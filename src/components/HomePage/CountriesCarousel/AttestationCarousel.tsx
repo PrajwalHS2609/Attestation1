@@ -39,7 +39,7 @@ export default function AttestationCarousel() {
 
   return (
     <div className="apostilleCountries">
-      <h3>Apostille Countries</h3>
+      <h3>Attestation Countries</h3>
       <div className="apostilleCountriesContent">
         <Carousel
           responsive={responsive}
