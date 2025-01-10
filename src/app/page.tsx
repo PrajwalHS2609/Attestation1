@@ -16,9 +16,9 @@ export default function Home() {
       <HomeCountries />
       <HomeAboutUs />
       <HomeSeo />
-      <HomeWhy /> 
+      <HomeWhy />
+      <CountriesCarousel />
       <Map />
-      <CountriesCarousel/>
     </div>
   );
 }

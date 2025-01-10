@@ -1,0 +1,91 @@
+.stateHrdHead-container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.stateHrdHead-container > h3 {
+  position: relative;
+  color: var(--customColor1);
+  text-align: center;
+}
+.stateHrdHead-container > h3::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  left: -20px;
+}
+.stateHrdHead-container > p {
+  text-align: justify;
+  font-size: 18px;
+}
+.stateHrdCommercial-container {
+  /* border: solid red; */
+  width: 95%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--customLightColor);
+  border-radius: 20px;
+}
+.stateHrdCommercial-content {
+  width: 50%;
+}
+.stateHrdCommercial-content > h4 {
+  position: relative;
+  color: var(--customColor1);
+}
+.stateHrdHead-container > h4::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  right: -20px;
+}
+.stateHrdCommercial-content > p {
+  text-align: justify;
+  font-weight: 500;
+}
+.stateHrdCommercial-content > Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.homeDepartmentBlore-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.homeDepartmentBlore-container > h1 {
+  position: relative;
+  color: var(--customColor1);
+  text-align: center;
+}
+.homeDepartmentBlore-container > h1::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  right: 200px;
+}
+.homeDepartmentBlore-container > p {
+  text-align: justify;
+  font-size: 18px;
+}

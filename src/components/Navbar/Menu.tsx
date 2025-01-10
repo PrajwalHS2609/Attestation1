@@ -8,7 +8,6 @@ import { HiMiniXMark } from "react-icons/hi2";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useRef, useState } from "react";
 
-
 const Menu = () => {
   const pathname = usePathname();
   const [drop, setDrop] = useState(false);
@@ -101,6 +100,65 @@ const Menu = () => {
       menu: "Non-Education Certificate",
     },
   ];
+  const stateHrd = [
+    {
+      id: "1",
+      pathName: "/karnataka",
+      menu: "Karnataka",
+    },
+    {
+      id: "2",
+      pathName: "/services/off-page-seo-services-in-bangalore",
+      menu: "Tamil Nadu",
+    },
+    {
+      id: "3",
+      pathName: "/services/off-page-seo-services-in-bangalore",
+      menu: "Kerala",
+    },
+    {
+      id: "4",
+      pathName: "/services/off-page-seo-services-in-bangalore",
+      menu: "Andhra Pradesh",
+    },
+    {
+      id: "5",
+      pathName: "/services/off-page-seo-services-in-bangalore",
+      menu: "Maharastra",
+    },
+    {
+      id: "6",
+      pathName: "/services/off-page-seo-services-in-bangalore",
+      menu: "Telangana",
+    },
+  ];
+  const pcc = [
+    {
+      id: "1",
+      pathName: "/oman-pcc",
+      menu: "Oman Pcc",
+    },
+    {
+      id: "2",
+      pathName: "/kuwait-pcc",
+      menu: "Kuwait Pcc",
+    },
+    {
+      id: "3",
+      pathName: "/saudi-pcc",
+      menu: "Saudi Pcc",
+    },
+    {
+      id: "4",
+      pathName: "/qatar-pcc",
+      menu: "Qatar Pcc",
+    },
+    {
+      id: "5",
+      pathName: "/uae-pcc",
+      menu: "UAE Pcc",
+    },
+  ];
   return (
     <div className="menu-container">
       <div className="menu-content1">
@@ -157,11 +215,25 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/about-us"
-            className={pathname === "/about-us" ? "active" : ""}
+            href="/state-hrd"
+            className={pathname === "/state-hrd" ? "active" : ""}
           >
-            State HRD{" "}
+            State HRD <MdKeyboardArrowDown className="serviceIco" />
           </Link>
+          <div className="menuDrop-container">
+            <ul>
+              {stateHrd.map((x) => (
+                <li key={x.id}>
+                  <Link
+                    href={x.pathName}
+                    className={pathname === x.pathName ? "active" : ""}
+                  >
+                    {x.menu}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </li>
         <li>
           <Link
@@ -173,11 +245,25 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/contact-us"
-            className={pathname === "/contact-us" ? "active" : ""}
+            href="/pcc"
+            className={pathname === "/pcc" ? "active" : ""}
           >
-            PCC{" "}
+            PCC <MdKeyboardArrowDown className="serviceIco" />
           </Link>
+          <div className="menuDrop-container">
+            <ul>
+              {pcc.map((x) => (
+                <li key={x.id}>
+                  <Link
+                    href={x.pathName}
+                    className={pathname === x.pathName ? "active" : ""}
+                  >
+                    {x.menu}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </li>
         <li>
           <Link

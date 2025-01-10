@@ -1,7 +1,8 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
-import "@/components/Style/style.css";
+import "./HomeHeader.css";
 import HomeHeaderKey from "./HomeHeaderKey";
+
 export default function HomeHeader() {
   return (
     <div className="header-container">
@@ -13,9 +14,8 @@ export default function HomeHeader() {
         <div className="header-coverContent">
           <h2>
             Welcome To <br />
-            XYZ Attestation Service <br />
+            Attestation Service <br />
             <span>
-              {" "}
               <Typewriter
                 words={["Bengaluru", "Chennai", "Mumbai", "Hyderabad"]}
                 loop
