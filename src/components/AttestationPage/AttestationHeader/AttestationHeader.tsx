@@ -1,19 +1,19 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
 import "@/components/Style/style.css";
-import HomeHeaderKey from "./HomeHeaderKey";
-export default function HomeHeader() {
+import HomeHeaderKey from "@/components/HomePage/HomeHeader/HomeHeaderKey";
+import Image from "next/image";
+import flagBanner from "@/media/images/flags/Flags.jpg";
+export default function AttestationHeader() {
   return (
     <div className="header-container">
-      <video autoPlay muted loop>
-        <source src="videos/Attestationvid.mp4" type="video/mp4" />
-        Your browser does not support video tag
-      </video>{" "}
+      <Image src={flagBanner} alt="flag Banner" />
       <div className="header-cover">
         <div className="header-coverContent">
           <h2>
-            Welcome To <br />
-            XYZ Attestation Service <br />
+            Our Certificate <br />
+            Attestation Service in
+            <br />
             <span>
               {" "}
               <Typewriter
