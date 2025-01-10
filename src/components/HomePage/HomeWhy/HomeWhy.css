@@ -1,0 +1,117 @@
+.homeWhyHead-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeWhyHead-container > h2 {
+  position: relative;
+  color: var(--customColor1);
+  text-align: center;
+}
+.homeWhyHead-container > h2 > span {
+  color: var(--customColor2);
+}
+.homeWhyHead-container > h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  left: -20px;
+}
+.homeWhyMain-container {
+  /* border: solid red; */
+  width: 100%;
+}
+.homeWhyMain-imgContainer > img {
+  width: 100%;
+  height: 550px;
+  object-position: 0px -250px;
+  object-fit: cover;
+}
+
+.homeWhyMain-content {
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -100px;
+}
+
+.homeWhyMain-cardContainer {
+  /* border: solid red; */
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--customColor1);
+  box-shadow: 0 0 10px rgb(103, 103, 103);
+}
+.homeWhyMain-cardWrapper {
+  /* border: solid green; */
+  width: 100%;
+  height: 95%;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.homeWhyMain-cardIcon {
+  /* border: solid red; */
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 10px rgb(85, 85, 85);
+}
+.homeWhyMain-cardIcon > img {
+  width: 70%;
+  height: 70%;
+}
+.homeWhyMain-Txt {
+  /* border: solid green; */
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeWhyMain-Txt > p {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeWhyHead-container > h2::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .homeWhyMain-imgContainer > img {
+    width: 100%;
+    height: 100%;
+    object-position: 0px;
+    object-fit: cover;
+  }
+  .homeWhyMain-content {
+    /* border: solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,75 @@
+.homeCountriesHead-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeCountriesHead-container > h2 {
+  position: relative;
+  color: var(--customColor1);
+}
+.homeCountriesHead-container > h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  right: -20px;
+}
+.homeCountriesMain-container {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.homeCountriesMain-marqueeCard {
+  /* border: solid blue; */
+  height: 300px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.homeCountriesMain-marqueeCard > a {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+.homeCountriesMain-marqueeCard > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.homeCountriesMain-marqueeCover {
+  /* border: solid blue; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.448);
+  transition: 200ms ease-in-out;
+  transform: translateY(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeCountriesMain-marqueeCover > h3 {
+  color: white;
+  font-size: 40px;
+  color: white;
+}
+.homeCountriesMain-marqueeCard:hover .homeCountriesMain-marqueeCover {
+  transform: translateY(0px);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeCountriesHead-container > h2::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}

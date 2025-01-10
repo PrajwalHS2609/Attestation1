@@ -1,0 +1,91 @@
+.countriesCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+.attestationCountries {
+  /* border: solid green; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.attestationCountries > h3 {
+  font-size: 30px;
+  color: var(--customColor2);
+}
+.attestationCountriesContent {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+.attestationCountriesContent > div {
+  width: 100%;
+}
+.apostilleCountries > h3 {
+  font-size: 30px;
+  color: var(--customColor1);
+}
+.apostilleCountries {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apostilleCountriesContent > div {
+  width: 100%;
+}
+.apostilleCountriesContent {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+.item {
+  /* border: solid green; */
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.item > img {
+  width: 100%;
+  object-fit: cover;
+}
+.attestationCountriesWrapper {
+  /* border: solid rebeccapurple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.attestationCountriesWrapper > h6 {
+  color: var(--customColor1);
+}
+.apostilleCountriesWrapper {
+  /* border: solid rebeccapurple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.apostilleCountriesWrapper > h4 {
+  color: var(--customColor1);
+}
