@@ -7,8 +7,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { HiMiniXMark } from "react-icons/hi2";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useRef, useState } from "react";
-import logo from "@/media/images/attestation1Logo.png";
-import Image from "next/image";
+
 
 const Menu = () => {
   const pathname = usePathname();
@@ -112,8 +111,8 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/projects"
-            className={pathname === "/project" ? "active" : ""}
+            href="/attestation"
+            className={pathname === "/attestation" ? "active" : ""}
           >
             Attestation
             <MdKeyboardArrowDown className="serviceIco" />
