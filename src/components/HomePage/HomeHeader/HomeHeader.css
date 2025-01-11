@@ -22,9 +22,9 @@
   padding: 20px;
 }
 .homeHeader-coverContent:nth-child(1) {
-  /* border: solid green; */
+  border: solid green;
   padding: 10px;
-  height: 300px;
+  height: 400px;
 }
 .homeHeader-coverContent:nth-child(2) {
   /* border: solid green; */
@@ -35,11 +35,12 @@
   flex-direction: column;
 }
 .homeHeader-coverContent > h2 {
-  color: white;
+  color: var(--customColor2);
   font-size: 60px;
+  width: 200px;
 }
 .homeHeader-coverContent > h2 > span {
-  color: var(--customColor2);
+  color: white;
 }
 .homeHeader-keyContainer {
   border: 2px solid var(--customColor2);

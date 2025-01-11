@@ -8,28 +8,6 @@
   flex-direction: column;
   padding: 20px;
 }
-.homeServiceHead-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.homeServiceHead-container > h2 {
-  position: relative;
-  color: var(--customColor1);
-  text-align: center;
-}
-.homeServiceHead-container > h2::after {
-  content: "";
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--customColor2);
-  width: 50%;
-  right: -20px;
-}
-
 .homeServiceMain-container {
   /* border: solid green; */
   width: 100%;
@@ -199,7 +177,6 @@
     content: "";
     position: absolute;
     display: none;
-
   }
   .homeServiceMain-container {
     /* border: solid green; */

@@ -3,11 +3,11 @@ import { Typewriter } from "react-simple-typewriter";
 import "@/components/Style/style.css";
 import HomeHeaderKey from "@/components/HomePage/HomeHeader/HomeHeaderKey";
 import Image from "next/image";
-import stateHrd from "@/media/images/stateHrd.jpg";
-export default function StateHrdHeader() {
+import mofaBanner from "@/media/images/stateHrd.jpg";
+export default function MofaHeader() {
   return (
     <div className="header-container">
-      <Image src={stateHrd} alt="state Hrd" />
+      <Image src={mofaBanner} alt="mofa Banner" />
       <div className="header-cover">
         <div className="header-coverContent">
           <h2>

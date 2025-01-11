@@ -12,6 +12,11 @@
   color: var(--customColor1);
   text-align: center;
 }
+.stateHrdHead-container>h5{
+  position: relative;
+  color: var(--customColor1);
+  text-align: start;width: 100%;
+}
 .stateHrdHead-container > h3::after {
   content: "";
   position: absolute;

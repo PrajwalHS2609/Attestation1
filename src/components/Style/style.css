@@ -43,6 +43,8 @@
 .header-coverContent > h2 {
   color: white;
   font-size: 50px;
+  /* border: solid violet; */
+  width: 600px;
 }
 .header-coverContent > h2 > span {
   color: var(--customColor2);
@@ -76,6 +78,47 @@
   font-size: 18px;
   width: 70%;
 }
+/* ------------------------Heading-------------------------------------- */
+.head-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-container > h1 {
+  position: relative;
+  color: var(--customColor1);
+  text-align: center;
+}
+.head-container > h1 > span {
+  color: var(--customColor2);
+}
+.head-container > h1::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  left: 20%;
+}
+.head-container > h2 {
+  position: relative;
+  color: var(--customColor1);
+  text-align: center;
+}
+.head-container > h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  right: -20px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .header-cover {
     /* border: solid blue; */
@@ -84,8 +127,22 @@
   .header-keyContainer {
     width: 100%;
   }
+  .header-cover {
+    padding: 10px;
+  }
+  .header-coverContent {
+    /* border: solid; */
+    width: 100%;
+  }
   .header-coverContent > h2 {
     color: white;
     font-size: 35px;
+    width: 300px;
+  }
+  /* -------------------------heading--------------------------- */
+  .head-container > h2::after {
+    content: "";
+    position: absolute;
+    display: none;
   }
 }

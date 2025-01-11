@@ -1,0 +1,31 @@
+.attestationCertificate-container {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.attestationCertificate-content {
+  /* border: solid blue; */
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.attestationCertificate-content > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.attestationCertificate-content > h3 {
+  text-align: start;
+  width: 100%;
+  color: var(--customColor1);
+}
+.attestationCertificate-content > p {
+  font-size: 18px;
+  text-align: justify;
+}

@@ -1,7 +1,7 @@
-import "./HomeCountries.css"
+import "@/components/Style/style.css";
 export  default function HomeCountriesHead(){
     return(
-        <div className="homeCountriesHead-container">
+        <div className="head-container">
         <h2>Countries We Serve</h2>
       </div>
     )

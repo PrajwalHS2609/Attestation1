@@ -237,8 +237,8 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/contact-us"
-            className={pathname === "/contact-us" ? "active" : ""}
+            href="/mofa"
+            className={pathname === "/mofa" ? "active" : ""}
           >
             MOFA{" "}
           </Link>

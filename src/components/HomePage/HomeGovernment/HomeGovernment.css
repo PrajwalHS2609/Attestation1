@@ -1,24 +1,3 @@
-.homeGovernmentHead-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.homeGovernmentHead-container > h2 {
-  position: relative;
-  color: var(--customColor1);
-}
-.homeGovernmentHead-container > h2::after {
-  content: "";
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--customColor2);
-  width: 50%;
-  left: -20px;
-}
-
 .homeGovernmentMain-container {
   /* border: solid blue; */
   display: flex;

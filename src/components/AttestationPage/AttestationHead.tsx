@@ -1,8 +1,9 @@
 import "@/components/Style/style.css";
-export default function HomeServiceHead() {
+export default function AttestationHead() {
   return (
     <div className="head-container">
-      <h2>Our Services</h2>
+      {" "}
+      <h1>Attestation Services in Bengaluru</h1>
     </div>
   );
 }

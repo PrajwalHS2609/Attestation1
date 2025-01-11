@@ -41,6 +41,7 @@
   text-align: justify;
 }
 .homeSeoContent2-container {
+  /* border: solid; */
   width: 100%;
   display: flex;
   justify-content: space-evenly;
