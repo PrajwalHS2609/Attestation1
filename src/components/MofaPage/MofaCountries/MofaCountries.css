@@ -10,7 +10,6 @@
 }
 
 .mofaCountries-content {
-  /* border: solid blue; */
   padding: 20px;
   border-radius: 10px;
   background-color: var(--customLightColor);
@@ -49,7 +48,7 @@
   font-size: 18px;
   text-align: justify;
 }
-.mofaCountries-container:hover .mofaCountries-item > img {
+.mofaCountries-content:hover .mofaCountries-item > img {
   transform: scale(1.1);
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {

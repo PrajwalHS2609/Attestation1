@@ -1,0 +1,196 @@
+.translateService-container {
+  /* border: solid black; */
+  height: 500px;
+  width: 100%;
+  padding: 0px;
+}
+.translateService-bar {
+  /* border: solid black; */
+  width: 100%;
+  height: 10px;
+  background-color: rgb(162, 162, 162);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.471);
+  position: relative;
+}
+.translateService-card {
+  /* border: solid red; */
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  background-color: var(--customColor1);
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+  margin-left: 10px;
+}
+.translateService-dummy1 {
+  /* border: solid green; */
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  transform: rotate(30deg);
+  background-color: white;
+}
+.translateService-dummy2 {
+  /* border: solid green; */
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: -100px;
+  right: -50px;
+  transform: rotate(-30deg);
+  background-color: white;
+}
+.translateService-icon {
+  font-size: 50px;
+  margin-top: 30px;
+  color: white;
+}
+.translateService-card > h5 {
+  color: white;
+}
+.translateService-card > p {
+  color: white;
+  text-align: justify;
+}
+.translateService-scrollTop {
+  /* border: solid green; */
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 50px 5px rgb(0, 0, 0);
+}
+
+.translateService-card:nth-child(2) {
+  left: 300px;
+}
+.translateService-card:nth-child(3) {
+  left: 600px;
+}
+.translateService-card:nth-child(4) {
+  left: 900px;
+}
+.translateService-card:nth-child(5) {
+  left: 1200px;
+}
+
+#translateService-card1:nth-child(1) {
+  left: 100px;
+}
+#translateService-card1:nth-child(2) {
+  left: 400px;
+}
+#translateService-card1:nth-child(3) {
+  left: 700px;
+}
+#translateService-card1:nth-child(4) {
+  left: 1000px;
+}
+/* .resp-TranslateService-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+/* -------------------------------------------------------------------------------- */
+.resp-TranslateService-container {
+  /* border: solid red; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.resp-TranslateService-wrapper {
+  /* border: solid blue; */
+  width: 300px;
+  height: 360px;
+  margin: 20px;
+}
+.resp-TranslateService-bar {
+  /* border: solid; */
+  position: relative;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  background-color: rgb(162, 162, 162);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.471);
+}
+.resp-TranslateService-card {
+  /* border: solid red; */
+  width: 280px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  background-color: var(--customColor1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+.resp-TranslateService-dummy1 {
+  /* border: solid green; */
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  bottom: -120px;
+  left: -40px;
+  transform: rotate(20deg);
+  background-color: white;
+}
+.resp-TranslateService-dummy2 {
+  /* border: solid green; */
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  bottom: -120px;
+  right: -40px;
+  transform: rotate(-20deg);
+  background-color: white;
+}
+.resp-TranslateService-scrollTop {
+  /* border: solid green; */
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 50px 5px rgb(0, 0, 0);
+}
+.resp-TranslateService-icon {
+  font-size: 50px;
+  margin-top: 30px;
+  color: white;
+}
+.resp-TranslateService-card > h5 {
+  color: white;
+}
+.resp-TranslateService-card > p {
+  color: white;
+  text-align: justify;
+}
+@media screen and (min-width: 320px) and (max-width: 990px) {
+  .translateService-container {
+    /* border: solid black; */
+    display: none;
+  }
+  .resp-TranslateService-container {
+    /* border: solid red; */
+    display: flex;
+  }
+}

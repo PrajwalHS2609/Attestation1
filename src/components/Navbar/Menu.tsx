@@ -267,24 +267,24 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/contact-us"
-            className={pathname === "/contact-us" ? "active" : ""}
+            href="/mea"
+            className={pathname === "/mea" ? "active" : ""}
           >
             MEA{" "}
           </Link>
         </li>
         <li>
           <Link
-            href="/contact-us"
-            className={pathname === "/contact-us" ? "active" : ""}
+            href="/wes"
+            className={pathname === "/wes" ? "active" : ""}
           >
             WES{" "}
           </Link>
         </li>
         <li>
           <Link
-            href="/contact-us"
-            className={pathname === "/contact-us" ? "active" : ""}
+            href="/translation"
+            className={pathname === "/translation" ? "active" : ""}
           >
             Translation{" "}
           </Link>
