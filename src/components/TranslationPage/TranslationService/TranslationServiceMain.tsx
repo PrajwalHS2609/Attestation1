@@ -181,7 +181,7 @@ export default function TranslationServiceMain() {
       {/* -----------------------------------for mobile responsive------------------------------------------------ */}
       <div className="resp-TranslateService-container">
         {respTranslateService.map((x) => (
-          <div className="resp-TranslateService-wrapper">
+          <div className="resp-TranslateService-wrapper" key={x.id}>
             <div className="resp-TranslateService-bar">
               <div
                 className="resp-TranslateService-card"

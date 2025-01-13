@@ -1,4 +1,3 @@
-import Translation from "@/app/translation/page";
 import TranslationServiceMain from "./TranslationServiceMain";
 import TranslationServiceHead from "./TranslationServiceHead";
 
