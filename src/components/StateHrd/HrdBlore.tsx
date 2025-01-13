@@ -14,10 +14,10 @@ export default function HrdBlore() {
       <p>
         After the completion of document attestation, the stamp on a certificate
         is exhibiting the authenticity of documents which is also known as an
-        HRD certificate. Goodwayattestation is a leading agency that provides
+        HRD certificate. Attestation1 is a leading agency that provides
         the affordable services of HRD attestation in Bangalore by reaching the
         authorities & assisting you in getting your document attested quickly &
-        hassle-free. Goodwayattestation is approved by Ministries & embassies in
+        hassle-free. Attestation1 is approved by Ministries & embassies in
         India as well as abroad.
       </p>
       <br />

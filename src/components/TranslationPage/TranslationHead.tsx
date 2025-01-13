@@ -4,7 +4,7 @@ export default function TranslationHead() {
     <div className="head-container">
       <h1>Translation Services in Bangalore by  <span>Attestation1</span> </h1>
       <p>
-        Welcome to Goodway Attestation’s professional translation services in
+        Welcome to  Attestation1 professional translation services in
         Bangalore! We are your one-stop destination for accurate and reliable
         language translation solutions. With our team of experienced translators
         and a commitment to quality, we ensure that your documents are
