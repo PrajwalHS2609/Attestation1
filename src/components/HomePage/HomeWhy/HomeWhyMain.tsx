@@ -1,6 +1,6 @@
 import "./HomeWhy.css";
 import Image from "next/image";
-import whyImgBanner from "@/media/images/benefits.png";
+import whyImgBanner from "@/media/images/whyChooseImg.png";
 import GovernmentApproved from "@/media/images/Attributes/Government Approved.png";
 import Efficiency from "@/media/images/Attributes/Efficiency.png";
 import Expertise from "@/media/images/Attributes/Expertise.png";

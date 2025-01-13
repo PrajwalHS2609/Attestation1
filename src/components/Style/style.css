@@ -130,6 +130,25 @@
   text-align: start;
   width: 100%;
 }
+.head-container > ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.head-container > ul > li {
+  list-style: none;
+  margin: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  text-align: start;
+}
+.headList-icon {
+  color: var(--customColor1);
+  font-size: 30px;
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .header-cover {
     /* border: solid blue; */

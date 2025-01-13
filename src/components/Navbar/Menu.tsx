@@ -169,8 +169,8 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/attestation"
-            className={pathname === "/attestation" ? "active" : ""}
+            href="/attestation-services-in-bangalore"
+            className={pathname === "/attestation-services-in-bangalore" ? "active" : ""}
           >
             Attestation
             <MdKeyboardArrowDown className="serviceIco" />
@@ -192,8 +192,8 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/apostille"
-            className={pathname === "/apostille" ? "active" : ""}
+            href="/apostille-services-in-bangalore"
+            className={pathname === "/apostille-services-in-bangalore" ? "active" : ""}
           >
             Apostille
             <MdKeyboardArrowDown className="serviceIco" />
@@ -215,8 +215,8 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/state-hrd"
-            className={pathname === "/state-hrd" ? "active" : ""}
+            href="/state-hrd-attestation-in-bangalore"
+            className={pathname === "/state-hrd-attestation-in-bangalore" ? "active" : ""}
           >
             State HRD <MdKeyboardArrowDown className="serviceIco" />
           </Link>
@@ -237,16 +237,16 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/mofa"
-            className={pathname === "/mofa" ? "active" : ""}
+            href="/mofa-attestation-in-bangalore"
+            className={pathname === "/mofa-attestation-in-bangalore" ? "active" : ""}
           >
             MOFA{" "}
           </Link>
         </li>
         <li>
           <Link
-            href="/pcc"
-            className={pathname === "/pcc" ? "active" : ""}
+            href="/pcc-verification-in-bangalore"
+            className={pathname === "/pcc-verification-in-bangalore" ? "active" : ""}
           >
             PCC <MdKeyboardArrowDown className="serviceIco" />
           </Link>
@@ -267,24 +267,24 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/mea"
-            className={pathname === "/mea" ? "active" : ""}
+            href="/mea-apostille-services-in-bangalore"
+            className={pathname === "/mea-apostille-services-in-bangalore" ? "active" : ""}
           >
             MEA{" "}
           </Link>
         </li>
         <li>
           <Link
-            href="/wes"
-            className={pathname === "/wes" ? "active" : ""}
+            href="/wes-verification-attestation-in-bangalore"
+            className={pathname === "/wes-verification-attestation-in-bangalore" ? "active" : ""}
           >
             WES{" "}
           </Link>
         </li>
         <li>
           <Link
-            href="/translation"
-            className={pathname === "/translation" ? "active" : ""}
+            href="/translation-documents-in-bangalore"
+            className={pathname === "/translation-documents-in-bangalore" ? "active" : ""}
           >
             Translation{" "}
           </Link>
@@ -322,8 +322,8 @@ const Menu = () => {
             <li>
               <div className="respMenuList">
                 <Link
-                  href="/"
-                  className={pathname === "/about-us" ? "active" : ""}
+                  href="/attestation-service-in-bangalore"
+                  className={pathname === "/attestation-service-in-bangalore" ? "active" : ""}
                   onClick={hideSideBar}
                 >
                   Attestation{" "}
@@ -352,8 +352,8 @@ const Menu = () => {
             <li>
               <div className="respMenuList">
                 <Link
-                  href="/services"
-                  className={pathname === "/services" ? "active" : ""}
+                  href="/apostille-service-in-bangalore"
+                  className={pathname === "/apostille-service-in-bangalore" ? "active" : ""}
                   onClick={hideSideBar}
                 >
                   Apostille

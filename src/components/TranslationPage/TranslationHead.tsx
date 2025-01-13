@@ -2,7 +2,7 @@ import "@/components/Style/style.css";
 export default function TranslationHead() {
   return (
     <div className="head-container">
-      <h1>Translation Services in Bangalore by  Attestation1 </h1>
+      <h1>Translation Services in Bangalore by  <span>Attestation1</span> </h1>
       <p>
         Welcome to Goodway Attestation’s professional translation services in
         Bangalore! We are your one-stop destination for accurate and reliable

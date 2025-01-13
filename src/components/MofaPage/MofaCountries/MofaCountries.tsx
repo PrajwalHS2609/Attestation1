@@ -43,7 +43,7 @@ export default function MofaCountries() {
     <div className="mofaCountries-container">
       {mofaCountries.map((x) => (
         <div className="mofaCountries-content" key={x.id}>
-          <div className="mofaCountries-item">
+          <div className="mofaCountries-item" id="mofaCountries-imgContainer">
             <Image src={x.img} alt={x.head} />
           </div>
           <div className="mofaCountries-item">

@@ -38,6 +38,11 @@
 .mofaCountries-item > img {
   border-radius: 10px;
   transition: 1s ease-in-out;
+  /* border: solid var(--customColor2); */
+}
+#mofaCountries-imgContainer{
+  border: solid var(--customColor2);
+
 }
 .mofaCountries-item > h4 {
   color: var(--customColor1);

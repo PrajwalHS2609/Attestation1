@@ -29,3 +29,20 @@
   font-size: 18px;
   text-align: justify;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .attestationCertificate-container {
+    /* border: solid red; */
+    width: 100%;
+    flex-direction: column;
+  }
+  .attestationCertificate-content {
+    /* border: solid blue; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+}
