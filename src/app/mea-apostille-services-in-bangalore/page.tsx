@@ -2,6 +2,7 @@ import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import MeaCommercialDoc from "@/components/MeaPage/MeaCommercialDoc/MeaCommercialDoc";
+import MeaContent from "@/components/MeaPage/MeaContent";
 import MeaHeader from "@/components/MeaPage/MeaHeader";
 import MeaProcedure from "@/components/MeaPage/MeaProcedure";
 
@@ -11,9 +12,10 @@ export default function MeaPage() {
       <MeaHeader />
       <MeaProcedure />
       <MeaCommercialDoc />
-            <HomeService />
-            <HomeCountries />
-            <HomeWhy />
+      <MeaContent />
+      <HomeService />
+      <HomeCountries />
+      <HomeWhy />
     </div>
   );
 }

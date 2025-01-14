@@ -1,4 +1,5 @@
 import ApostilleCertificate from "@/components/ApostillePage/ApostilleCertificate";
+import ApostilleContent from "@/components/ApostillePage/ApostilleContent";
 import ApostilleFlag from "@/components/ApostillePage/ApostilleFlags/ApostilleFlags";
 import ApostilleHead from "@/components/ApostillePage/ApostilleHead";
 import ApostilleHeader from "@/components/ApostillePage/ApostilleHeader";
@@ -12,6 +13,7 @@ export default function Attestation() {
       <ApostilleHead />
       <ApostilleCertificate />
       <ApostilleFlag />
+      <ApostilleContent/>
       <HomeService />
       <HomeCountries />
       <HomeWhy />

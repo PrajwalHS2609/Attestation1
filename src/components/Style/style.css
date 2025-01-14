@@ -149,6 +149,110 @@
   color: var(--customColor1);
   font-size: 30px;
 }
+
+/* -------------------content--------------------------- */
+.content-wrapper {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-container {
+  /* border: solid blue; */
+  padding: 20px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-container > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  border-radius: 20px;
+}
+.content-container > span {
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  z-index: -1;
+}
+
+.content-container > span > img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.content-container > h4 {
+  color: var(--customColor1);
+}
+.content-container > p {
+  font-size: 18px;
+  text-align: justify;
+}
+.content-container > p > a {
+  color: var(--customColor1);
+  text-decoration: none;
+}
+#contentStyle-container > p {
+  color: var(--customColor1);
+  font-weight: 500;
+}
+#contentStyle-container > p > a {
+  color: var(--customColor2);
+  text-decoration: none;
+}
+#contentStyle-container {
+  /* border: solid blue; */
+  padding: 30px;
+  width: 90%;
+  position: relative;
+}
+#contentStyle-containerBg {
+  /* border: solid blue; */
+  padding: 30px;
+  width: 90%;
+  position: relative;
+  background-color: var(--customLightColor);
+  border-radius: 20px;
+}
+.content-container > ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.content-container > ul > h5 {
+  color: var(--customColor1);
+}
+.content-container > ul > p {
+  font-size: 18px;
+}
+.content-container > ul > li {
+  list-style: none;
+  margin: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  text-align: start;
+}
+.content-containerIcon {
+  color: var(--customColor1);
+  font-size: 30px;
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .header-cover {
     /* border: solid blue; */

@@ -8,6 +8,7 @@ import StateHrdCommercial from "@/components/StateHrd/StateHrdCommercial";
 import StateHrdHead from "@/components/StateHrd/StateHrdHead";
 import StateHrdHeader from "@/components/StateHrd/StateHrdHeader";
 import "@/components/HomePage/HomeSeo/HomeSeo.css";
+import StateHrdContent from "@/components/StateHrd/StateHrdContent";
 export default function StateHrd() {
   return (
     <div className="main-container">
@@ -16,6 +17,7 @@ export default function StateHrd() {
       <StateHrdCommercial />
       <HrdBlore />
       <StateHomeDepartmentBlore />
+      <StateHrdContent/>
       <HomeSeoContent2 />
       <HomeService />
       <HomeCountries />

@@ -29,6 +29,17 @@
   font-size: 18px;
   text-align: justify;
 }
+#attestationContent-container > p {
+  color: var(--customColor1);
+  font-weight: 500;
+}
+#attestationContent-container {
+  /* border: solid blue; */
+  padding: 30px;
+  width: 90%;
+  position: relative;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .attestationCertificate-container {
     /* border: solid red; */

@@ -12,31 +12,31 @@ export default function MofaCountries() {
       id: 1,
       img: uaeMofa,
       head: "MOFA UAE",
-      para: "We also do Ministry of Foreign Affairs of UAE (MOFA of UAE)* After Attesting from country from which the documents are issued it has to be Attested from MOFA Ministry of Foreign Affairs of the Country where you are going for emploment. *Additional charge can apply for MOFA and takes 8 working days for MOFA attestation from UAE.",
+      para: "For individuals traveling to the United Arab Emirates (UAE), the MOFA attestation process is mandatory after obtaining attestation from the issuing country. This step ensures that documents such as educational certificates, marriage certificates, birth certificates, and commercial documents are legally recognized in the UAE. Once the document has been authenticated in the home country, it must be submitted to the UAE MOFA for final verification. The processing time for MOFA attestation in the UAE typically takes around 8 working days, depending on the type of document and verification requirements. Additional charges may apply, depending on the complexity of the attestation process.",
     },
     {
       id: 2,
       img: qatarMofa,
       head: "MOFA QATAR",
-      para: "We also do Ministry of Foreign Affairs of Qatar (MOFA of Qatar)* After Attesting from country from which the documents are issued it has to be Attested from MOFA Ministry of Foreign Affairs of the Country where you are going for emploment. *Additional charge can apply for MOFA and takes 8 working days for MOFA attestation from Qatar.",
+      para: "For individuals planning to work or study in Qatar, MOFA attestation is required for all essential documents. Similar to the UAE, documents must first be attested by the relevant authorities in the home country before being submitted to Qatar’s MOFA. This attestation validates documents such as academic certificates, personal identification records, and employment contracts, ensuring their authenticity. The processing time for MOFA attestation in Qatar is generally 8 working days, although additional verification may be required in some cases.",
     },
     {
       id: 3,
       img: saudiMofa,
       head: "MOFA SAUDI",
-      para: "We also do Ministry of Foreign Affairs of Saudi Arabia (MOFA of Saudi) After Attesting from country from which the documents are issued it has to be Attested from MOFA Ministry of Foreign Affairs of the Country where you are going for emploment. *Additional charge can apply for MOFA and takes minimum 40 working days & upto 6 month for MOFA attestation from Saudi Arabia.",
+      para: "When applying for jobs or residency in Saudi Arabia, the MOFA attestation process is more complex and time-consuming. After obtaining attestation from the home country, documents must be sent to the Saudi MOFA for further verification. The attestation process for Saudi Arabia includes stringent checks, particularly for educational and commercial documents. Unlike other countries, Saudi MOFA attestation takes a minimum of 40 working days and can extend up to 6 months, depending on the type of document and level of verification required. Additional fees apply for attestation services, and applicants must ensure all documents are correctly authenticated before submission.",
     },
     {
       id: 4,
       img: bahrainMofa,
       head: "MOFA BAHRAIN",
-      para: "We also do Ministry of Foreign Affairs of Bahrain (MOFA of Bahrain) After Attesting from country from which the documents are issued it has to be Attested from MOFA Ministry of Foreign Affairs of the Country where you are going for emploment. *Additional charge can apply for MOFA and takes addtional time/days for MOFA attestation from Bahrain.",
+      para: "For individuals moving to Bahrain, MOFA attestation is a necessary step for legalizing documents. Whether applying for employment, higher education, or business registration, attested documents are required to confirm their authenticity. Similar to other countries, all documents must first be attested by the Home Department and MEA before being submitted for Bahrain MOFA attestation. The processing time varies depending on the document type, but applicants should expect an additional waiting period for verification.",
     },
     {
       id: 5,
       img: kuwaitMofa,
       head: "MOFA KUWAIT",
-      para: "We also do Ministry of Foreign Affairs of Kuwait (MOFA of Kuwait)* After Attesting from country from which the documents are issued it has to be Attested from MOFA Ministry of Foreign Affairs of the Country where you are going for emploment.",
+      para: "In the case of Kuwait, MOFA attestation is compulsory for all legal documents, including educational degrees, marriage certificates, birth certificates, and business-related paperwork. This process is necessary for securing work permits, student visas, and company registrations. Once documents are attested in the home country, they must be presented to Kuwait’s MOFA for final approval. The processing time depends on the document category, and applicants may be required to submit additional paperwork for verification.",
     },
   ];
   return (

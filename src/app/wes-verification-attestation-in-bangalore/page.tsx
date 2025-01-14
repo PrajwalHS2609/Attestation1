@@ -1,3 +1,7 @@
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
+import WesContent from "@/components/Wespage/WesContent";
 import WesDoc from "@/components/Wespage/WesDoc";
 import WesHead from "@/components/Wespage/WesHead";
 import WesHeader from "@/components/Wespage/WesHeader";
@@ -10,6 +14,10 @@ export default function WesPage() {
       <WesHead />
       <WesDoc />
       <WesProcess />
+      <WesContent />
+      <HomeService />
+      <HomeCountries />
+      <HomeWhy />
     </div>
   );
 }
