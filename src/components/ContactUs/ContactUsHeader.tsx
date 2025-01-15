@@ -1,11 +1,11 @@
 import "./ContactUs.css";
-import contactUsHeader from "./../Images/contactUsHeader.jpg";
+import ContactUsBanner from "@/media/images/ContactUsBanner.png"
 import Image from "next/image";
 export default function ContactUsHeader() {
   return (
     <div className="contactUs-headerContainer">
-      <img
-        src="https://img.freepik.com/free-photo/global-globalization-world-map-environmental-concservation-concept_53876-124164.jpg?t=st=1736928939~exp=1736932539~hmac=f7380aeee5134af2ee7cbccde50037fd3bafe9e66153ed5ea5c4bae9543f9fff&w=1380"
+      <Image
+        src={ContactUsBanner}
         alt="contactUsHeader"
       />
       <div className="contactUs-headerContents">

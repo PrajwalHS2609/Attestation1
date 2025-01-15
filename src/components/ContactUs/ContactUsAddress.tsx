@@ -20,7 +20,7 @@ export default function ContactUsAddress() {
           <ul>
             <li>
               {" "}
-              <a href="/">
+              <a href="https://www.google.com/maps">
                 <span>
                   <FaLocationDot className="footerAddressIco" />
                 </span>
