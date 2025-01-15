@@ -1,4 +1,6 @@
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import PccImportant from "./PccImportant";
+import PccProcess from "./PccProcess";
 
 export default function PccContent() {
   return (
@@ -28,6 +30,9 @@ export default function PccContent() {
           clean criminal record.
         </p>
       </div>
+      <PccImportant />
+      <PccProcess />
+
       <div className="content-container">
         <h4>Challenges in PCC Verification</h4>
         <p>
