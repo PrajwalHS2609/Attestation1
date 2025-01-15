@@ -1,7 +1,7 @@
 import Image from "next/image";
 import steps from "@/media/images/steps.png";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import "@/components/Style/style.css"
+import "@/components/Style/style.css";
 
 export default function StateHrdContent() {
   return (
@@ -27,7 +27,7 @@ export default function StateHrdContent() {
           from New Delhi.
         </p>
       </div>
-      <div className="content-container">
+      <div className="content-container" id="contentStyle-containerBg">
         <p>
           Document attestation is a mandatory procedure required when applying
           for educational institutions, work permits, visa applications, and
@@ -63,7 +63,7 @@ export default function StateHrdContent() {
           before proceeding with further verification.
         </p>
       </div>
-      <div className="content-container">
+      <div className="content-container" id="contentStyle-containerBg">
         <p>
           With the rise of globalization and the increasing number of
           individuals migrating for education, employment, or business, the
@@ -99,7 +99,7 @@ export default function StateHrdContent() {
           document attestation and verification within the state.
         </p>
       </div>
-      <div className="content-container">
+      <div className="content-container" id="contentStyle-containerBg">
         <p>
           The procedure and timeline for{" "}
           <a href="https://foreignembassyattestation.com/state-hrd-attestation-in-bangalore">
@@ -130,7 +130,7 @@ export default function StateHrdContent() {
           use.
         </p>
       </div>
-      <div className="content-container">
+      <div className="content-container" id="contentStyle-containerBg">
         <p>
           To ensure a hassle-free experience,{" "}
           <a href="https://foreignembassyattestation.com/attestation-services-in-bangalore">
@@ -159,7 +159,7 @@ export default function StateHrdContent() {
           ensure timely completion with guaranteed authenticity.
         </p>
       </div>
-      <div className="content-container">
+      <div className="content-container" id="contentStyle-containerBg">
         <p>
           For documents originating from Karnataka, attestation by the State
           Home Department in Bangalore is necessary before further verification.
@@ -192,25 +192,31 @@ export default function StateHrdContent() {
         <ul>
           <h5>The attestation process involves multiple steps, including:</h5>
           <li>
-            <span><MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}</span>
+            <span>
+              <MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}
+            </span>
             Verification by the university (for educational certificates).
           </li>
           <li>
             {" "}
-            <span><MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}</span>
-            Verification by the university (for educational certificates).
+            <span>
+              <MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}
+            </span>
             Authentication by the State Home Department (SHD).
           </li>
           <li>
-            <span><MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}</span>
-            Verification by the university (for educational certificates).
+            <span>
+              <MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}
+            </span>
             Submission to the Ministry of External Affairs (MEA) for apostille
             or further attestation.
           </li>
           <li>
             {" "}
-           <span> <MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}</span>
-            Verification by the university (for educational certificates).
+            <span>
+              {" "}
+              <MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}
+            </span>
             Embassy attestation (if required by the destination country).
           </li>
         </ul>
@@ -231,7 +237,7 @@ export default function StateHrdContent() {
           ensure that documents are processed as per international standards.
         </p>
       </div>
-      <div className="content-container">
+      <div className="content-container" id="contentStyle-containerBg">
         <p>
           Given the increasing number of students, professionals, and businesses
           expanding internationally, the demand for reliable{" "}
@@ -259,7 +265,7 @@ export default function StateHrdContent() {
           simplifies the process and guarantees timely completion.
         </p>
       </div>
-      <div className="content-container">
+      <div className="content-container" id="contentStyle-containerBg">
         <p>
           As global mobility continues to rise, individuals must ensure that
           their documents comply with international verification standards.

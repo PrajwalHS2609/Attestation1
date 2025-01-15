@@ -301,9 +301,9 @@ const Menu = () => {
         </li>
         <li>
           <Link
-            href="/visa-stamping-in-bangalore"
+            href="/visa-stamping-services-in-bangalore"
             className={
-              pathname === "/visa-stamping-in-bangalore" ? "active" : ""
+              pathname === "/visa-stamping-services-in-bangalore" ? "active" : ""
             }
           >
             Visa Stamping{" "}
@@ -451,8 +451,8 @@ const Menu = () => {
             <li>
               {" "}
               <Link
-                href="/visa-stamping-in-bangalore"
-                className={pathname === "/visa-stamping-in-bangalore" ? "active" : ""}
+                href="/visa-stamping-services-in-bangalore"
+                className={pathname === "/visa-stamping-services-in-bangalore" ? "active" : ""}
                 onClick={hideSideBar}
               >
                 Visa Stamping

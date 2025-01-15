@@ -2,22 +2,24 @@ import "@/components/Style/style.css";
 export default function MofaProcedure() {
   return (
     <div className="head-container">
-      <h3>MOFA Attestation Procedure :</h3>
+      <h1>MOFA Attestation Services in Bangalore </h1>
       <p>
-        All original documents requiring attestation or Apostille should be
-        first authenticated by the designated agencies in the State from where
-        the document has been issued. In case of personal documents, Home
-        Department /General Administration Department are the designated
-        authorities. In case of educational documents, the documents should
-        first be authenticated by the Education Department of the concerned
-        State Government/Union Territory. The details of the Regional
-        Authentication Centre (RACs) in the States/UTs from where the documents
-        should first be authenticated are given below. The Ministry of External
-        Affairs attests the documents on the basis of the signature of the
-        designated signing authorities of the State Government/Union
-        Territory/Chambers of Commerce; hence it does not take responsibility of
-        the contents of the documents.
-      </p>
+          For documents to be recognized internationally, it is essential to
+          have them authenticated by the appropriate authorities in the country
+          where they were issued. This process ensures that the documents are
+          legally valid and accepted by foreign governments, institutions, and
+          employers. In the case of personal documents, authentication is
+          handled by the{" "}
+          <a href="https://foreignembassyattestation.com/state-hrd-attestation-in-bangalore">
+            Home Department
+          </a>{" "}
+          or the General Administration Department of the respective state. For
+          educational documents, the Education Department of the concerned State
+          Government or Union Territory is responsible for authentication. The
+          Regional Authentication Centers (RACs) in various states and union
+          territories facilitate this process by verifying the authenticity of
+          documents before forwarding them for further attestation.
+        </p>
     </div>
   );
 }

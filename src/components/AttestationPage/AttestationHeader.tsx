@@ -7,7 +7,7 @@ import flagBanner from "@/media/images/flags/Flags.jpg";
 export default function AttestationHeader() {
   return (
     <div className="header-container">
-      <Image src={flagBanner} alt="flag Banner" />
+      <Image src={flagBanner} alt="flag Banner" loading="lazy"/>
       <div className="header-cover">
         <div className="header-coverContent">
           <h2>

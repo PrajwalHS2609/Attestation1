@@ -7,52 +7,6 @@ export default function ApostilleContent() {
     <div className="content-wrapper">
       <div className="content-container">
         <p>
-          Apostille services play a crucial role in ensuring the authenticity
-          and legality of documents for use in foreign countries. The Apostille
-          Convention, formally known as the{" "}
-          <a href="https://www.hcch.net/en/instruments/conventions/specialised-sections/apostille">
-            Hague Convention of 1961
-          </a>
-          , was introduced to streamline the process of document authentication
-          between member countries. This international treaty, established by
-          the Hague Conference on Private International Law, simplifies the
-          legalization of documents for use in foreign nations by eliminating
-          the need for multiple rounds of authentication. Instead of undergoing
-          certification by both the originating and receiving country, a single{" "}
-          <a href="https://foreignembassyattestation.com/apostille-services-in-bangalore">
-            Apostille certification
-          </a>
-          serves as a universal validation.
-        </p>
-      </div>
-      <div className="content-container" id="contentStyle-containerBg">
-        <p>
-          An Apostille is essentially an international certification similar to
-          notarization in domestic law. When a{" "}
-          <a href="https://foreignembassyattestation.com/apostille-services-in-bangalore">
-            document is apostilled
-          </a>
-          , it is officially recognized as valid in all signatory countries of
-          the Hague Convention without requiring additional authentication. This
-          is particularly beneficial for individuals and businesses dealing with
-          international legal processes,{" "}
-          <a href="https://foreignembassyattestation.com/degree-certificate-apostille-in-bangalore">
-            educational admissions
-          </a>
-          ,{" "}
-          <a href="https://foreignembassyattestation.com/marriage-certificate-apostille-in-bangalore">
-            employment opportunities
-          </a>
-          ,
-          <a href="https://foreignembassyattestation.com/commercial-documents-apostille-in-bangalore">
-            {" "}
-            business transactions
-          </a>
-          , and immigration requirements.
-        </p>
-      </div>
-      <div className="content-container">
-        <p>
           The Apostille process ensures that documents issued in one country are
           legally recognized in another without undergoing lengthy verification
           procedures. This system is widely accepted in 112 countries, including

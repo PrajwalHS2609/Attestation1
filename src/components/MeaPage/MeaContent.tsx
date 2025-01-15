@@ -5,33 +5,6 @@ import MeaProcess from "./MeaProcess";
 export default function MeaContent() {
   return (
     <div className="content-wrapper">
-      <div className="content-container">
-        <p>
-          Obtaining{" "}
-          <a href="https://foreignembassyattestation.com/mea-apostille-services-in-bangalore">
-            MEA Apostille in Bangalore
-          </a>{" "}
-          and{" "}
-          <a href="https://foreignembassyattestation.com/attestation-services-in-bangalore">
-            MEA Attestation in Bangalore
-          </a>{" "}
-          is a crucial process for individuals and businesses who need to
-          authenticate documents for international use. Whether you are
-          traveling abroad for higher studies, employment, business purposes, or
-          personal matters, ensuring your documents are properly attested by the{" "}
-          <a href="https://foreignembassyattestation.com/mea-apostille-services-in-bangalore">
-            Ministry of External Affairs (MEA)
-          </a>{" "}
-          is a mandatory requirement in many foreign countries. The process
-          involves multiple steps, including verification from local authorities
-          before the final
-          <a href="https://foreignembassyattestation.com/mea-apostille-services-in-bangalore">
-            MEA Apostille in Bangalore
-          </a>{" "}
-          is issued. Understanding the procedure can help individuals navigate
-          through the complexities involved in document attestation.
-        </p>
-      </div>
       <div className="content-container" id="contentStyle-containerBg">
         <p>
           When applying for{" "}
@@ -128,44 +101,6 @@ export default function MeaContent() {
           Convention, additional attestation from the respective embassy is
           required after the MEA Attestation in Bangalore process is completed.
         </p>
-      </div>
-
-      <div className="content-container">
-        <ul>
-          <h5>Documents Required for MEA Apostille in Bangalore</h5>
-          <p>
-            To successfully obtain MEA Apostille in Bangalore, applicants must
-            submit the following documents:
-          </p>
-          <li>
-            <span>
-              {" "}
-              <LiaHandPointRight className="content-containerIcon" />
-            </span>{" "}
-            Original document that requires attestation or apostille{" "}
-          </li>
-          <li>
-            {" "}
-            <span>
-              <LiaHandPointRight className="content-containerIcon" />
-            </span>
-            One clear photocopy of the document
-          </li>
-          <li>
-            <span>
-              {" "}
-              <LiaHandPointRight className="content-containerIcon" />
-            </span>
-            One photocopy of the passport (as proof of identity)
-          </li>
-          <p>
-            It is important to note that for MEA Attestation in Bangalore, the
-            original document must be pre-authenticated by the respective State
-            HRD, GAD, Home Department, or Chamber of Commerce, depending on the
-            type of document. Without proper pre-authentication, the MEA will
-            not proceed with the Apostille or attestation process.
-          </p>
-        </ul>
       </div>
       <MeaProcess />
       <div className="content-container">

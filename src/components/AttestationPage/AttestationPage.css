@@ -29,6 +29,10 @@
   font-size: 18px;
   text-align: justify;
 }
+.attestationCertificate-content > p > a {
+  text-decoration: none;
+  color: var(--customColor1);
+}
 #attestationContent-container > p {
   color: var(--customColor1);
   font-weight: 500;

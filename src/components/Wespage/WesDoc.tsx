@@ -4,7 +4,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 export default function WesDoc() {
   return (
     <div className="head-container">
-      <h2>Major Documents Required for WES Canada Verification:</h2>
+      <h2>Major Documents Required for WES  Verification:</h2>
       <ul>
         <li>
           <MdKeyboardDoubleArrowRight className="headList-icon" />{" "}

@@ -8,49 +8,26 @@ export default function WesContent() {
     <div className="content-wrapper">
       <div className="content-container" id="contentStyle-container">
         <Image src={educationContentBanner} alt="" />
-
         <p>
-          World Education Services (WES) is a globally recognized non-profit
-          organization that helps international students and professionals
-          achieve their academic and career goals by providing verification
-          services for their educational documents. Every year, WES assists over
-          1.5 million individuals in verifying their credentials, which is an
-          essential step for those planning to migrate to the United States and
-          Canada.{" "}
+          For individuals seeking{" "}
           <a href="https://foreignembassyattestation.com/wes-verification-attestation-in-bangalore">
-            WES verification in Bangalore
-          </a>{" "}
-          is a crucial requirement for those seeking employment, higher
-          education, or permanent residency in these countries. Although WES
-          verification is currently limited to the US and Canada, there is a
-          possibility that it may become a mandatory requirement in other
-          countries as well in the future. The verification process ensures the
-          authenticity and credibility of educational certificates, which is
-          especially important for migrants. Those applying for{" "}
-          <a href="https://foreignembassyattestation.com/wes-verification-attestation-in-bangalore">
-            WES verification Attestation in Bangalore
-          </a>{" "}
-          must meet the primary qualification requirement of having at least a
-          Bachelor's Degree.
+            {" "}
+            WES Canada verification
+          </a>
+          , specific documents must be submitted, including a degree
+          certificate, mark sheets from all semesters, a passport copy, a WES
+          form, a WES reference number, and two passport-size photos. These
+          documents are essential to complete the WES verification process. Many
+          individuals undergo this verification to obtain permanent resident
+          status in the US and Canada. The process involves sending the
+          necessary documents to the WES organization, where they are thoroughly
+          reviewed and verified. After verification, the documents are mailed or
+          sealed and sent to the respective country. This attestation enhances
+          the credibility of academic certificates and increases the chances of
+          acceptance by employers, universities, and immigration authorities.
         </p>
       </div>
       <div className="content-container">
-        <p>
-          For individuals seeking <a href=""> WES Canada verification</a>,
-          specific documents must be submitted, including a degree certificate,
-          mark sheets from all semesters, a passport copy, a WES form, a WES
-          reference number, and two passport-size photos. These documents are
-          essential to complete the WES verification process. Many individuals
-          undergo this verification to obtain permanent resident status in the
-          US and Canada. The process involves sending the necessary documents to
-          the WES organization, where they are thoroughly reviewed and verified.
-          After verification, the documents are mailed or sealed and sent to the
-          respective country. This attestation enhances the credibility of
-          academic certificates and increases the chances of acceptance by
-          employers, universities, and immigration authorities.
-        </p>
-      </div>
-      <div className="content-container" id="contentStyle-containerBg">
         <p>
           As international migration increases, the demand for{" "}
           <a href="https://foreignembassyattestation.com/">
@@ -71,7 +48,7 @@ export default function WesContent() {
           enhance their career prospects in foreign countries.
         </p>
       </div>
-      <div className="content-container">
+      <div className="content-container" id="contentStyle-containerBg">
         <p>
           The WES evaluation process is a crucial step for those planning to
           immigrate to Canada. However, individuals who have completed their
@@ -87,7 +64,7 @@ export default function WesContent() {
           hassle-free verification process.
         </p>
       </div>
-      <div className="content-container" id="contentStyle-containerBg">
+      <div className="content-container">
         <p>
           One of the major challenges faced by individuals seeking{" "}
           <a href="https://foreignembassyattestation.com/wes-verification-attestation-in-bangalore">

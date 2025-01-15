@@ -6,36 +6,7 @@ import Image from "next/image";
 export default function AttestationContent() {
   return (
     <div className="content-wrapper">
-      <div className="content-container">
-        <p>
-          Embassy attestation is a crucial step for individuals planning to
-          travel abroad for various reasons. Whether it’s for higher education,
-          employment, official assignments, medical emergencies, or even
-          settling down in another country, documentation plays a key role in
-          the process. In today’s interconnected world, moving from one place to
-          another has become easier, but verifying the authenticity of documents
-          remains a necessity. Governments and organizations across the globe
-          require proof of authenticity before granting permissions, visas, or
-          approvals. This is where embassy attestation services become
-          essential.
-        </p>
-      </div>
-      <div className="content-container" id="contentStyle-containerBg">
-        <p>
-          Every country has its own legal framework that governs the acceptance
-          of foreign documents. When you move abroad, your educational
-          qualifications, employment records, personal certificates, and other
-          crucial documents need to be authenticated. Without{" "}
-          <a href="https://foreignembassyattestation.com/commercial-documents-attestation-in-bangalore">
-            proper attestation, your documents
-          </a>{" "}
-          may not be recognized by foreign authorities, leading to unnecessary
-          delays and complications. Attestation is the process of verifying the
-          authenticity of your certificates through a series of approvals from
-          local, state, and national authorities, followed by authentication
-          from the embassy of the destination country.
-        </p>
-      </div>
+
       <div className="content-container">
         <p>
           The requirement for attestation can arise at any stage in life. You
@@ -52,7 +23,7 @@ export default function AttestationContent() {
           vital role in your transition to a new country.
         </p>
       </div>
-      <div className="content-container" >
+      <div className="content-container">
         <p>
           <a href="https://foreignembassyattestation.com/">
             Embassy attestation services in Bangalore
@@ -90,7 +61,7 @@ export default function AttestationContent() {
         </p>
       </div>
       <div className="content-container" id="contentStyle-container">
-        <Image src={processBg} alt="" />
+        <Image src={processBg} alt="processBg" loading="lazy" />
         <p>
           The process of attestation varies depending on the type of document
           being authenticated.{" "}
@@ -180,7 +151,7 @@ export default function AttestationContent() {
         </p>
       </div>
       <div className="content-container" id="contentStyle-container">
-        <Image src={countriesBanner} alt="" />
+        <Image src={countriesBanner} alt="countriesBanner" loading="lazy" />
 
         <p>
           The importance of embassy attestation cannot be overstated. Without

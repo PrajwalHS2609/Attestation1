@@ -88,7 +88,7 @@ export default function AttestationFlag() {
     <div className="attestationFlag-container">
       {flags.map((x) => (
         <div className="attestationFlag-cardContainer" key={x.id}>
-          <Image src={x.img} alt={x.name} />
+          <Image src={x.img} alt={x.name} loading="lazy" />
           <div className="attestationFlag-cardCover">
             <h5>{x.name}</h5>
             <p>Embassy Attestation</p>

@@ -4,28 +4,16 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 export default function MeaCommercialDocContent() {
   return (
     <div className="meaCommercialContent-container">
-      <h4>COMMERCIAL DOCUMENTS:</h4>
+      <h5>Documents Required for MEA Apostille in Bangalore</h5>
       <p>
-        Commercial Documents are to be pre-authenticated by the respective
-        Chambers of Commerce before these can be attested by the Ministry of
-        External Affairs.
-      </p>
-      <br />
-      <h5>
-        DOCUMENTS REQUIRED FOR EDUCATIONAL/PERSONAL CERTIFICATE ATTESTATION FOR
-        MEA ATTESTATION:
-      </h5>
-      <p>
-        Only original documents duly authenticated by the designated authorities
-        of the State Governments are Apostilled by the Ministry of External
-        Affairs. Apostille is done on the reverse side of the original document.
-        The applicants need to submit the following documents/fees
+        To successfully obtain MEA Apostille in Bangalore, applicants must
+        submit the following documents:
       </p>
       <ul>
         <li>
           {" "}
           <MdKeyboardDoubleArrowRight className="meaCommercialList-icon" />
-          Original document to be attested or apostilled.
+          Original document that requires attestation or apostille{" "}
         </li>
         <li>
           {" "}
@@ -39,8 +27,11 @@ export default function MeaCommercialDocContent() {
         </li>
       </ul>
       <p>
-        <span> Please note:</span> For MEA attestation, original document needs
-        to be pre authenticated first by respective HRD/HD
+        It is important to note that for MEA Attestation in Bangalore, the
+        original document must be pre-authenticated by the respective State HRD,
+        GAD, Home Department, or Chamber of Commerce, depending on the type of
+        document. Without proper pre-authentication, the MEA will not proceed
+        with the Apostille or attestation process.
       </p>
     </div>
   );

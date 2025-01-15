@@ -1,0 +1,21 @@
+.stateHrdProcess-container {
+  border: solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.stateHrdProcess-container>h3{
+    color: var(--customColor1);
+}
+.stateHrdProcess-content{
+    border: solid blue;
+}
+.stateHrdProcess-item{
+    border: solid green;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+}
