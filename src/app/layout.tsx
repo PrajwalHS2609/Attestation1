@@ -1,17 +1,8 @@
-import Footer from "@/components/Footer/Footer";
-import "./global.css";
-import Navbar from "@/components/Navbar/Navbar";
-import TopBar from "@/components/TopBar/Topbar";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Head from "next/head";
+import { Html, Head, Main, NextScript } from "next/document";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Document() {
   return (
-    <html lang="en">
+    <Html lang="en">
       <Head>
         <title>Attestation Service</title>
         <meta
@@ -39,11 +30,9 @@ export default function RootLayout({
         ></script>
       </Head>
       <body>
-        <TopBar />
-        <Navbar />
-        <main className="main-container">{children}</main>
-        <Footer />
+        <Main />
+        <NextScript />
       </body>
-    </html>
+    </Html>
   );
 }
