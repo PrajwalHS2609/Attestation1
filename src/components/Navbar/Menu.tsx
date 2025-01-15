@@ -170,7 +170,9 @@ const Menu = () => {
         <li>
           <Link
             href="/attestation-services-in-bangalore"
-            className={pathname === "/attestation-services-in-bangalore" ? "active" : ""}
+            className={
+              pathname === "/attestation-services-in-bangalore" ? "active" : ""
+            }
           >
             Attestation
             <MdKeyboardArrowDown className="serviceIco" />
@@ -193,7 +195,9 @@ const Menu = () => {
         <li>
           <Link
             href="/apostille-services-in-bangalore"
-            className={pathname === "/apostille-services-in-bangalore" ? "active" : ""}
+            className={
+              pathname === "/apostille-services-in-bangalore" ? "active" : ""
+            }
           >
             Apostille
             <MdKeyboardArrowDown className="serviceIco" />
@@ -216,7 +220,9 @@ const Menu = () => {
         <li>
           <Link
             href="/state-hrd-attestation-in-bangalore"
-            className={pathname === "/state-hrd-attestation-in-bangalore" ? "active" : ""}
+            className={
+              pathname === "/state-hrd-attestation-in-bangalore" ? "active" : ""
+            }
           >
             State HRD <MdKeyboardArrowDown className="serviceIco" />
           </Link>
@@ -238,7 +244,9 @@ const Menu = () => {
         <li>
           <Link
             href="/mofa-attestation-in-bangalore"
-            className={pathname === "/mofa-attestation-in-bangalore" ? "active" : ""}
+            className={
+              pathname === "/mofa-attestation-in-bangalore" ? "active" : ""
+            }
           >
             MOFA{" "}
           </Link>
@@ -246,7 +254,9 @@ const Menu = () => {
         <li>
           <Link
             href="/pcc-verification-in-bangalore"
-            className={pathname === "/pcc-verification-in-bangalore" ? "active" : ""}
+            className={
+              pathname === "/pcc-verification-in-bangalore" ? "active" : ""
+            }
           >
             PCC <MdKeyboardArrowDown className="serviceIco" />
           </Link>
@@ -268,7 +278,11 @@ const Menu = () => {
         <li>
           <Link
             href="/mea-apostille-services-in-bangalore"
-            className={pathname === "/mea-apostille-services-in-bangalore" ? "active" : ""}
+            className={
+              pathname === "/mea-apostille-services-in-bangalore"
+                ? "active"
+                : ""
+            }
           >
             MEA{" "}
           </Link>
@@ -276,17 +290,23 @@ const Menu = () => {
         <li>
           <Link
             href="/wes-verification-attestation-in-bangalore"
-            className={pathname === "/wes-verification-attestation-in-bangalore" ? "active" : ""}
+            className={
+              pathname === "/wes-verification-attestation-in-bangalore"
+                ? "active"
+                : ""
+            }
           >
             WES{" "}
           </Link>
         </li>
         <li>
           <Link
-            href="/translation-documents-in-bangalore"
-            className={pathname === "/translation-documents-in-bangalore" ? "active" : ""}
+            href="/visa-stamping-in-bangalore"
+            className={
+              pathname === "/visa-stamping-in-bangalore" ? "active" : ""
+            }
           >
-            Translation{" "}
+            Visa Stamping{" "}
           </Link>
         </li>{" "}
         <li>
@@ -322,8 +342,12 @@ const Menu = () => {
             <li>
               <div className="respMenuList">
                 <Link
-                  href="/attestation-service-in-bangalore"
-                  className={pathname === "/attestation-service-in-bangalore" ? "active" : ""}
+                  href="/attestation-services-in-bangalore"
+                  className={
+                    pathname === "/attestation-services-in-bangalore"
+                      ? "active"
+                      : ""
+                  }
                   onClick={hideSideBar}
                 >
                   Attestation{" "}
@@ -352,8 +376,12 @@ const Menu = () => {
             <li>
               <div className="respMenuList">
                 <Link
-                  href="/apostille-service-in-bangalore"
-                  className={pathname === "/apostille-service-in-bangalore" ? "active" : ""}
+                  href="/apostille-services-in-bangalore"
+                  className={
+                    pathname === "/apostille-services-in-bangalore"
+                      ? "active"
+                      : ""
+                  }
                   onClick={hideSideBar}
                 >
                   Apostille
@@ -382,8 +410,8 @@ const Menu = () => {
             <li>
               {" "}
               <Link
-                href="/about-us"
-                className={pathname === "/about-us" ? "active" : ""}
+                href="/state-hrd-attestation-in-bangalore"
+                className={pathname === "/state-hrd-attestation-in-bangalore" ? "active" : ""}
                 onClick={hideSideBar}
               >
                 State HRD{" "}
@@ -393,8 +421,8 @@ const Menu = () => {
             <li>
               {" "}
               <Link
-                href="/contact-us"
-                className={pathname === "/contact-us" ? "active" : ""}
+                href="/mofa-attestation-in-bangalore"
+                className={pathname === "/mofa-attestation-in-bangalore" ? "active" : ""}
                 onClick={hideSideBar}
               >
                 MOFA
@@ -403,8 +431,8 @@ const Menu = () => {
             <li>
               {" "}
               <Link
-                href="/contact-us"
-                className={pathname === "/contact-us" ? "active" : ""}
+                href="/mea-apostille-services-in-bangalore"
+                className={pathname === "/mea-apostille-services-in-bangalore" ? "active" : ""}
                 onClick={hideSideBar}
               >
                 MEA
@@ -413,8 +441,8 @@ const Menu = () => {
             <li>
               {" "}
               <Link
-                href="/contact-us"
-                className={pathname === "/contact-us" ? "active" : ""}
+                href="/wes-verification-attestation-in-bangalore"
+                className={pathname === "/wes-verification-attestation-in-bangalore" ? "active" : ""}
                 onClick={hideSideBar}
               >
                 WES
@@ -423,11 +451,11 @@ const Menu = () => {
             <li>
               {" "}
               <Link
-                href="/contact-us"
-                className={pathname === "/contact-us" ? "active" : ""}
+                href="/visa-stamping-in-bangalore"
+                className={pathname === "/visa-stamping-in-bangalore" ? "active" : ""}
                 onClick={hideSideBar}
               >
-                Translation
+                Visa Stamping
               </Link>
             </li>
             <li>
