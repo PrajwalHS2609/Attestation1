@@ -51,7 +51,7 @@ export default function AttestationContent() {
           , or even medical documents attested. Each of these documents plays a
           vital role in your transition to a new country.
         </p>
-      </div>id="contentStyle-containerBg"
+      </div>
       <div className="content-container" >
         <p>
           <a href="https://foreignembassyattestation.com/">
