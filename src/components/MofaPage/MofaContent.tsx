@@ -71,31 +71,46 @@ export default function MofaContent() {
           unable to visit government offices personally.
         </p>
       </div>
-      <div className="content-container" >
+      <div className="content-container">
         <ul>
           <h5>Professional attestation agencies assist clients by:</h5>
           <li>
-            <MdKeyboardDoubleArrowRight className="content-containerIcon" />
+            <span>
+              {" "}
+              <MdKeyboardDoubleArrowRight className="content-containerIcon" />
+            </span>
             Collecting documents and verifying their authenticity{" "}
           </li>
           <li>
             {" "}
-            <MdKeyboardDoubleArrowRight className="content-containerIcon" />
+            <span>
+              {" "}
+              <MdKeyboardDoubleArrowRight className="content-containerIcon" />
+            </span>
             Coordinating with state authorities for initial attestation.
           </li>
           <li>
-            <MdKeyboardDoubleArrowRight className="content-containerIcon" />
+            <span>
+              {" "}
+              <MdKeyboardDoubleArrowRight className="content-containerIcon" />
+            </span>
             Processing MEA attestation to ensure documents meet international
             standards.
           </li>
           <li>
             {" "}
-            <MdKeyboardDoubleArrowRight className="content-containerIcon" />
+            <span>
+              {" "}
+              <MdKeyboardDoubleArrowRight className="content-containerIcon" />
+            </span>
             Submitting documents to MOFA for final verification.
           </li>
           <li>
             {" "}
-            <MdKeyboardDoubleArrowRight className="content-containerIcon" />
+            <span>
+              {" "}
+              <MdKeyboardDoubleArrowRight className="content-containerIcon" />
+            </span>
             Tracking progress and providing updates on attestation status.{" "}
           </li>
         </ul>

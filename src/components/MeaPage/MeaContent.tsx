@@ -1,46 +1,88 @@
 import "@/components/Style/style.css";
 import { LiaHandPointRight } from "react-icons/lia";
+import MeaProcess from "./MeaProcess";
 
 export default function MeaContent() {
   return (
     <div className="content-wrapper">
       <div className="content-container">
         <p>
-          Obtaining MEA Apostille in Bangalore and MEA Attestation in Bangalore
+          Obtaining{" "}
+          <a href="https://foreignembassyattestation.com/mea-apostille-services-in-bangalore">
+            MEA Apostille in Bangalore
+          </a>{" "}
+          and{" "}
+          <a href="https://foreignembassyattestation.com/attestation-services-in-bangalore">
+            MEA Attestation in Bangalore
+          </a>{" "}
           is a crucial process for individuals and businesses who need to
           authenticate documents for international use. Whether you are
           traveling abroad for higher studies, employment, business purposes, or
-          personal matters, ensuring your documents are properly attested by the
-          Ministry of External Affairs (MEA) is a mandatory requirement in many
-          foreign countries. The process involves multiple steps, including
-          verification from local authorities before the final MEA Apostille in
-          Bangalore is issued. Understanding the procedure can help individuals
-          navigate through the complexities involved in document attestation.
+          personal matters, ensuring your documents are properly attested by the{" "}
+          <a href="https://foreignembassyattestation.com/mea-apostille-services-in-bangalore">
+            Ministry of External Affairs (MEA)
+          </a>{" "}
+          is a mandatory requirement in many foreign countries. The process
+          involves multiple steps, including verification from local authorities
+          before the final
+          <a href="https://foreignembassyattestation.com/mea-apostille-services-in-bangalore">
+            MEA Apostille in Bangalore
+          </a>{" "}
+          is issued. Understanding the procedure can help individuals navigate
+          through the complexities involved in document attestation.
         </p>
       </div>
       <div className="content-container" id="contentStyle-containerBg">
         <p>
-          When applying for MEA Apostille in Bangalore, it is essential to first
-          authenticate the original document from the designated state-level
-          agencies. The State Home Department, General Administration Department
-          (GAD), or Human Resource Department (HRD) are responsible for
-          verifying educational, personal, and commercial documents. Once the
-          document has been authenticated at the state level, it is then
-          forwarded to the MEA Attestation in Bangalore office for final
-          validation. The MEA attests documents based on the signature of the
-          state authorities but does not take responsibility for the contents of
-          the document.
+          When applying for{" "}
+          <a href="https://foreignembassyattestation.com/">
+            {" "}
+            MEA Apostille in Bangalore
+          </a>
+          , it is essential to first authenticate the original document from the
+          designated state-level agencies. The State Home Department, General
+          Administration Department (GAD), or{" "}
+          <a href="https://foreignembassyattestation.com/state-hrd-attestation-in-bangalore">
+            Human Resource Department (HRD)
+          </a>
+          are responsible for verifying educational, personal, and commercial
+          documents. Once the document has been authenticated at the state
+          level, it is then forwarded to the{" "}
+          <a href="https://foreignembassyattestation.com/attestation-services-in-bangalore">
+            MEA Attestation in Bangalore
+          </a>{" "}
+          office for final validation. The MEA attests documents based on the
+          signature of the state authorities but does not take responsibility
+          for the contents of the document.
         </p>
       </div>
       <div className="content-container">
         <p>
-          For individuals applying for MEA Apostille in Bangalore, it is
-          necessary to ensure that the documents are in their original form and
-          have been pre-authenticated by the respective authorities. This
-          process is required for a range of documents, including birth
-          certificates, marriage certificates, degree certificates, and
-          commercial documents. If the documents are not pre-authenticated, they
-          will not be considered valid for MEA Attestation in Bangalore.
+          For individuals applying for{" "}
+          <a href="https://foreignembassyattestation.com/mea-apostille-services-in-bangalore">
+            MEA Apostille in Bangalore
+          </a>
+          , it is necessary to ensure that the documents are in their original
+          form and have been pre-authenticated by the respective authorities.
+          This process is required for a range of documents, including{" "}
+          <a href="https://foreignembassyattestation.com/birth-certificate-attestation-in-bangalore">
+            {" "}
+            birth certificates
+          </a>
+          ,{" "}
+          <a href="https://foreignembassyattestation.com/marriage-certificate-attestation-in-bangalore">
+            marriage certificates
+          </a>
+          ,{" "}
+          <a href="https://foreignembassyattestation.com/degree-certificate-attestation-in-bangalore">
+            degree certificates
+          </a>
+          , and
+          <a href="https://foreignembassyattestation.com/commercial-documents-attestation-in-bangalore">
+            commercial documents
+          </a>
+          . If the documents are not pre-authenticated, they will not be
+          considered valid for MEA Attestation in Bangalore.
         </p>
       </div>
 
@@ -67,9 +109,13 @@ export default function MeaContent() {
           documents before forwarding them to the MEA for attestation. Business
           owners and corporate entities planning to expand their operations
           internationally must ensure that their commercial documents undergo
-          the necessary MEA Apostille in Bangalore procedures. These documents
-          may include company incorporation certificates, export-import
-          documents, invoices, and power of attorney papers.
+          the necessary{" "}
+          <a href="https://foreignembassyattestation.com/mea-apostille-services-in-bangalore">
+            MEA Apostille in Bangalore
+          </a>{" "}
+          procedures. These documents may include company incorporation
+          certificates, export-import documents, invoices, and power of attorney
+          papers.
         </p>
       </div>
       <div className="content-container">
@@ -92,16 +138,24 @@ export default function MeaContent() {
             submit the following documents:
           </p>
           <li>
-            <LiaHandPointRight className="content-containerIcon" /> Original
-            document that requires attestation or apostille{" "}
+            <span>
+              {" "}
+              <LiaHandPointRight className="content-containerIcon" />
+            </span>{" "}
+            Original document that requires attestation or apostille{" "}
           </li>
           <li>
             {" "}
-            <LiaHandPointRight className="content-containerIcon" />
+            <span>
+              <LiaHandPointRight className="content-containerIcon" />
+            </span>
             One clear photocopy of the document
           </li>
           <li>
-            <LiaHandPointRight className="content-containerIcon" />
+            <span>
+              {" "}
+              <LiaHandPointRight className="content-containerIcon" />
+            </span>
             One photocopy of the passport (as proof of identity)
           </li>
           <p>
@@ -113,7 +167,7 @@ export default function MeaContent() {
           </p>
         </ul>
       </div>
-  {/* --------------------need to add process--------------- */}
+      <MeaProcess />
       <div className="content-container">
         <ul>
           <h5>
@@ -129,26 +183,41 @@ export default function MeaContent() {
           </p>
           <h6>A reputable attestation agency provides:</h6>
           <li>
-            <LiaHandPointRight className="content-containerIcon" /> Original
-            Expert guidance on document requirements and legal formalities{" "}
+            <span>
+              {" "}
+              <LiaHandPointRight className="content-containerIcon" />
+            </span>{" "}
+            Original Expert guidance on document requirements and legal
+            formalities{" "}
           </li>
           <li>
             {" "}
-            <LiaHandPointRight className="content-containerIcon" />
+            <span>
+              {" "}
+              <LiaHandPointRight className="content-containerIcon" />
+            </span>
             Hassle-free processing of MEA Attestation in Bangalore{" "}
           </li>
           <li>
-            <LiaHandPointRight className="content-containerIcon" /> Timely
-            updates on the status of document attestation{" "}
+            <span>
+              {" "}
+              <LiaHandPointRight className="content-containerIcon" />
+            </span>{" "}
+            Timely updates on the status of document attestation{" "}
           </li>
           <li>
             {" "}
-            <LiaHandPointRight className="content-containerIcon" /> Expedited
-            services for urgent cases
+            <span>
+              <LiaHandPointRight className="content-containerIcon" />
+            </span>{" "}
+            Expedited services for urgent cases
           </li>
           <li>
             {" "}
-            <LiaHandPointRight className="content-containerIcon" />
+            <span>
+              {" "}
+              <LiaHandPointRight className="content-containerIcon" />
+            </span>
             Assistance with embassy attestation for non-Hague countries
           </li>
           <p>

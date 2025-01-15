@@ -209,6 +209,7 @@
 #contentStyle-container > p {
   color: var(--customColor1);
   font-weight: 500;
+  text-align: justify;
 }
 #contentStyle-container > p > a {
   color: var(--customColor2);
@@ -238,6 +239,7 @@
 }
 .content-container > ul > p {
   font-size: 18px;
+  text-align: justify;
 }
 .content-container > ul > li {
   list-style: none;
@@ -247,7 +249,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  text-align: start;
+  text-align: justify;
 }
 .content-containerIcon {
   color: var(--customColor1);
@@ -278,5 +280,26 @@
     content: "";
     position: absolute;
     display: none;
+  }
+  /* -------------------------------content-------------------------- */
+  .content-container {
+    /* border: solid blue; */
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content-containerIcon {
+    color: var(--customColor1);
+    font-size: 30px;
+  }
+  #contentStyle-container {
+    /* border: solid blue; */
+    padding: 10px;
+    width: 90%;
+    position: relative;
   }
 }

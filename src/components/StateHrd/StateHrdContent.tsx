@@ -192,24 +192,24 @@ export default function StateHrdContent() {
         <ul>
           <h5>The attestation process involves multiple steps, including:</h5>
           <li>
-            <MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}
+            <span><MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}</span>
             Verification by the university (for educational certificates).
           </li>
           <li>
             {" "}
-            <MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}
+            <span><MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}</span>
             Verification by the university (for educational certificates).
             Authentication by the State Home Department (SHD).
           </li>
           <li>
-            <MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}
+            <span><MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}</span>
             Verification by the university (for educational certificates).
             Submission to the Ministry of External Affairs (MEA) for apostille
             or further attestation.
           </li>
           <li>
             {" "}
-            <MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}
+           <span> <MdKeyboardDoubleArrowRight className="content-containerIcon" />{" "}</span>
             Verification by the university (for educational certificates).
             Embassy attestation (if required by the destination country).
           </li>
