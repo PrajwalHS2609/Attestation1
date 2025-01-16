@@ -1,4 +1,6 @@
 import "@/components/Style/style.css";
+import processBg from "@/media/images/processBg.png";
+import Image from "next/image";
 
 export default function VisaStampingContent() {
   return (
@@ -13,7 +15,9 @@ export default function VisaStampingContent() {
           be fulfilled.
         </p>
       </div>
-      <div className="content-container" id="contentStyle-containerBg">
+      <div className="content-container"  id="contentStyle-container">
+      <Image src={processBg} alt="processBg" loading="lazy" />
+
         <p>
           {" "}
           The process involves document verification, submission of biometric

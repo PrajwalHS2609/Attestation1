@@ -34,7 +34,7 @@ export default function PccImpCard() {
     {
       id: 5,
       icon: <MdOutlineCurrencyExchange />,
-      head: "Business and Trade:",
+      head: "Business and Trade",
       para: " For businesses looking to expand or operate internationally, a PCC may be required to ensure that key personnel have a clean record.",
     },
   ];
