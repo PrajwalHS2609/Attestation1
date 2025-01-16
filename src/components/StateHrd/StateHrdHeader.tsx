@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import "@/components/Style/style.css";
 import HomeHeaderKey from "@/components/HomePage/HomeHeader/HomeHeaderKey";
 import Image from "next/image";
-import stateHrd from "@/media/images/stateHrd.jpg";
+import stateHrd from "@/media/images/stateHrdBanner.png";
 export default function StateHrdHeader() {
   return (
     <div className="header-container">

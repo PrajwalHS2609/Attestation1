@@ -7,18 +7,31 @@ import HomeSeo from "@/components/HomePage/HomeSeo/HomeSeo";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import Map from "@/components/HomePage/Map/Map";
+import Head from "next/head";
 export default function Home() {
   return (
-    <div className="main-container">
-      <HomeHeader />
-      <HomeService />
-      <HomeGovernment />
-      <HomeCountries />
-      <HomeAboutUs />
-      <HomeSeo />
-      <HomeWhy />
-      <CountriesCarousel />
-      <Map />
-    </div>
+    <>
+      <Head>
+        <title>
+          Attestation & Apostille Services in Bangalore at Best Price{" "}
+        </title>
+        <meta
+          name="description"
+          content="Attestation & Apostille Services in Bangalore at Best Price for Birth, Marriage, degree & Commercial Documents attestation. Call Today!"
+        />
+        <link rel="canonical" href="https://foreignembassyattestation.com/" />
+      </Head>
+      <div className="main-container">
+        <HomeHeader />
+        <HomeService />
+        <HomeGovernment />
+        <HomeCountries />
+        <HomeAboutUs />
+        <HomeSeo />
+        <HomeWhy />
+        <CountriesCarousel />
+        <Map />
+      </div>
+    </>
   );
 }

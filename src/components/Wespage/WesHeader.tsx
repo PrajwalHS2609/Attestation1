@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 import HomeHeaderKey from "../HomePage/HomeHeader/HomeHeaderKey";
-import WesBanner from "@/media/images/WesBanner.jpg";
+import WesBanner from "@/media/images/wesBanner.png";
 
 export default function WesHeader() {
   return (

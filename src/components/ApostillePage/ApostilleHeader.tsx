@@ -3,11 +3,11 @@ import { Typewriter } from "react-simple-typewriter";
 import "@/components/Style/style.css";
 import HomeHeaderKey from "@/components/HomePage/HomeHeader/HomeHeaderKey";
 import Image from "next/image";
-import flagBanner from "@/media/images/flags/Flags.jpg";
+import apostilleBanner from "@/media/images/apostilleBanner.png";
 export default function ApostilleHeader() {
   return (
     <div className="header-container">
-      <Image src={flagBanner} alt="flag Banner" />
+      <Image src={apostilleBanner} alt="apostille Banner" />
       <div className="header-cover">
         <div className="header-coverContent">
           <h2>

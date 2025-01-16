@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 import HomeHeaderKey from "../HomePage/HomeHeader/HomeHeaderKey";
-import visaStampingBanner from "@/media/images/stateHrd.jpg";
+import visaStampingBanner from "@/media/images/visaStampingBanner.png";
 export default function VisaStampingHeader() {
   return (
     <div className="header-container">

@@ -6,31 +6,31 @@ export default function FooterService() {
       <ul>
         <h4>Our Service</h4>
         <li>
-          <Link href="">Attestation</Link>
+          <Link href="/attestation-services-in-bangalore">Attestation</Link>
         </li>
         <li>
-          <Link href="">Apostille</Link>
+          <Link href="/apostille-services-in-bangalore">Apostille</Link>
         </li>
         <li>
-          <Link href="">State HRD</Link>
+          <Link href="/state-hrd-attestation-in-bangalore">State HRD</Link>
         </li>
         <li>
-          <Link href="">MEA Apostille</Link>
+          <Link href="/mea-apostille-services-in-bangalore">MEA Apostille</Link>
         </li>
         <li>
-          <Link href="">MOFA</Link>
+          <Link href="/mofa-attestation-in-bangalore">MOFA</Link>
         </li>
         <li>
-          <Link href="">PCC</Link>
+          <Link href="/pcc-verification-in-bangalore">PCC</Link>
         </li>
         <li>
-          <Link href="">WES</Link>
+          <Link href="/wes-verification-attestation-in-bangalore">WES</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="">Translation</Link>
-        </li>
+        </li> */}
         <li>
-          <Link href="">Kuwait Stamping</Link>
+          <Link href="/visa-stamping-services-in-bangalore">Visa Stamping</Link>
         </li>
       </ul>
     </div>

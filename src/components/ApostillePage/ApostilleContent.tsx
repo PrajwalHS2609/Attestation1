@@ -1,7 +1,7 @@
 import Image from "next/image";
 import internationalBanner from "@/media/images/internationalBanner.png";
 import docAssistBanner from "@/media/images/docAssist.png";
-
+import "@/components/Style/style.css"
 export default function ApostilleContent() {
   return (
     <div className="content-wrapper">

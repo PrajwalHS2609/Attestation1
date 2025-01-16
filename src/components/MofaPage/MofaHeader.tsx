@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import "@/components/Style/style.css";
 import HomeHeaderKey from "@/components/HomePage/HomeHeader/HomeHeaderKey";
 import Image from "next/image";
-import mofaBanner from "@/media/images/stateHrd.jpg";
+import mofaBanner from "@/media/images/mofaBanner.png";
 export default function MofaHeader() {
   return (
     <div className="header-container">

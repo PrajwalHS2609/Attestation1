@@ -26,7 +26,7 @@ export default function HomeServiceMain() {
       serviceName: "Attestation",
       serviceDescription:
         "Attestation is the process of verifying the authenticity of documents by authorized officials,required for legal recognition in foreign countries.",
-      link: "/",
+      link: "/attestation-services-in-bangalore",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ export default function HomeServiceMain() {
       serviceName: "Apostille",
       serviceDescription:
         "Apostille is a form of document authentication issued by a designated authority for use in countries that are members of the Hague Convention.",
-      link: "/",
+      link: "/apostille-services-in-bangalore",
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ export default function HomeServiceMain() {
       serviceName: "MOFA",
       serviceDescription:
         "MOFA (Ministry of Foreign Affairs) is responsible for the attestation and legalization of documents for international use, ensuring their authenticity and validity in foreign countries.",
-      link: "/",
+      link: "/mofa-attestation-in-bangalore",
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ export default function HomeServiceMain() {
       serviceName: " PCC",
       serviceDescription:
         " PCC (Police Clearance Certificate) is an official document issued by police or government authorities certifying that an individual has no criminal record or pending cases.",
-      link: "/",
+      link: "/pcc-verification-in-bangalore",
     },
     {
       id: 5,
@@ -58,7 +58,7 @@ export default function HomeServiceMain() {
       serviceName: "MEA",
       serviceDescription:
         "MEA (Ministry of External Affairs) is responsible for the attestation and legalization of documents for international use, ensuring their authenticity for foreign authorities.",
-      link: "/",
+      link: "/mea-apostille-services-in-bangalore",
     },
     {
       id: 6,
@@ -66,7 +66,7 @@ export default function HomeServiceMain() {
       serviceName: "WES",
       serviceDescription:
         "WES (World Education Services) is an organization that evaluates and converts academic credentials from any country into their U.S. or Canadian equivalents for recognition.",
-      link: "/",
+      link: "/wes-verification-attestation-in-bangalore",
     },
     {
       id: 7,
@@ -82,7 +82,7 @@ export default function HomeServiceMain() {
       serviceName: "State HRD ",
       serviceDescription:
         "State HRD (Human Resource Development) refers to the government department responsible for the attestation of educational documents for use abroad, verifying their authenticity.",
-      link: "/",
+      link: "/state-hrd-attestation-in-bangalore",
     },
   ];
   return (
