@@ -1,4 +1,3 @@
-"use client";
 import MarriageAttestationHead from "@/components/MarriageCertificateAttestation/MarriageAttestationHead";
 import MarriageAttestationHeader from "@/components/MarriageCertificateAttestation/MarriageAttestationHeader";
 export const metadata = {
