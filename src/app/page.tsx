@@ -7,20 +7,18 @@ import HomeSeo from "@/components/HomePage/HomeSeo/HomeSeo";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import Map from "@/components/HomePage/Map/Map";
-import Head from "next/head";
+export const metadata = {
+  title: "Attestation & Apostille Services in Bangalore",
+  description:
+    "Attestation & Apostille Services in Bangalore at Best Price for Birth, Marriage, degree & Commercial Documents attestation. Call Today!",
+  canonical: "https://foreignembassyattestation.com/",
+  keywords: [
+    "Attestation, Apostille, Bangalore, Best Price",
+    "Birth, Marriage, Degree",
+  ],
+};
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>
-          Attestation & Apostille Services in Bangalore at Best Price{" "}
-        </title>
-        <meta
-          name="description"
-          content="Attestation & Apostille Services in Bangalore at Best Price for Birth, Marriage, degree & Commercial Documents attestation. Call Today!"
-        />
-        <link rel="canonical" href="https://foreignembassyattestation.com/" />
-      </Head>
       <div className="main-container">
         <HomeHeader />
         <HomeService />
@@ -32,6 +30,5 @@ export default function Home() {
         <CountriesCarousel />
         <Map />
       </div>
-    </>
   );
 }

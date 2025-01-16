@@ -9,33 +9,30 @@ import StateHrdHead from "@/components/StateHrd/StateHrdHead";
 import StateHrdHeader from "@/components/StateHrd/StateHrdHeader";
 import "@/components/HomePage/HomeSeo/HomeSeo.css";
 import StateHrdContent from "@/components/StateHrd/StateHrdContent";
-import Head from "next/head";
+export const metadata = {
+  title: "State HRD & Home Department Attestation in Bangalore",
+  description:
+    "State HRD & Home Department Attestation in Bangalore at Lowest Price. All the documents meant for Attestation / Apostille must be attested by the home department.",
+  canonical:
+    "https://foreignembassyattestation.com/state-hrd-attestation-in-bangalore",
+  keywords: [
+    "Attestation, Apostille, Bangalore, Best Price",
+    "Birth, Marriage, Degree",
+  ],
+};
 export default function StateHrd() {
   return (
-    <>
-      <Head>
-        <title>State HRD & Home Department Attestation in Bangalore </title>
-        <meta
-          name="description"
-          content="State HRD & Home Department Attestation in Bangalore at Lowest Price. All the documents meant for Attestation / Apostille must be attested by the home department."
-        />
-        <link
-          rel="canonical"
-          href="https://foreignembassyattestation.com/state-hrd-attestation-in-bangalore"
-        />
-      </Head>
-      <div className="main-container">
-        <StateHrdHeader />
-        <StateHrdHead />
-        <StateHrdCommercial />
-        <HrdBlore />
-        <StateHomeDepartmentBlore />
-        <StateHrdContent />
-        <HomeSeoContent2 />
-        <HomeService />
-        <HomeCountries />
-        <HomeWhy />
-      </div>
-    </>
+    <div className="main-container">
+      <StateHrdHeader />
+      <StateHrdHead />
+      <StateHrdCommercial />
+      <HrdBlore />
+      <StateHomeDepartmentBlore />
+      <StateHrdContent />
+      <HomeSeoContent2 />
+      <HomeService />
+      <HomeCountries />
+      <HomeWhy />
+    </div>
   );
 }

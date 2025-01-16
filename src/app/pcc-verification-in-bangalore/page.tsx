@@ -5,34 +5,29 @@ import PccContent from "@/components/PccPage/PccContent";
 import PccHead from "@/components/PccPage/PccHead";
 import PccHeader from "@/components/PccPage/PccHeader";
 import PccImp from "@/components/PccPage/PccImp/PccImp";
-import Head from "next/head";
 
+export const metadata = {
+  title:
+    "PCC Verification in Bangalore – Police Document Verification in Bangalore",
+  description:
+    "PCC Verification in Bangalore is a crucial process for individuals planning to travel, work, or reside abroad. Call Today!",
+  canonical:
+    "https://foreignembassyattestation.com/pcc-verification-in-bangalore",
+  keywords: [
+    "Attestation, Apostille, Bangalore, Best Price",
+    "Birth, Marriage, Degree",
+  ],
+};
 export default function Pcc() {
   return (
-    <>
-      <Head>
-        <title>
-          PCC Verification in Bangalore – Police Document Verification in
-          Bangalore{" "}
-        </title>
-        <meta
-          name="description"
-          content="PCC Verification in Bangalore is a crucial process for individuals planning to travel, work, or reside abroad. Call Today!"
-        />
-        <link
-          rel="canonical"
-          href="https://foreignembassyattestation.com/pcc-verification-in-bangalore"
-        />
-      </Head>
-      <div className="main-container">
-        <PccHeader />
-        <PccHead />
-        <PccImp />
-        <PccContent />
-        <HomeService />
-        <HomeCountries />
-        <HomeWhy />
-      </div>
-    </>
+    <div className="main-container">
+      <PccHeader />
+      <PccHead />
+      <PccImp />
+      <PccContent />
+      <HomeService />
+      <HomeCountries />
+      <HomeWhy />
+    </div>
   );
 }

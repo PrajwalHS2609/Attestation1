@@ -2,28 +2,24 @@ import MofaContent from "@/components/MofaPage/MofaContent";
 import MofaCountries from "@/components/MofaPage/MofaCountries/MofaCountries";
 import MofaHeader from "@/components/MofaPage/MofaHeader";
 import MofaProcedure from "@/components/MofaPage/MofaProcedure";
-import Head from "next/head";
-
+export const metadata = {
+  title: "MOFA Attestation in Bangalore at Lowest Price",
+  description:
+    "MOFA Attestation in Bangalore at Lowest Price. In case of personal documents, Home Department /General Administration Department are the designated authorities.",
+  canonical:
+    "https://foreignembassyattestation.com/mofa-attestation-in-bangalore",
+  keywords: [
+    "Attestation, Apostille, Bangalore, Best Price",
+    "Birth, Marriage, Degree",
+  ],
+};
 export default function Mofa() {
   return (
-    <>
-      <Head>
-        <title>MOFA Attestation in Bangalore at Lowest Price </title>
-        <meta
-          name="description"
-          content="MOFA Attestation in Bangalore at Lowest Price. In case of personal documents, Home Department /General Administration Department are the designated authorities."
-        />
-        <link
-          rel="canonical"
-          href="https://foreignembassyattestation.com/mofa-attestation-in-bangalore"
-        />
-      </Head>
-      <div className="main-container">
-        <MofaHeader />
-        <MofaProcedure />
-        <MofaCountries />
-        <MofaContent />
-      </div>
-    </>
+    <div className="main-container">
+      <MofaHeader />
+      <MofaProcedure />
+      <MofaCountries />
+      <MofaContent />
+    </div>
   );
 }

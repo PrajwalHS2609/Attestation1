@@ -1,7 +1,7 @@
 export default function MeaProcedure() {
   return (
     <div className="head-container">
-      <h3>MEA Attestation Procedure :</h3>
+      <h1>MEA Apostille Service in Bangalore :</h1>
       <p>
         Obtaining{" "}
         <a href="https://foreignembassyattestation.com/mea-apostille-services-in-bangalore">
