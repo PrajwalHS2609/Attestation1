@@ -1,3 +1,4 @@
+
 import DegreeApostilleHead from "@/components/DegreeApostilleCertificate/DegreeApostilleHead";
 import DegreeApostilleHeader from "@/components/DegreeApostilleCertificate/DegreeApostilleHeader";
 export const metadata = {

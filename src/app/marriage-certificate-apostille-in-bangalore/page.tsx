@@ -1,3 +1,4 @@
+
 import MarriageApostilleHead from "@/components/MarriageCertificateApostille/MarriageApostilleHead";
 import MarriageApostilleHeader from "@/components/MarriageCertificateApostille/MarriageApostilleHeader";
 export const metadata = {

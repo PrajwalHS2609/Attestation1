@@ -1,3 +1,4 @@
+
 import MofaContent from "@/components/MofaPage/MofaContent";
 import MofaCountries from "@/components/MofaPage/MofaCountries/MofaCountries";
 import MofaHeader from "@/components/MofaPage/MofaHeader";

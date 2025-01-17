@@ -44,26 +44,27 @@ export default function RootLayout({
           {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "Product",
-            "name": "Foreign Embassy Attestation",
-            "image": "https://foreignembassyattestation.com/_next/image?…Fmedia%2Fattestation1Logo.6c72ab9d.png&w=256&q=75",
-            "description":
+            name: "Foreign Embassy Attestation",
+            image:
+              "https://foreignembassyattestation.com/_next/image?…Fmedia%2Fattestation1Logo.6c72ab9d.png&w=256&q=75",
+            description:
               "At Service Attestation1, we take pride in being a trusted leader in certificate attestation and apostille services. With over 15 years of expertise and a dedicated team of professionals, we have built a strong reputation for delivering fast, efficient, and reliable solutions.",
-            "brand": { "@type": "Thing", "name": "Service Attestion1" },
-            "review": {
+            brand: { "@type": "Thing", name: "Service Attestion1" },
+            review: {
               "@type": "Review",
-              "reviewRating": {
+              reviewRating: {
                 "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5",
+                ratingValue: "5",
+                bestRating: "5",
               },
-              "author": { "@type": "Person", "name": "Rishi" },
+              author: { "@type": "Person", name: "Rishi" },
             },
-            "aggregateRating": {
+            aggregateRating: {
               "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "bestRating": "5",
-              "worstRating": "1",
-              "ratingCount": "8365",
+              ratingValue: "4.9",
+              bestRating: "5",
+              worstRating: "1",
+              ratingCount: "8365",
             },
           })}
         </Script>
