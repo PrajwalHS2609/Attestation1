@@ -56,7 +56,7 @@ const Menu = () => {
     }
   };
   const handleDrop2 = () => {
-    const plus = document.querySelector(".plus") as HTMLElement | null;
+    const plus = document.querySelector(".plus1") as HTMLElement | null;
     // Ensure dropRef.current is not null
     if (dropRef2.current) {
       if (!drop) {
@@ -353,11 +353,11 @@ const Menu = () => {
                   Attestation{" "}
                 </Link>
                 <span>
-                  <AiOutlinePlus className="plus" onClick={handleDrop2} />
+                  <AiOutlinePlus className="plus" onClick={handleDrop} />
                 </span>
               </div>
               {/* ---------------------------respDropDown-------------------------------------------- */}
-              <div className="respDrop" ref={dropRef2}>
+              <div className="respDrop" ref={dropRef}>
                 <ul>
                   {attestationMenu.map((x) => (
                     <li key={x.id}>
@@ -387,11 +387,11 @@ const Menu = () => {
                   Apostille
                 </Link>
                 <span>
-                  <AiOutlinePlus className="plus" onClick={handleDrop} />
+                  <AiOutlinePlus className="plus1" onClick={handleDrop2} />
                 </span>
               </div>
               {/* ---------------------------respDropDown-------------------------------------------- */}
-              <div className="respDrop" ref={dropRef}>
+              <div className="respDrop" ref={dropRef2}>
                 <ul>
                   {apostilleMenu.map((x) => (
                     <li key={x.id}>
