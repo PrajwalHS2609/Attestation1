@@ -16,30 +16,30 @@ import nigeriaFlag from "@/media/images/flags/NigeriaFlag.jpg";
 
 export default function AttestationFlag() {
   const flags = [
-    { id: 1, name: "UAE", img: uaeFlag, link: "/" },
+    { id: 1, name: "UAE", img: uaeFlag, link: "/uae-embassy-attestation-in-bangalore" },
     {
       id: 2,
       name: "Qatar ",
       img: qatarFlag,
-      link: "/",
+      link: "/qatar-embassy-attestation-in-bangalore",
     },
     {
       id: 3,
       name: "Kuwait ",
       img: kuwaitFlag,
-      link: "/",
+      link: "/kuwait-embassy-attestation-in-bangalore",
     },
     {
       id: 4,
       name: "Saudi ",
       img: saudiFlag,
-      link: "/",
+      link: "/saudi-arabia-embassy-attestation-in-bangalore",
     },
     {
       id: 5,
       name: "Bahrain",
       img: bahrainFlag,
-      link: "/",
+      link: "/bahrain-embassy-attestation-in-bangalore",
     },
     {
       id: 6,
@@ -51,13 +51,13 @@ export default function AttestationFlag() {
       id: 7,
       name: "China",
       img: chinaFlag,
-      link: "/",
+      link: "/china-embassy-attestation-in-bangalore",
     },
     {
       id: 8,
       name: "Vietnam",
       img: vietnamFlag,
-      link: "/",
+      link: "/vietnam-embassy-attestation-in-bangalore",
     },
     {
       id: 9,

@@ -18,7 +18,7 @@ export const metadata = {
     "Birth, Marriage, Degree",
   ],
 };
-export default function Apostille() {
+export default function Attestation() {
   return (
     <div className="main-container">
       <AttestationHeader />
