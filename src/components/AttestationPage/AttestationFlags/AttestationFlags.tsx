@@ -16,7 +16,12 @@ import nigeriaFlag from "@/media/images/flags/NigeriaFlag.jpg";
 
 export default function AttestationFlag() {
   const flags = [
-    { id: 1, name: "UAE", img: uaeFlag, link: "/uae-embassy-attestation-in-bangalore" },
+    {
+      id: 1,
+      name: "UAE",
+      img: uaeFlag,
+      link: "/uae-embassy-attestation-in-bangalore",
+    },
     {
       id: 2,
       name: "Qatar ",
@@ -45,7 +50,7 @@ export default function AttestationFlag() {
       id: 6,
       name: "Nigeria",
       img: nigeriaFlag,
-      link: "/",
+      link: "/nigeria-embassy-attestation-in-bangalore",
     },
     {
       id: 7,
@@ -63,25 +68,25 @@ export default function AttestationFlag() {
       id: 9,
       name: "Taiwan",
       img: taiwanFlag,
-      link: "/",
+      link: "/taiwan-embassy-attestation-in-bangalore",
     },
     {
       id: 10,
       name: "Egypt",
       img: egyptFlag,
-      link: "/",
+      link: "/egypt-embassy-attestation-in-bangalore",
     },
     {
       id: 11,
       name: "Philippines",
       img: philippinesFlag,
-      link: "/",
+      link: "/philippines-embassy-attestation-in-bangalore",
     },
     {
       id: 12,
       name: "Malaysia",
       img: malaysiaFlag,
-      link: "/",
+      link: "/malaysia-embassy-attestation-in-bangalore",
     },
   ];
   return (

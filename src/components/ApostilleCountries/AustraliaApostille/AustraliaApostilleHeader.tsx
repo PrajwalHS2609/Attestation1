@@ -3,12 +3,13 @@ import { Typewriter } from "react-simple-typewriter";
 import "@/components/Style/style.css";
 import HomeHeaderKey from "@/components/HomePage/HomeHeader/HomeHeaderKey";
 import Image from "next/image";
-import attestationBanner from "@/media/images/attestationBanner.png";
-export default function AttestationHeader() {
+import AustraliaFlag from "@/media/images/Countries_Flag/australia.png";
+
+export default function AustraliaApostilleHeader() {
   return (
     <>
       <div className="header-container">
-        <Image src={attestationBanner} alt="attestationBanner" loading="lazy" />
+        <Image src={AustraliaFlag} alt="Australia Flag" />
         <div className="header-cover">
           <div className="header-coverContent">
             <h2>
@@ -27,7 +28,8 @@ export default function AttestationHeader() {
           </div>
           <span className="headerKey-container">
             <HomeHeaderKey />
-          </span>        </div>
+          </span>{" "}
+        </div>
       </div>
       <span className="headerKey-respContainer">
         <HomeHeaderKey />
