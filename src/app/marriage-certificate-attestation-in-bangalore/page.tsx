@@ -1,6 +1,6 @@
-
+import marriageAttestationBanner from "@/media/images/marriageCerti.png";
 import MarriageAttestationHead from "@/components/MarriageCertificateAttestation/MarriageAttestationHead";
-import MarriageAttestationHeader from "@/components/MarriageCertificateAttestation/MarriageAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 export const metadata = {
   title:
     "Marriage Certificate Attestation in Bangalore | Certificate Attestation Near Me",
@@ -16,7 +16,10 @@ export const metadata = {
 export default function MarriageCertificateAttestation() {
   return (
     <div className="main-container">
-      <MarriageAttestationHeader />
+      <HeaderComponent
+        imageSrc={marriageAttestationBanner.src}
+        alt="marriage Attestation Banner"
+      />
       <MarriageAttestationHead />
     </div>
   );

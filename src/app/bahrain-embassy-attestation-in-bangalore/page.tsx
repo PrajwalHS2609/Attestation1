@@ -1,6 +1,7 @@
 import BahrainAttestationContent from "@/components/AttestationCountries/BahrainAttestation/BahrainAttestationContent";
 import BahrainAttestationHead from "@/components/AttestationCountries/BahrainAttestation/BahrainAttestationHead";
-import BahrainAttestationHeader from "@/components/AttestationCountries/BahrainAttestation/BahrainAttestationHeader";
+import BahrainFlag from "@/media/images/Countries_Flag/Baharain.png";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 export const metadata = {
   title:
     "Bahrain Embassy Attestation in Bangalore | Bahrain Attestation Services Near Me",
@@ -16,7 +17,7 @@ export const metadata = {
 export default function BahrainAttestation() {
   return (
     <div className="main-container">
-      <BahrainAttestationHeader />
+      <HeaderComponent imageSrc={BahrainFlag.src} alt="Bahrain Flag" />
       <BahrainAttestationHead />
       <BahrainAttestationContent />
     </div>

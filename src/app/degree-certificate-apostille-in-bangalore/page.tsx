@@ -1,6 +1,8 @@
 
 import DegreeApostilleHead from "@/components/DegreeApostilleCertificate/DegreeApostilleHead";
-import DegreeApostilleHeader from "@/components/DegreeApostilleCertificate/DegreeApostilleHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import degreeBanner from "@/media/images/degreeCertificate.png";
+
 export const metadata = {
   title:
     "Degree Certificate Apostille in Bangalore | Certificate Apostille Near Me",
@@ -16,7 +18,7 @@ export const metadata = {
 export default function DegreeCertificateAttestation() {
   return (
     <div className="main-container">
-      <DegreeApostilleHeader />
+      <HeaderComponent imageSrc={degreeBanner.src} alt="degree Banner" />
       <DegreeApostilleHead />
     </div>
   );

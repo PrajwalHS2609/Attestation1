@@ -1,8 +1,9 @@
-
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import MofaContent from "@/components/MofaPage/MofaContent";
 import MofaCountries from "@/components/MofaPage/MofaCountries/MofaCountries";
-import MofaHeader from "@/components/MofaPage/MofaHeader";
 import MofaProcedure from "@/components/MofaPage/MofaProcedure";
+import mofaBanner from "@/media/images/mofaBanner.png";
+
 export const metadata = {
   title: "MOFA Attestation in Bangalore at Lowest Price",
   description:
@@ -17,7 +18,7 @@ export const metadata = {
 export default function Mofa() {
   return (
     <div className="main-container">
-      <MofaHeader />
+      <HeaderComponent imageSrc={mofaBanner.src} alt="mofa Banner" />
       <MofaProcedure />
       <MofaCountries />
       <MofaContent />

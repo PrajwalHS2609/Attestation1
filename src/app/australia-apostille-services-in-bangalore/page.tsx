@@ -1,6 +1,7 @@
 import AustraliaApostilleContent from "@/components/ApostilleCountries/AustraliaApostille/AustraliaApostilleContent";
 import AustraliaApostilleHead from "@/components/ApostilleCountries/AustraliaApostille/AustraliaApostilleHead";
-import AustraliaApostilleHeader from "@/components/ApostilleCountries/AustraliaApostille/AustraliaApostilleHeader";
+import AustraliaFlag from "@/media/images/Countries_Flag/australia.png";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 
 export const metadata = {
   title:
@@ -17,7 +18,7 @@ export const metadata = {
 export default function AustraliaApostille() {
   return (
     <div className="main-container">
-      <AustraliaApostilleHeader />
+      <HeaderComponent imageSrc={AustraliaFlag.src} alt="Australia Flag" />
       <AustraliaApostilleHead />
       <AustraliaApostilleContent />
     </div>

@@ -2,12 +2,16 @@
 import { Typewriter } from "react-simple-typewriter";
 import HomeHeaderKey from "../HomePage/HomeHeader/HomeHeaderKey";
 import Image from "next/image";
-import pccBanner from "@/media/images/pccBanner.png";
-export default function PccHeader() {
+import "@/components/Style/style.css";
+interface HeaderProps {
+  imageSrc: string;
+  alt: string;
+}
+export default function HeaderComponent({ imageSrc, alt }: HeaderProps) {
   return (
     <>
       <div className="header-container">
-        <Image src={pccBanner} alt="PCC Banner" />
+        <Image src={imageSrc} alt={alt} fill />
         <div className="header-cover">
           <div className="header-coverContent">
             <h2>

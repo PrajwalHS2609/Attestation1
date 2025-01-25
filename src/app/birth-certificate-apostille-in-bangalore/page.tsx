@@ -1,6 +1,7 @@
 
 import BirthApostilleHead from "@/components/BirthCertificateApostille/BirthApostilleHead";
-import BirthApostilleHeader from "@/components/BirthCertificateApostille/BirthApostilleHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import birthAttestationBanner from "@/media/images/birthCerti.png";
 export const metadata = {
   title:
     "Birth Certificate Apostille in Bangalore | Certificate Apostille Near Me",
@@ -16,7 +17,7 @@ export const metadata = {
 export default function BirthCertificateAttestation() {
   return (
     <div className="main-container">
-      <BirthApostilleHeader />
+      <HeaderComponent imageSrc={birthAttestationBanner.src} alt="Birth Attestation Banner" />
       <BirthApostilleHead />
     </div>
   );

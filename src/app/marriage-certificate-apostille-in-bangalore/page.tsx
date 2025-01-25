@@ -1,6 +1,8 @@
 
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import MarriageApostilleHead from "@/components/MarriageCertificateApostille/MarriageApostilleHead";
-import MarriageApostilleHeader from "@/components/MarriageCertificateApostille/MarriageApostilleHeader";
+import marriageAttestationBanner from "@/media/images/marriageCerti.png"
+
 export const metadata = {
   title:
     "Marriage Certificate Apostille in Bangalore | Certificate Apostille Near Me",
@@ -16,7 +18,7 @@ export const metadata = {
 export default function MarriageCertificateAttestation() {
   return (
     <div className="main-container">
-      <MarriageApostilleHeader />
+      <HeaderComponent imageSrc={marriageAttestationBanner.src} alt="Marriage Attestation Banner" />
       <MarriageApostilleHead />
     </div>
   );

@@ -1,6 +1,8 @@
 import SaudiAttestationContent from "@/components/AttestationCountries/SaudiAttestation/SaudiAttestationContent";
 import SaudiAttestationHead from "@/components/AttestationCountries/SaudiAttestation/SaudiAttestationHead";
-import SaudiAttestationHeader from "@/components/AttestationCountries/SaudiAttestation/SaudiAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import SaudiFlag from "@/media/images/Countries_Flag/Saudi Arabia.png";
+
 export const metadata = {
   title:
     "Saudi Arabia Embassy Attestation in Bangalore | Kuwait Attestation Services Near Me",
@@ -16,7 +18,7 @@ export const metadata = {
 export default function SaudiAttestation() {
   return (
     <div className="main-container">
-      <SaudiAttestationHeader />
+      <HeaderComponent imageSrc={SaudiFlag.src} alt="Saudi Flag" />
       <SaudiAttestationHead />
       <SaudiAttestationContent />
     </div>

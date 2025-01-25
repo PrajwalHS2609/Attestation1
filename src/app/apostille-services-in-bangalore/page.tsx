@@ -1,12 +1,13 @@
-
 import ApostilleCertificate from "@/components/ApostillePage/ApostilleCertificate";
 import ApostilleContent from "@/components/ApostillePage/ApostilleContent";
 import ApostilleFlag from "@/components/ApostillePage/ApostilleFlags/ApostilleFlags";
 import ApostilleHead from "@/components/ApostillePage/ApostilleHead";
-import ApostilleHeader from "@/components/ApostillePage/ApostilleHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
+import apostilleBanner from "@/media/images/apostilleBanner.png";
+
 export const metadata = {
   title: "Apostille Services in Bangalore – Embassy Apostille in Bangalore",
   description:
@@ -21,7 +22,7 @@ export const metadata = {
 export default function Attestation() {
   return (
     <div className="main-container">
-      <ApostilleHeader />
+      <HeaderComponent imageSrc={apostilleBanner.src} alt="apostille Banner" />
       <ApostilleHead />
       <ApostilleCertificate />
       <ApostilleFlag />

@@ -1,6 +1,7 @@
 import ItalyApostilleContent from "@/components/ApostilleCountries/ItalyApostille/ItalyApostilleContent";
 import ItalyApostilleHead from "@/components/ApostilleCountries/ItalyApostille/ItalyApostilleHead";
-import ItalyApostilleHeader from "@/components/ApostilleCountries/ItalyApostille/ItalyApostilleHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import ItalyFlag from "@/media/images/Countries_Flag/Italy.png";
 
 export const metadata = {
   title: "Italy Apostille Services in Bangalore | Italy Apostille Near Me",
@@ -16,7 +17,7 @@ export const metadata = {
 export default function ItalyApostille() {
   return (
     <div className="main-container">
-      <ItalyApostilleHeader />
+      <HeaderComponent imageSrc={ItalyFlag.src} alt="Italy Flag" />
       <ItalyApostilleHead />
       <ItalyApostilleContent />
     </div>

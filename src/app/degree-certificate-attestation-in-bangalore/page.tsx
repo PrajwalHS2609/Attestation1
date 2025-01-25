@@ -1,5 +1,7 @@
 import DegreeAttestationHead from "@/components/DegreeAttestationCertificate/DegreeAttestationHead";
-import DegreeAttestationHeader from "@/components/DegreeAttestationCertificate/DegreeAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import degreeBanner from "@/media/images/degreeCertificate.png";
+
 export const metadata = {
   title:
     "Degree Certificate Attestation in Bangalore | Certificate Attestation Near Me",
@@ -15,7 +17,7 @@ export const metadata = {
 export default function DegreeCertificateAttestation() {
   return (
     <div className="main-container">
-      <DegreeAttestationHeader />
+      <HeaderComponent imageSrc={degreeBanner.src} alt="degree Banner" />
       <DegreeAttestationHead />
     </div>
   );

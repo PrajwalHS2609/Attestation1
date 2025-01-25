@@ -14,7 +14,7 @@ export const metadata = {
     "Birth, Marriage, Degree",
   ],
 };
-export default function CommercialDocumentsAttestation() {
+export default function CommercialDocumentsApostille() {
   return (
     <div className="main-container">
       <CommercialApostilleHeader />

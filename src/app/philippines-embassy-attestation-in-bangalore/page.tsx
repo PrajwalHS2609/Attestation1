@@ -1,6 +1,7 @@
 import PhilippinesAttestationContent from "@/components/AttestationCountries/PhilippinesAttestation/PhilippinesAttestationContent";
 import PhilippinesAttestationHead from "@/components/AttestationCountries/PhilippinesAttestation/PhilippinesAttestationHead";
-import PhilippinesAttestationHeader from "@/components/AttestationCountries/PhilippinesAttestation/PhilippinesAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import PhilippinesFlag from "@/media/images/Countries_Flag/philippines.png";
 
 export const metadata = {
   title:
@@ -17,7 +18,7 @@ export const metadata = {
 export default function QatarAttestation() {
   return (
     <div className="main-container">
-      <PhilippinesAttestationHeader />
+      <HeaderComponent imageSrc={PhilippinesFlag.src} alt="PhilippinesFlag" />
       <PhilippinesAttestationHead />
       <PhilippinesAttestationContent />
     </div>

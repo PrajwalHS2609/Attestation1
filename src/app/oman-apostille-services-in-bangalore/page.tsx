@@ -1,6 +1,7 @@
 import OmanApostilleContent from "@/components/ApostilleCountries/OmanApostille/OmanApostilleContent";
 import OmanApostilleHead from "@/components/ApostilleCountries/OmanApostille/OmanApostilleHead";
-import OmanApostilleHeader from "@/components/ApostilleCountries/OmanApostille/OmanApostilleHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import OmanFlag from "@/media/images/Countries_Flag/Oman.png";
 
 export const metadata = {
   title: "Oman Apostille Services in Bangalore | Oman Apostille Near Me",
@@ -16,7 +17,7 @@ export const metadata = {
 export default function OmanApostille() {
   return (
     <div className="main-container">
-      <OmanApostilleHeader />
+      <HeaderComponent imageSrc={OmanFlag.src} alt="Oman Flag" />
       <OmanApostilleHead />
       <OmanApostilleContent />
     </div>

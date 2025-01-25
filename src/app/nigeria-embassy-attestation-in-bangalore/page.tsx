@@ -1,6 +1,7 @@
 import NigeriaAttestationContent from "@/components/AttestationCountries/NigeriaAttestation/NigeriaAttestationContent";
 import NigeriaAttestationHead from "@/components/AttestationCountries/NigeriaAttestation/NigeriaAttestationHead";
-import NigeriaAttestationHeader from "@/components/AttestationCountries/NigeriaAttestation/NigeriaAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import NigeriaFlag from "@/media/images/Countries_Flag/nigeria.png";
 
 export const metadata = {
   title:
@@ -17,7 +18,7 @@ export const metadata = {
 export default function QatarAttestation() {
   return (
     <div className="main-container">
-      <NigeriaAttestationHeader />
+      <HeaderComponent imageSrc={NigeriaFlag.src} alt="Nigeria Flag" />
       <NigeriaAttestationHead />
       <NigeriaAttestationContent />
     </div>

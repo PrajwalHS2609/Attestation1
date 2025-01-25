@@ -1,6 +1,8 @@
 import QatarAttestationContent from "@/components/AttestationCountries/QatarAttestation/QatarAttestationContent";
 import QatarAttestationHead from "@/components/AttestationCountries/QatarAttestation/QatarAttestationHead";
-import QatarAttestationHeader from "@/components/AttestationCountries/QatarAttestation/QatarAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import QatarFlag from "@/media/images/Countries_Flag/Qatar.png";
+
 export const metadata = {
   title:
     "Qatar Embassy Attestation in Bangalore | Qatar Attestation Services Near Me",
@@ -16,7 +18,7 @@ export const metadata = {
 export default function QatarAttestation() {
   return (
     <div className="main-container">
-      <QatarAttestationHeader />
+      <HeaderComponent imageSrc={QatarFlag.src} alt="Qatar Flag"/>
       <QatarAttestationHead />
       <QatarAttestationContent />
     </div>

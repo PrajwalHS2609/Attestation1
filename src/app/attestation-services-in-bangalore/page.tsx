@@ -1,12 +1,13 @@
-
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import AttestationFlag from "@/components/AttestationPage/AttestationFlags/AttestationFlags";
 import AttestationCertificate from "@/components/AttestationPage/AttetationCertificate";
 import AttestationHead from "@/components/AttestationPage/AttestationHead";
-import AttestationHeader from "@/components/AttestationPage/AttestationHeader";
 import AttestationContent from "@/components/AttestationPage/AttestationContent";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import attestationBanner from "@/media/images/attestationBanner.png";
+
 export const metadata = {
   title: "Attestation Services in Bangalore – Embassy Attestation in Bangalore",
   description:
@@ -21,7 +22,10 @@ export const metadata = {
 export default function Attestation() {
   return (
     <div className="main-container">
-      <AttestationHeader />
+      <HeaderComponent
+        imageSrc={attestationBanner.src}
+        alt="attestation Banner"
+      />
       <AttestationHead />
       <AttestationCertificate />
       <AttestationFlag />

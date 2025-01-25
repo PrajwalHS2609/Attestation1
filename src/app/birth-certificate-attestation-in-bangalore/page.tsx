@@ -1,6 +1,7 @@
 
 import BirthAttestationHead from "@/components/BirthCertificateAttestation/BirthAttestationHead";
-import BirthAttestationHeader from "@/components/BirthCertificateAttestation/BirthAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import birthAttestationBanner from "@/media/images/birthCerti.png";
 
 export const metadata = {
   title:
@@ -17,7 +18,7 @@ export const metadata = {
 export default function BirthCertificateAttestation() {
   return (
     <div className="main-container">
-      <BirthAttestationHeader />
+      <HeaderComponent imageSrc={birthAttestationBanner.src} alt="Birth Attestation Banner" />
       <BirthAttestationHead />
     </div>
   );

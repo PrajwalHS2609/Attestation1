@@ -1,6 +1,8 @@
 import KuwaitAttestationContent from "@/components/AttestationCountries/KuwaitAttestation/KuwaitAttestationContent";
 import KuwaitAttestationHead from "@/components/AttestationCountries/KuwaitAttestation/KuwaitAttestationHead";
-import KuwaitAttestationHeader from "@/components/AttestationCountries/KuwaitAttestation/KuwaitAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import KuwaitFlag from "@/media/images/Countries_Flag/Kuwait.png";
+
 export const metadata = {
   title:
     "Kuwait Embassy Attestation in Bangalore | Kuwait Attestation Services Near Me",
@@ -16,7 +18,7 @@ export const metadata = {
 export default function KuwaitAttestation() {
   return (
     <div className="main-container">
-      <KuwaitAttestationHeader />
+      <HeaderComponent imageSrc={KuwaitFlag.src} alt="KuwaitFlag" />
       <KuwaitAttestationHead />
       <KuwaitAttestationContent />
     </div>

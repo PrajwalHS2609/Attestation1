@@ -1,11 +1,12 @@
-
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import MeaCommercialDoc from "@/components/MeaPage/MeaCommercialDoc/MeaCommercialDoc";
 import MeaContent from "@/components/MeaPage/MeaContent";
-import MeaHeader from "@/components/MeaPage/MeaHeader";
 import MeaProcedure from "@/components/MeaPage/MeaProcedure";
+import meaBanner from "@/media/images/meaBanner.png";
+
 export const metadata = {
   title: "MEA Apostille Services in Bangalore for all types of documents",
   description:
@@ -20,7 +21,7 @@ export const metadata = {
 export default function MeaPage() {
   return (
     <div className="main-container">
-      <MeaHeader />
+      <HeaderComponent imageSrc={meaBanner.src} alt="mea Banner" />
       <MeaProcedure />
       <MeaCommercialDoc />
       <MeaContent />

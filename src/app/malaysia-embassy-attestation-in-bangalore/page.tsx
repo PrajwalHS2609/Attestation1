@@ -1,6 +1,7 @@
-import MalaysiaAttestationHeader from "@/components/AttestationCountries/MalaysiaAttestation/MalaysiaAttestationHeader";
 import MalaysiaAttestationHead from "./../../components/AttestationCountries/MalaysiaAttestation/MalaysiaAttestationHead";
 import MalaysiaAttestationContent from "@/components/AttestationCountries/MalaysiaAttestation/MalaysiaAttestationContent";
+import MalaysiaFlag from "@/media/images/Countries_Flag/Malaysia.png";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 
 export const metadata = {
   title:
@@ -17,7 +18,7 @@ export const metadata = {
 export default function QatarAttestation() {
   return (
     <div className="main-container">
-      <MalaysiaAttestationHeader />
+      <HeaderComponent imageSrc={MalaysiaFlag.src} alt="Malaysia Flag"/>
       <MalaysiaAttestationHead />
       <MalaysiaAttestationContent />
     </div>

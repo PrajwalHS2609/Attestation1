@@ -1,6 +1,7 @@
 import EgyptAttestationContent from "@/components/AttestationCountries/EgyptAttestation/EgyptAttestationContent";
 import EgyptAttestationHead from "@/components/AttestationCountries/EgyptAttestation/EgyptAttestationHead";
-import EgyptAttestationHeader from "@/components/AttestationCountries/EgyptAttestation/EgyptAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import EgyptFlag from "@/media/images/Countries_Flag/Egypt.png";
 
 export const metadata = {
   title:
@@ -17,7 +18,7 @@ export const metadata = {
 export default function QatarAttestation() {
   return (
     <div className="main-container">
-      <EgyptAttestationHeader />
+      <HeaderComponent imageSrc={EgyptFlag.src} alt="Egypt Flag" />
       <EgyptAttestationHead />
       <EgyptAttestationContent />
     </div>
