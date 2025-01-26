@@ -3,7 +3,7 @@ import "@/components/Style/style.css";
 export default function QatarAttestationHead() {
   return (
     <div className="head-container">
-      <h1>Bahrain Embassy Attestation Services in Bangalore </h1>
+      <h1>Qatar Embassy Attestation Services in Bangalore </h1>
       <p>
         Qatar attestation service in Bangalore is an essential requirement for
         individuals seeking to authenticate their documents for use in Qatar.

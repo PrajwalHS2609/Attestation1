@@ -1,6 +1,6 @@
-
 import CommercialAttestationHead from "@/components/CommercialDocsAttestation/CommercialDocsAttestationHead";
-import CommercialAttestationHeader from "@/components/CommercialDocsAttestation/CommercialDocsAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import commercialBanner from "@/media/images/commercialDocsBanner.png";
 export const metadata = {
   title:
     "Commercial Documents Attestation in Bangalore for Business Certificates",
@@ -16,7 +16,10 @@ export const metadata = {
 export default function CommercialDocumentsAttestation() {
   return (
     <div className="main-container">
-      <CommercialAttestationHeader />
+      <HeaderComponent
+        imageSrc={commercialBanner.src}
+        alt="commercial Banner"
+      />
       <CommercialAttestationHead />
     </div>
   );

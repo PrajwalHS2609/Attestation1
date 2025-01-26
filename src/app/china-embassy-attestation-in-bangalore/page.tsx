@@ -1,6 +1,7 @@
 import ChinaAttestationContent from "@/components/AttestationCountries/ChinaAttestation/ChinaAttestationContent";
 import ChinaAttestationHead from "@/components/AttestationCountries/ChinaAttestation/ChinaAttestationHead";
-import ChinaAttestationHeader from "@/components/AttestationCountries/ChinaAttestation/ChinaAttestationHeader";
+import ChinaFlag from "@/media/images/Countries_Flag/chinaFlag.png";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 export const metadata = {
   title:
     "China Embassy Attestation in Bangalore | China Attestation Services Near Me",
@@ -16,7 +17,7 @@ export const metadata = {
 export default function ChinaAttestation() {
   return (
     <div className="main-container">
-      <ChinaAttestationHeader />
+      <HeaderComponent imageSrc={ChinaFlag.src} alt="China Flag" />
       <ChinaAttestationHead />
       <ChinaAttestationContent />
     </div>

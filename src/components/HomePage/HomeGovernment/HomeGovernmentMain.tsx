@@ -10,12 +10,42 @@ import Image from "next/image";
 
 export default function HomeGovernmentMain() {
   const govtApproved = [
-    { id: 1, embassy: IndianEmbassy, name: "Indian MEA", link: "/" },
-    { id: 2, embassy: UaeEmbassy, name: "UAE Embassy", link: "/" },
-    { id: 3, embassy: QatarEmbassy, name: "Qatar Embassy", link: "/" },
-    { id: 4, embassy: KuwaitEmbassy, name: "Kuwait Embassy", link: "/" },
-    { id: 5, embassy: BahrainEmbassy, name: "Bahrain Embassy", link: "/" },
-    { id: 6, embassy: SaudiEmbassy, name: "Saudi Embassy", link: "/" },
+    {
+      id: 1,
+      embassy: IndianEmbassy,
+      name: "Indian MEA",
+      link: "/mea-apostille-services-in-bangalore",
+    },
+    {
+      id: 2,
+      embassy: UaeEmbassy,
+      name: "UAE Embassy",
+      link: "/uae-embassy-attestation-in-bangalore",
+    },
+    {
+      id: 3,
+      embassy: QatarEmbassy,
+      name: "Qatar Embassy",
+      link: "/qatar-embassy-attestation-in-bangalore",
+    },
+    {
+      id: 4,
+      embassy: KuwaitEmbassy,
+      name: "Kuwait Embassy",
+      link: "/kuwait-embassy-attestation-in-bangalore",
+    },
+    {
+      id: 5,
+      embassy: BahrainEmbassy,
+      name: "Bahrain Embassy",
+      link: "/bahrain-embassy-attestation-in-bangalore",
+    },
+    {
+      id: 6,
+      embassy: SaudiEmbassy,
+      name: "Saudi Embassy",
+      link: "/saudi-arabia-embassy-attestation-in-bangalore",
+    },
   ];
   return (
     <div className="homeGovernmentMain-container">

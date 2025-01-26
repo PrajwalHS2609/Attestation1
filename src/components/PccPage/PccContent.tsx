@@ -1,14 +1,12 @@
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import PccImportant from "./PccImportant";
 import PccProcess from "./PccProcess";
 
 export default function PccContent() {
   return (
     <div className="content-wrapper">
-
       <div className="content-container">
         <p>
-          In Bangalore, obtaining <a href="">PCC verification in Bangalore</a>{" "}
+          In Bangalore, obtaining <a href="https://foreignembassyattestation.com/pcc-verification-in-bangalore">PCC verification in Bangalore</a>{" "}
           is now a streamlined process with the assistance of professional
           attestation agencies. These agencies ensure that documents are
           verified efficiently, meeting the stringent requirements of embassies
@@ -18,7 +16,6 @@ export default function PccContent() {
           clean criminal record.
         </p>
       </div>
-      <PccImportant />
       <PccProcess />
 
       <div className="content-container">

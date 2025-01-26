@@ -1,6 +1,7 @@
 
-import CommercialApostilleHeader from "@/components/CommercialDocsApostille/CommercialDocsAttestationHeader";
 import CommercialApostilleHead from "@/components/CommercialDocsApostille/CommercialDocsApostilleHead";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import commercialBanner from "@/media/images/commercialDocsBanner.png";
 
 export const metadata = {
   title:
@@ -17,7 +18,7 @@ export const metadata = {
 export default function CommercialDocumentsApostille() {
   return (
     <div className="main-container">
-      <CommercialApostilleHeader />
+      <HeaderComponent imageSrc={commercialBanner.src} alt="Commercial Banner" />
       <CommercialApostilleHead />
     </div>
   );
