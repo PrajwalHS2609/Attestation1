@@ -1,11 +1,13 @@
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import WesContent from "@/components/Wespage/WesContent";
 import WesDoc from "@/components/Wespage/WesDoc";
 import WesHead from "@/components/Wespage/WesHead";
-import WesHeader from "@/components/Wespage/WesHeader";
 import WesProcess from "@/components/Wespage/WesProcess";
+import WesBanner from "@/media/images/wesBanner.png";
+
 export const metadata = {
   title: "WES Verification Attestation in Bangalore at Lowest Price",
   description:
@@ -20,7 +22,7 @@ export const metadata = {
 export default function WesPage() {
   return (
     <div className="main-container">
-      <WesHeader />
+      <HeaderComponent imageSrc={WesBanner.src} alt="Wes Banner" />
       <WesHead />
       <WesDoc />
       <WesProcess />

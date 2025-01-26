@@ -1,6 +1,7 @@
 import VietnamAttestationContent from "@/components/AttestationCountries/VietnamAttestation/VietnamAttestationContent";
 import VietnamAttestationHead from "@/components/AttestationCountries/VietnamAttestation/VietnamAttestationHead";
-import VietnamAttestationHeader from "@/components/AttestationCountries/VietnamAttestation/VietnamAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import VietnamFlag from "@/media/images/Countries_Flag/vietnam.png";
 export const metadata = {
   title:
     "Vietnam Embassy Attestation in Bangalore | Vietnam Attestation Services Near Me",
@@ -16,7 +17,7 @@ export const metadata = {
 export default function VietnamAttestation() {
   return (
     <div className="main-container">
-      <VietnamAttestationHeader />
+      <HeaderComponent imageSrc={VietnamFlag.src} alt="Vietnam Flag" />
       <VietnamAttestationHead />
       <VietnamAttestationContent />
     </div>

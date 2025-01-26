@@ -1,13 +1,14 @@
 
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import TranslationHead from "@/components/TranslationPage/TranslationHead";
-import TranslationHeader from "@/components/TranslationPage/TranslationHeader";
 import TranslationService from "@/components/TranslationPage/TranslationService/TranslationService";
+import translateBanner from "@/media/images/translationBanner.jpg";
 
 export default function Translation() {
   
   return (
     <div className="main-container">
-      <TranslationHeader />
+      <HeaderComponent imageSrc={translateBanner.src} alt="translate Banner" />
       <TranslationHead />
       <TranslationService/>
     </div>

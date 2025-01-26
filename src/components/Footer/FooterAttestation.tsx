@@ -6,40 +6,40 @@ export default function FooterAttestation() {
       <ul>
         <h4>Attestation</h4>
         <li>
-          <Link href="">UAE</Link>
+          <Link href="uae-embassy-attestation-in-bangalore">UAE</Link>
         </li>
         <li>
-          <Link href="">Qatar</Link>
+          <Link href="qatar-embassy-attestation-in-bangalore">Qatar</Link>
         </li>
         <li>
-          <Link href="">Kuwait</Link>
+          <Link href="kuwait-embassy-attestation-in-bangalore">Kuwait</Link>
         </li>
         <li>
-          <Link href="">Saudi Arabia</Link>
+          <Link href="saudi-arabia-embassy-attestation-in-bangalore">Saudi Arabia</Link>
         </li>
         <li>
-          <Link href="">Bahrain</Link>
+          <Link href="bahrain-embassy-attestation-in-bangalore">Bahrain</Link>
         </li>
         <li>
-          <Link href="">China</Link>
+          <Link href="china-embassy-attestation-in-bangalore">China</Link>
         </li>
         <li>
-          <Link href="">Vietnam</Link>
+          <Link href="vietnam-embassy-attestation-in-bangalore">Vietnam</Link>
         </li>
         <li>
-          <Link href="">Taiwan</Link>
+          <Link href="taiwan-embassy-attestation-in-bangalore">Taiwan</Link>
         </li>
         <li>
-          <Link href="">Egypt</Link>
+          <Link href="egypt-embassy-attestation-in-bangalore">Egypt</Link>
         </li>
         <li>
-          <Link href="">Nigeria</Link>
+          <Link href="nigeria-embassy-attestation-in-bangalore">Nigeria</Link>
         </li>
         <li>
-          <Link href="">Malaysia</Link>
+          <Link href="malaysia-embassy-attestation-in-bangalore">Malaysia</Link>
         </li>
         <li>
-          <Link href="">Philippines</Link>
+          <Link href="philippines-embassy-attestation-in-bangalore">Philippines</Link>
         </li>
       </ul>
     </div>

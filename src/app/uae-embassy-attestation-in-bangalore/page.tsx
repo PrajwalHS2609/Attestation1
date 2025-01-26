@@ -1,6 +1,7 @@
 import UaeAttestationContent from "@/components/AttestationCountries/UaeAttestation/UaeAttestationContent";
 import UaeAttestationHead from "@/components/AttestationCountries/UaeAttestation/UaeAttestationHead";
-import UaeAttestationHeader from "@/components/AttestationCountries/UaeAttestation/UaeAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import UaeFlag from "@/media/images/Countries_Flag/UAE.png";
 export const metadata = {
     title: "UAE Embassy Attestation in Bangalore | UAE Attestation Services Near Me",
     description:
@@ -15,7 +16,7 @@ export const metadata = {
 export default function VietnamAttestation() {
   return (
     <div className="main-container">
-      <UaeAttestationHeader />
+      <HeaderComponent imageSrc={UaeFlag.src} alt="Uae Flag"/>
       <UaeAttestationHead />
       <UaeAttestationContent />
     </div>

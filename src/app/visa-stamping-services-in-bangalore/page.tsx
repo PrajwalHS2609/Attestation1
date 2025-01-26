@@ -1,7 +1,8 @@
 
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import VisaStampingContent from "@/components/VisaStampingPage/VisaStampingContent";
 import VisaStampingHead from "@/components/VisaStampingPage/VisaStampingHead";
-import VisaStampingHeader from "@/components/VisaStampingPage/VisaStampingHeader";
+import visaStampingBanner from "@/media/images/visaStampingBanner.png";
 export const metadata = {
   title: "Visa Stamping Services in Bangalore | Visa Stamping Near Me",
   description:
@@ -16,7 +17,7 @@ export const metadata = {
 export default function VisaStamping() {
   return (
     <div className="main-container">
-      <VisaStampingHeader />
+      <HeaderComponent imageSrc={visaStampingBanner.src} alt="visa Stamping Banner" />
       <VisaStampingHead />
       <VisaStampingContent />
     </div>

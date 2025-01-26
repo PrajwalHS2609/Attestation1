@@ -6,16 +6,16 @@ export default function FooterApostille() {
       <ul>
         <h4>Apostille</h4>
         <li>
-          <Link href="">Oman</Link>
+          <Link href="oman-apostille-services-in-bangalore">Oman</Link>
         </li>
         <li>
-          <Link href="">Italy</Link>
+          <Link href="italy-apostille-services-in-bangalore">Italy</Link>
         </li>
         <li>
-          <Link href="">Germany</Link>
+          <Link href="germany-apostille-services-in-bangalore">Germany</Link>
         </li>
         <li>
-          <Link href="">Australia</Link>
+          <Link href="australia-apostille-services-in-bangalore">Australia</Link>
         </li>
         <li>
           <Link href="">Austria</Link>

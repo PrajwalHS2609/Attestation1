@@ -7,9 +7,11 @@ import StateHomeDepartmentBlore from "@/components/StateHrd/HomeDepartmentBlore"
 import HrdBlore from "@/components/StateHrd/HrdBlore";
 import StateHrdCommercial from "@/components/StateHrd/StateHrdCommercial";
 import StateHrdHead from "@/components/StateHrd/StateHrdHead";
-import StateHrdHeader from "@/components/StateHrd/StateHrdHeader";
 import "@/components/HomePage/HomeSeo/HomeSeo.css";
 import StateHrdContent from "@/components/StateHrd/StateHrdContent";
+import stateHrd from "@/media/images/stateHrdBanner.png";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+
 export const metadata = {
   title: "State HRD & Home Department Attestation in Bangalore",
   description:
@@ -24,7 +26,7 @@ export const metadata = {
 export default function StateHrd() {
   return (
     <div className="main-container">
-      <StateHrdHeader />
+      <HeaderComponent imageSrc={stateHrd.src} alt="state Hrd" />
       <StateHrdHead />
       <StateHrdCommercial />
       <HrdBlore />

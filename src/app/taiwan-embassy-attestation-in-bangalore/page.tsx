@@ -1,6 +1,7 @@
 import TaiwanAttestationContent from "@/components/AttestationCountries/TaiwanAttestation/TaiwanAttestationContent";
 import TaiwanAttestationHead from "@/components/AttestationCountries/TaiwanAttestation/TaiwanAttestationHead";
-import TaiwanAttestationHeader from "@/components/AttestationCountries/TaiwanAttestation/TaiwanAttestationHeader";
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import TaiwanFlag from "@/media/images/Countries_Flag/taiwan.png";
 
 export const metadata = {
   title:
@@ -17,7 +18,7 @@ export const metadata = {
 export default function QatarAttestation() {
   return (
     <div className="main-container">
-      <TaiwanAttestationHeader />
+      <HeaderComponent imageSrc={TaiwanFlag.src} alt="Taiwan Flag" />
       <TaiwanAttestationHead />
       <TaiwanAttestationContent />
     </div>
