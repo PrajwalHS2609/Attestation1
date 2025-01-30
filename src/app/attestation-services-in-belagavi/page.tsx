@@ -1,7 +1,5 @@
 import BelagaviAttestationContent from "@/components/AttestationCities/BelagaviAttestation/BelagaviAttestationContent";
 import BelagaviAttestationHead from "@/components/AttestationCities/BelagaviAttestation/BelagaviAttestationHead";
-import MangaloreAttestationContent from "@/components/AttestationCities/MangaloreAttestation/MangaloreAttestationContent";
-import MangaloreAttestationHead from "@/components/AttestationCities/MangaloreAttestation/MangaloreAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import attestationBanner from "@/media/images/attestationBanner.png";
 
@@ -16,7 +14,7 @@ export const metadata = {
     "Birth, Marriage, Degree",
   ],
 };
-export default function MangaloreAttestation() {
+export default function BelagaviAttestation() {
   return (
     <div className="main-container">
       <HeaderComponent
