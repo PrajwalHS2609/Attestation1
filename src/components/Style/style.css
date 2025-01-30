@@ -283,6 +283,10 @@
   color: var(--customColor1);
   text-decoration: none;
 }
+
+.contentImportant-container > ul {
+  width: 100%;
+}
 .contentImportant-container > ul > li {
   list-style: none;
   margin: 20px;
@@ -296,6 +300,10 @@
 }
 .contentImportant-container > ul > li > span > h5 {
   color: var(--customColor1);
+}
+.contentImportant-container > ul > li > ul > li > span {
+  color: var(--customColor1);
+  font-weight: 500;
 }
 .contentList-container {
   /* border: solid blue; */
@@ -442,5 +450,13 @@
   .contentList-container > ul {
     margin: 0;
     padding: 0;
+  }
+  .contentImportant-container > ul > li > ul {
+    margin: 0;
+    padding: 0;
+  }
+  .contentImportant-container > ul > li > ul > li > span {
+    color: var(--customColor1);
+    font-weight: 500;
   }
 }
