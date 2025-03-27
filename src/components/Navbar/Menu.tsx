@@ -79,56 +79,56 @@ const Menu = () => {
   const apostilleMenu = [
     {
       id: "1",
-      pathName: "/services/on-page-seo-services-in-bangalore",
+      pathName: "degree-certificate-apostille-in-bangalore",
       menu: "Education Certificate",
     },
     {
       id: "2",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "/commercial-documents-appostille-in-bangalore",
       menu: "Non-Education Certificate",
     },
   ];
   const attestationMenu = [
     {
       id: "1",
-      pathName: "/services/on-page-seo-services-in-bangalore",
+      pathName: "/degree-certificate-attestation-in-bangalore",
       menu: "Education Certificate",
     },
     {
       id: "2",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "/commercial-documents-attestation-in-bangalore",
       menu: "Non-Education Certificate",
     },
   ];
   const stateHrd = [
     {
       id: "1",
-      pathName: "/karnataka",
+      pathName: "",
       menu: "Karnataka",
     },
     {
       id: "2",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "",
       menu: "Tamil Nadu",
     },
     {
       id: "3",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "",
       menu: "Kerala",
     },
     {
       id: "4",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "",
       menu: "Andhra Pradesh",
     },
     {
       id: "5",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "",
       menu: "Maharastra",
     },
     {
       id: "6",
-      pathName: "/services/off-page-seo-services-in-bangalore",
+      pathName: "",
       menu: "Telangana",
     },
   ];
@@ -145,7 +145,7 @@ const Menu = () => {
     },
     {
       id: "3",
-      pathName: "/saudi-pcc",
+      pathName: "saudi-pcc",
       menu: "Saudi Pcc",
     },
     {

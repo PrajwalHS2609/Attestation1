@@ -76,3 +76,22 @@
     width: 300px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .homeSeo-container > h1::after {
+    content: "";
+    display: none;
+  }
+  .homeSeoContent2-container {
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .homeSeoContent2-content {
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+  }
+}

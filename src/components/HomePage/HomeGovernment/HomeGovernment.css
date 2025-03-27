@@ -84,3 +84,31 @@
     margin: 20px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .homeGovernmentHead-container > h2::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .homeGovernmentHead-container {
+    flex-direction: column;
+  }
+  .homeGovernmentMain-container {
+    /* border: solid blue; */
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+  }
+  .homeGovernmentMain-cardContainer {
+    /* border: solid; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 20px;
+  }
+}

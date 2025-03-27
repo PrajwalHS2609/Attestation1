@@ -363,3 +363,19 @@
     display: block;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .menu-container {
+    /* border: solid; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+  .menu-content1 {
+    display: none;
+  }
+  .menu-content2 {
+    /* border: solid red; */
+    display: block;
+  }
+}
