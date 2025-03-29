@@ -135,27 +135,27 @@ const Menu = () => {
   const pcc = [
     {
       id: "1",
-      pathName: "/oman-pcc",
+      pathName: "/oman-pcc-verification-in-bangalore",
       menu: "Oman Pcc",
     },
     {
       id: "2",
-      pathName: "/kuwait-pcc",
+      pathName: "/kuwait-pcc-verification-in-bangalore",
       menu: "Kuwait Pcc",
     },
     {
       id: "3",
-      pathName: "saudi-pcc",
+      pathName: "/saudi-arabia-pcc-verification-in-bangalore",
       menu: "Saudi Pcc",
     },
     {
       id: "4",
-      pathName: "/qatar-pcc",
+      pathName: "/qatar-pcc-verification-in-bangalore",
       menu: "Qatar Pcc",
     },
     {
       id: "5",
-      pathName: "/uae-pcc",
+      pathName: "/uae-pcc-verification-in-bangalore",
       menu: "UAE Pcc",
     },
   ];
@@ -303,7 +303,9 @@ const Menu = () => {
           <Link
             href="/visa-stamping-services-in-bangalore"
             className={
-              pathname === "/visa-stamping-services-in-bangalore" ? "active" : ""
+              pathname === "/visa-stamping-services-in-bangalore"
+                ? "active"
+                : ""
             }
           >
             Visa Stamping{" "}
@@ -411,7 +413,11 @@ const Menu = () => {
               {" "}
               <Link
                 href="/state-hrd-attestation-in-bangalore"
-                className={pathname === "/state-hrd-attestation-in-bangalore" ? "active" : ""}
+                className={
+                  pathname === "/state-hrd-attestation-in-bangalore"
+                    ? "active"
+                    : ""
+                }
                 onClick={hideSideBar}
               >
                 State HRD{" "}
@@ -422,7 +428,9 @@ const Menu = () => {
               {" "}
               <Link
                 href="/mofa-attestation-in-bangalore"
-                className={pathname === "/mofa-attestation-in-bangalore" ? "active" : ""}
+                className={
+                  pathname === "/mofa-attestation-in-bangalore" ? "active" : ""
+                }
                 onClick={hideSideBar}
               >
                 MOFA
@@ -432,7 +440,11 @@ const Menu = () => {
               {" "}
               <Link
                 href="/mea-apostille-services-in-bangalore"
-                className={pathname === "/mea-apostille-services-in-bangalore" ? "active" : ""}
+                className={
+                  pathname === "/mea-apostille-services-in-bangalore"
+                    ? "active"
+                    : ""
+                }
                 onClick={hideSideBar}
               >
                 MEA
@@ -442,7 +454,11 @@ const Menu = () => {
               {" "}
               <Link
                 href="/wes-verification-attestation-in-bangalore"
-                className={pathname === "/wes-verification-attestation-in-bangalore" ? "active" : ""}
+                className={
+                  pathname === "/wes-verification-attestation-in-bangalore"
+                    ? "active"
+                    : ""
+                }
                 onClick={hideSideBar}
               >
                 WES
@@ -452,7 +468,11 @@ const Menu = () => {
               {" "}
               <Link
                 href="/visa-stamping-services-in-bangalore"
-                className={pathname === "/visa-stamping-services-in-bangalore" ? "active" : ""}
+                className={
+                  pathname === "/visa-stamping-services-in-bangalore"
+                    ? "active"
+                    : ""
+                }
                 onClick={hideSideBar}
               >
                 Visa Stamping
