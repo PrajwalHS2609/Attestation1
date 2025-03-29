@@ -103,32 +103,32 @@ const Menu = () => {
   const stateHrd = [
     {
       id: "1",
-      pathName: "",
+      pathName: "/karnataka-state-hrd-attestation-in-bangalore",
       menu: "Karnataka",
     },
     {
       id: "2",
-      pathName: "",
+      pathName: "/tamil-nadu-state-hrd-attestation-in-bangalore",
       menu: "Tamil Nadu",
     },
     {
       id: "3",
-      pathName: "",
+      pathName: "/kerala-state-hrd-attestation-in-bangalore",
       menu: "Kerala",
     },
     {
       id: "4",
-      pathName: "",
+      pathName: "/andhra-pradesh-state-hrd-attestation-in-bangalore",
       menu: "Andhra Pradesh",
     },
     {
       id: "5",
-      pathName: "",
+      pathName: "/maharashtra-state-hrd-attestation-in-bangalore",
       menu: "Maharastra",
     },
     {
       id: "6",
-      pathName: "",
+      pathName: "/telangana-state-hrd-attestation-in-bangalore",
       menu: "Telangana",
     },
   ];
