@@ -91,9 +91,17 @@
   gap: 20px;
   padding: 20px;
 }
+.head-container>p:nth-child(odd){
+  background-color: var(--customLightColor);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+}
 .head-container > p {
   font-size: 18px;
   text-align: justify;
+  padding: 20px;
+
 }
 .head-container > p > a {
   text-decoration: none;
@@ -406,6 +414,7 @@
     position: absolute;
     display: none;
   }
+
   /* -------------------------------content-------------------------- */
   .content-container {
     /* border: solid blue; */
