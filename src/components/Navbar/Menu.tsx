@@ -13,6 +13,8 @@ const Menu = () => {
   const [drop, setDrop] = useState(false);
   const dropRef = useRef<HTMLDivElement | null>(null); // Explicitly typed ref
   const dropRef2 = useRef<HTMLDivElement | null>(null); // Explicitly typed ref
+  const dropRef3 = useRef<HTMLDivElement | null>(null); // Explicitly typed ref
+  const dropRef4 = useRef<HTMLDivElement | null>(null); // Explicitly typed ref
 
   // const handlePopUp = () => {};
   const hideSideBar = () => {
@@ -68,6 +70,48 @@ const Menu = () => {
       } else {
         setDrop(false);
         dropRef2.current.style.display = "none"; // Safe to access
+        if (plus) {
+          plus.style.transform = "rotate(0)";
+        }
+      }
+    } else {
+      console.error("dropRef is null or not attached to an element");
+    }
+  };
+  const handleDrop3 = () => {
+    const plus = document.querySelector(".plus2") as HTMLElement | null;
+    // Ensure dropRef.current is not null
+    if (dropRef3.current) {
+      if (!drop) {
+        setDrop(true);
+        dropRef3.current.style.display = "flex"; // Safe to access
+        if (plus) {
+          plus.style.transform = "rotate(45deg)";
+        }
+      } else {
+        setDrop(false);
+        dropRef3.current.style.display = "none"; // Safe to access
+        if (plus) {
+          plus.style.transform = "rotate(0)";
+        }
+      }
+    } else {
+      console.error("dropRef is null or not attached to an element");
+    }
+  };
+  const handleDrop4 = () => {
+    const plus = document.querySelector(".plus3") as HTMLElement | null;
+    // Ensure dropRef.current is not null
+    if (dropRef4.current) {
+      if (!drop) {
+        setDrop(true);
+        dropRef4.current.style.display = "flex"; // Safe to access
+        if (plus) {
+          plus.style.transform = "rotate(45deg)";
+        }
+      } else {
+        setDrop(false);
+        dropRef4.current.style.display = "none"; // Safe to access
         if (plus) {
           plus.style.transform = "rotate(0)";
         }
@@ -409,19 +453,39 @@ const Menu = () => {
                 </ul>
               </div>
             </li>
-            <li>
-              {" "}
-              <Link
-                href="/state-hrd-attestation-in-bangalore"
-                className={
-                  pathname === "/state-hrd-attestation-in-bangalore"
-                    ? "active"
-                    : ""
-                }
-                onClick={hideSideBar}
-              >
-                State HRD{" "}
-              </Link>
+            <li id="respDropList">
+              <div className="respMenuList">
+                {" "}
+                <Link
+                  href="/state-hrd-attestation-in-bangalore"
+                  className={
+                    pathname === "/state-hrd-attestation-in-bangalore"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={hideSideBar}
+                >
+                  State HRD{" "}
+                </Link>
+                <span>
+                  <AiOutlinePlus className="plus2" onClick={handleDrop3} />
+                </span>
+              </div>
+              <div className="respDrop" ref={dropRef3}>
+                <ul>
+                  {stateHrd.map((x) => (
+                    <li key={x.id}>
+                      <Link
+                        href={x.pathName}
+                        className={pathname === x.pathName ? "active" : ""}
+                        onClick={hideSideBar}
+                      >
+                        {x.menu}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </li>
 
             <li>
@@ -436,6 +500,42 @@ const Menu = () => {
                 MOFA
               </Link>
             </li>
+
+            <li id="respDropList">
+              <div className="respMenuList">
+                {" "}
+                <Link
+                  href="/pcc-verification-in-bangalore"
+                  className={
+                    pathname === "/pcc-verification-in-bangalore"
+                      ? "active"
+                      : ""
+                  }
+                  onClick={hideSideBar}
+                >
+                  PCC
+                </Link>
+                <span>
+                  <AiOutlinePlus className="plus3" onClick={handleDrop4} />
+                </span>
+              </div>
+              <div className="respDrop" ref={dropRef4}>
+                <ul>
+                  {pcc.map((x) => (
+                    <li key={x.id}>
+                      <Link
+                        href={x.pathName}
+                        className={pathname === x.pathName ? "active" : ""}
+                        onClick={hideSideBar}
+                      >
+                        {x.menu}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+
             <li>
               {" "}
               <Link

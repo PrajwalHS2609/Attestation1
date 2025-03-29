@@ -226,6 +226,11 @@
   flex-direction: column;
   outline: none;
 }
+#respDropList {
+  /* border: solid teal; */
+  display: flex;
+  justify-content: space-between;
+}
 .respMenuList {
   /* border: solid red; */
   width: 100%;
