@@ -91,7 +91,7 @@
   gap: 20px;
   padding: 20px;
 }
-.head-container>p:nth-child(odd){
+.head-container > p:nth-child(odd) {
   background-color: var(--customLightColor);
   border-radius: 20px;
   padding: 20px;
@@ -101,7 +101,6 @@
   font-size: 18px;
   text-align: justify;
   padding: 20px;
-
 }
 .head-container > p > a {
   text-decoration: none;
@@ -467,5 +466,81 @@
   .contentImportant-container > ul > li > ul > li > span {
     color: var(--customColor1);
     font-weight: 500;
+  }
+}
+
+/* ----------------------AboutOffice------------------------------------------------------ */
+.aboutUs-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutUs-header > h2 {
+  color: var(--customColor1);
+  font-size: 40px;
+}
+.aboutUs-header > h2 > span {
+  color: var(--customColor2);
+}
+.aboutUs-header > h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 10%;
+  left: 40%;
+}
+.aboutUs-wrapper {
+  /* border: solid blue; */
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.aboutUs-content {
+  /* border: solid green; */
+  width: 300px;
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 0 10px grey;
+  border-radius: 20px;
+}
+.aboutUs-content > b {
+  text-align: center;
+}
+.aboutUs-content > b > span {
+  color: var(--customColor1);
+}
+.aboutUs-content > b > a {
+  color: var(--customColor1);
+  text-decoration: none;
+}
+.aboutUs-icon {
+  font-size: 40px;
+  color: var(--customColor1);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .aboutUs-header > h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .aboutUs-wrapper {
+    /* border: solid blue; */
+    gap: 30px;
   }
 }
