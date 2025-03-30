@@ -2,7 +2,6 @@ import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
-import OfficeAbout from "@/components/OfficeInDelhi/UaeOfficeInDelhi/OfficeUaeAbout";
 import QatarOfficeInDelhiContent from "@/components/OfficeInDelhi/QatarOfficeInDelhi/QatarOfficeInDelhiContent";
 import QatarOfficeInDelhiHead from "@/components/OfficeInDelhi/QatarOfficeInDelhi/QatarOfficeInDelhiHead";
 import qatarOfficeBanner from "@/media/images/Countries_Flag/Qatar.png";

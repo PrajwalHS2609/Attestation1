@@ -5,7 +5,6 @@ import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import KuwaitOfficeInDelhiContent from "@/components/OfficeInDelhi/KuwaitOfficeInDelhi/KuwaitOfficeInDelhiContent";
 import KuwaitOfficeInDelhiHead from "@/components/OfficeInDelhi/KuwaitOfficeInDelhi/KuwaitOfficeInDelhiHead";
 import OfficeKuwaitAbout from "@/components/OfficeInDelhi/KuwaitOfficeInDelhi/OfficeKuwaitAbout";
-import OfficeAbout from "@/components/OfficeInDelhi/UaeOfficeInDelhi/OfficeUaeAbout";
 import kuwaitOfficeBanner from "@/media/images/Countries_Flag/Kuwait.png";
 export const metadata = {
   title:

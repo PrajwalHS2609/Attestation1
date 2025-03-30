@@ -5,7 +5,6 @@ import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import BahrainOfficeInDelhiContent from "@/components/OfficeInDelhi/BahrainOfficeInDelhi/BahrainOfficeInDelhiContent";
 import BahrainOfficeInDelhiHead from "@/components/OfficeInDelhi/BahrainOfficeInDelhi/BahrainOfficeInDelhiHead";
 import OfficeBahrainAbout from "@/components/OfficeInDelhi/BahrainOfficeInDelhi/OfficeBahrainAbout";
-import OfficeAbout from "@/components/OfficeInDelhi/UaeOfficeInDelhi/OfficeUaeAbout";
 import bahrainOfficeBanner from "@/media/images/Countries_Flag/Baharain.png";
 
 export const metadata = {
