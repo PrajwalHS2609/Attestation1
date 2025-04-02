@@ -1,6 +1,9 @@
 import KuwaitAttestationContent from "@/components/AttestationCountries/KuwaitAttestation/KuwaitAttestationContent";
 import KuwaitAttestationHead from "@/components/AttestationCountries/KuwaitAttestation/KuwaitAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import KuwaitFlag from "@/media/images/Countries_Flag/Kuwait.png";
 
 export const metadata = {
@@ -20,6 +23,9 @@ export default function KuwaitAttestation() {
     <div className="main-container">
       <HeaderComponent imageSrc={KuwaitFlag.src} alt="KuwaitFlag" />
       <KuwaitAttestationHead />
+            <HomeService />
+            <HomeCountries />
+            <HomeWhy />
       <KuwaitAttestationContent />
     </div>
   );

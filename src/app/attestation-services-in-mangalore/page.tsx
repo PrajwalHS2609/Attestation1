@@ -1,6 +1,9 @@
 import MangaloreAttestationContent from "@/components/AttestationCities/MangaloreAttestation/MangaloreAttestationContent";
 import MangaloreAttestationHead from "@/components/AttestationCities/MangaloreAttestation/MangaloreAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import attestationBanner from "@/media/images/attestationBanner.png";
 
 export const metadata = {
@@ -23,6 +26,9 @@ export default function MangaloreAttestation() {
         alt="attestation Banner"
       />
       <MangaloreAttestationHead />
+            <HomeService />
+            <HomeCountries />
+            <HomeWhy />
       <MangaloreAttestationContent />
     </div>
   );

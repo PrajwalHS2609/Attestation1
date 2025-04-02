@@ -1,34 +1,34 @@
-import BellaryAttestationContent from "@/components/AttestationCities/BellaryAttestation/BellaryAttestationContent";
-import BellaryAttestationHead from "@/components/AttestationCities/BellaryAttestation/BellaryAttestationHead";
+import WhitefieldAttestationContent from "@/components/AttestationCities/WhitefieldAttestation/WhitefieldAttestationContent";
+import WhitefieldAttestationHead from "@/components/AttestationCities/WhitefieldAttestation/WhitefieldAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import attestationBanner from "@/media/images/attestationBanner.png";
-
 export const metadata = {
-  title: "Attestation services in Bellary | Embassy Attestation in Bellary",
+  title:
+    "Attestation services in Whitefield, Bangalore for All types of Documents",
   description:
-    "Attestation services in Bellary, we cater to a wide range of needs, ensuring that your personal, educational, and commercial documents are verified and meet the required international standards. ",
+    "Attestation Services in Whitefield, Bangalore for all types of such as Birth, Degree, and Marriage & Commercial Documents. Call Now!",
   canonical:
-    "https://foreignembassyattestation.com/attestation-services-in-bellary",
+    "https://foreignembassyattestation.com/attestation-services-in-whitefield",
   keywords: [
     "Attestation, Apostille, Bangalore, Best Price",
     "Birth, Marriage, Degree",
   ],
 };
-export default function BellaryAttestation() {
+export default function WhitefieldAttestation() {
   return (
     <div className="main-container">
       <HeaderComponent
         imageSrc={attestationBanner.src}
         alt="attestation Banner"
       />
-      <BellaryAttestationHead />
+      <WhitefieldAttestationHead />
       <HomeService />
       <HomeCountries />
       <HomeWhy />
-      <BellaryAttestationContent />
+      <WhitefieldAttestationContent />
     </div>
   );
 }

@@ -3,6 +3,9 @@ import HubballiAttestationHead from "@/components/AttestationCities/HubballiAtte
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import attestationBanner from "@/media/images/attestationBanner.png";
 import HubballiAttestationContent from './../../components/AttestationCities/HubballiAttestation/HubballiAttestationContent';
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 
 export const metadata = {
   title:
@@ -24,6 +27,9 @@ export default function HubballiAttestation() {
         alt="attestation Banner"
       />
       <HubballiAttestationHead />
+            <HomeService />
+            <HomeCountries />
+            <HomeWhy />
       <HubballiAttestationContent />
     </div>
   );
