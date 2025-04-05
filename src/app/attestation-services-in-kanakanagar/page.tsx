@@ -1,5 +1,5 @@
-import YelahankaAttestationContent from "@/components/AttestationCities/YelahankaAttestation/YelahankaAttestationContent";
-import YelahankaAttestationHead from "@/components/AttestationCities/YelahankaAttestation/YelahankaAttestationHead";
+import KanakanagarAttestationContent from "@/components/AttestationCities/KanakanagarAttestation/KanakanagarAttestationContent";
+import KanakanagarAttestationHead from "@/components/AttestationCities/KanakanagarAttestation/KanakanagarAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
@@ -8,11 +8,11 @@ import attestationBanner from "@/media/images/attestationBanner.png";
 
 export const metadata = {
     title:
-      "Attestation services in Yelahanka, Bangalore for All types of Documents",
+      "Attestation services in Kanakanagar, Bangalore for All types of Documents",
     description:
-      "Attestation Services in Yelahanka, Bangalore for all types of such as Birth, Degree, and Marriage & Commercial Documents. Call Now!",
+      "Attestation Services in Kanakanagar, Bangalore for all types of such as Birth, Degree, and Marriage & Commercial Documents. Call Now!",
     canonical:
-      "https://foreignembassyattestation.com/attestation-services-in-yelahanka",
+      "https://foreignembassyattestation.com/attestation-services-in-kanakanagar",
     keywords: [
       "Attestation, Apostille, Bangalore, Best Price",
       "Birth, Marriage, Degree",
@@ -26,11 +26,11 @@ export default function KanakanagarAttestation() {
         imageSrc={attestationBanner.src}
         alt="attestation Banner"
       />
-      <YelahankaAttestationHead />
+      <KanakanagarAttestationHead />
       <HomeService />
       <HomeCountries />
       <HomeWhy />
-      <YelahankaAttestationContent />
+      <KanakanagarAttestationContent />
     </div>
   );
 }
