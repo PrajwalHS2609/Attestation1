@@ -1,6 +1,4 @@
 import NagarbhaviAttestationHead from "@/components/AttestationCities/NagarbhaviAttestation/NagarbhaviAttestationHead";
-import WhitefieldAttestationContent from "@/components/AttestationCities/WhitefieldAttestation/WhitefieldAttestationContent";
-import WhitefieldAttestationHead from "@/components/AttestationCities/WhitefieldAttestation/WhitefieldAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";

@@ -1,7 +1,5 @@
 import KadugodiAttestationContent from "@/components/AttestationCities/KadugodiAttestation/KadugodiAttestationContent";
 import KadugodiAttestationHead from "@/components/AttestationCities/KadugodiAttestation/KadugodiAttestationHead";
-import WhitefieldAttestationContent from "@/components/AttestationCities/WhitefieldAttestation/WhitefieldAttestationContent";
-import WhitefieldAttestationHead from "@/components/AttestationCities/WhitefieldAttestation/WhitefieldAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
@@ -19,7 +17,7 @@ export const metadata = {
     "Birth, Marriage, Degree",
   ],
 };
-export default function WhitefieldAttestation() {
+export default function KadugodiAttestation() {
   return (
     <div className="main-container">
       <HeaderComponent
