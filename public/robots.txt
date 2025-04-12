@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap:https://foreignembassyattestation.com/sitemap.xml
+Sitemap: https://foreignembassyattestation.com/sitemap.xml
