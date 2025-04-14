@@ -19,7 +19,7 @@ export const metadata = {
 };
 export default function MandyaAttestation() {
   return (
-    <div className="main-container">,
+    <div className="main-container">
       <HeaderComponent
         imageSrc={attestationBanner.src}
         alt="attestation Banner"

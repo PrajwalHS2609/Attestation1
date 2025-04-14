@@ -19,7 +19,7 @@ export const metadata = {
 export default function WhitefieldAttestation() {
   return (
     <div className="main-container">
-      ,
+      
       <HeaderComponent
         imageSrc={attestationBanner.src}
         alt="attestation Banner"
