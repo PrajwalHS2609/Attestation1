@@ -1,6 +1,9 @@
 import AustriaApostilleContent from "@/components/ApostilleCountries/AustriaApostille/AustriaApostilleContent";
 import AustriaApostilleHead from "@/components/ApostilleCountries/AustriaApostille/AustriaApostilleHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import AustriaFlag from "@/media/images/Countries_Flag/austria.png";
 
 export const metadata = {
@@ -20,6 +23,9 @@ export default function OmanApostille() {
     <div className="main-container">
       <HeaderComponent imageSrc={AustriaFlag.src} alt="Austria Flag" />
       <AustriaApostilleHead />
+            <HomeService />
+            <HomeCountries />
+            <HomeWhy />
       <AustriaApostilleContent />
     </div>
   );

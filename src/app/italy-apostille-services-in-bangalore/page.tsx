@@ -1,6 +1,9 @@
 import ItalyApostilleContent from "@/components/ApostilleCountries/ItalyApostille/ItalyApostilleContent";
 import ItalyApostilleHead from "@/components/ApostilleCountries/ItalyApostille/ItalyApostilleHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import ItalyFlag from "@/media/images/Countries_Flag/Italy.png";
 
 export const metadata = {
@@ -19,6 +22,9 @@ export default function ItalyApostille() {
     <div className="main-container">
       <HeaderComponent imageSrc={ItalyFlag.src} alt="Italy Flag" />
       <ItalyApostilleHead />
+            <HomeService />
+            <HomeCountries />
+            <HomeWhy />
       <ItalyApostilleContent />
     </div>
   );

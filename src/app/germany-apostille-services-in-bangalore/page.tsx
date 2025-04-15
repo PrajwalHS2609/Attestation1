@@ -2,6 +2,9 @@ import GermanyApostilleContent from "@/components/ApostilleCountries/GermanyApos
 import GermanyApostilleHead from "@/components/ApostilleCountries/GermanyApostille/GermanyApostilleHead";
 import GermanyFlag from "@/media/images/Countries_Flag/Germany.png";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 
 export const metadata = {
   title: "Germany Apostille Services in Bangalore | Germany Apostille Near Me",
@@ -19,6 +22,9 @@ export default function OmanApostille() {
     <div className="main-container">
       <HeaderComponent imageSrc={GermanyFlag.src} alt="GermanyFlag" />
       <GermanyApostilleHead />
+            <HomeService />
+            <HomeCountries />
+            <HomeWhy />
       <GermanyApostilleContent />
     </div>
   );

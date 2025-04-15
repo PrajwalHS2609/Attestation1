@@ -2,6 +2,9 @@ import AustraliaApostilleContent from "@/components/ApostilleCountries/Australia
 import AustraliaApostilleHead from "@/components/ApostilleCountries/AustraliaApostille/AustraliaApostilleHead";
 import AustraliaFlag from "@/media/images/Countries_Flag/australia.png";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 
 export const metadata = {
   title:
@@ -20,6 +23,9 @@ export default function AustraliaApostille() {
     <div className="main-container">
       <HeaderComponent imageSrc={AustraliaFlag.src} alt="Australia Flag" />
       <AustraliaApostilleHead />
+            <HomeService />
+            <HomeCountries />
+            <HomeWhy />
       <AustraliaApostilleContent />
     </div>
   );
