@@ -1,6 +1,9 @@
 import LithuaniaApostilleContent from "@/components/ApostilleCountries/LithuaniaApostille/LithuaniaApostilleContent";
 import LithuaniaApostilleHead from "@/components/ApostilleCountries/LithuaniaApostille/LithuaniaApostilleHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import lithuaniaFlag from "@/media/images/Countries_Flag/lithuania.png";
 
 export const metadata = {
@@ -19,6 +22,9 @@ export default function OmanApostille() {
     <div className="main-container">
       <HeaderComponent imageSrc={lithuaniaFlag.src} alt="lithuania Flag" />
       <LithuaniaApostilleHead/>
+            <HomeService />
+            <HomeCountries />
+            <HomeWhy />
       <LithuaniaApostilleContent/>
     </div>
   );

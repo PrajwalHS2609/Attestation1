@@ -1,5 +1,7 @@
-
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import VisaStampingContent from "@/components/VisaStampingPage/VisaStampingContent";
 import VisaStampingHead from "@/components/VisaStampingPage/VisaStampingHead";
 import visaStampingBanner from "@/media/images/visaStampingBanner.png";
@@ -17,8 +19,14 @@ export const metadata = {
 export default function VisaStamping() {
   return (
     <div className="main-container">
-      <HeaderComponent imageSrc={visaStampingBanner.src} alt="visa Stamping Banner" />
+      <HeaderComponent
+        imageSrc={visaStampingBanner.src}
+        alt="visa Stamping Banner"
+      />
       <VisaStampingHead />
+      <HomeService />
+      <HomeCountries />
+      <HomeWhy />
       <VisaStampingContent />
     </div>
   );
