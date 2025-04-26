@@ -1,4 +1,3 @@
-
 import BahrainDegreeAttestationContent from "@/components/DegreeAttestation/BahrainDegreeAttestation/BahrainDegreeAttestationContent";
 import BahrainDegreeAttestationHead from "@/components/DegreeAttestation/BahrainDegreeAttestation/BahrainDegreeAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
