@@ -1,5 +1,4 @@
 import marriageAttestationBanner from "@/media/images/marriageCerti.png";
-import MarriageAttestationHead from "@/components/MarriageCertificateAttestation/MarriageAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import MarriageCertificationHead from "@/components/MarriageCertification/MarriageCertificationHead";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
