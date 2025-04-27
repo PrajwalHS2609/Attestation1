@@ -1,5 +1,5 @@
-import ChannapatnaAttestationContent from "@/components/ChannapatnaAttestation/ChannapatnaAttestationContent";
-import ChannapatnaAttestationHead from "@/components/ChannapatnaAttestation/ChannapatnaAttestationHead";
+import ChannapatnaAttestationContent from "@/components/AttestationCities/ChannapatnaAttestation/ChannapatnaAttestationContent";
+import ChannapatnaAttestationHead from "@/components/AttestationCities/ChannapatnaAttestation/ChannapatnaAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";

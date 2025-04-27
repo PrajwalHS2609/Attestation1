@@ -6,16 +6,24 @@ export default function FooterDocuments() {
       <ul>
         <h4>Documents</h4>
         <li>
-          <Link href="">Birth Certificate</Link>
+          <Link href="birth-certificate-attestation-in-bangalore">
+            Birth Certificate
+          </Link>
         </li>
         <li>
-          <Link href="">Marriage Certificate</Link>
+          <Link href="marriage-certificate-attestation-in-bangalore">
+            Marriage Certificate
+          </Link>
         </li>
         <li>
-          <Link href="">Commercial Documents</Link>
+          <Link href="commercial-certificate-attestation-in-bangalore">
+            Commercial Documents
+          </Link>
         </li>
         <li>
-          <Link href="">Salary Certificate</Link>
+          <Link href="salary-certificate-attestation-in-bangalore">
+            Salary Certificate
+          </Link>
         </li>
         <li>
           <Link href="">Equivalence Certificate</Link>
