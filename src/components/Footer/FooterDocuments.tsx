@@ -6,51 +6,51 @@ export default function FooterDocuments() {
       <ul>
         <h4>Documents</h4>
         <li>
-          <Link href="birth-certificate-attestation-in-bangalore">
+          <Link href="/birth-certificate-attestation-in-bangalore">
             Birth Certificate
           </Link>
         </li>
         <li>
-          <Link href="marriage-certificate-attestation-in-bangalore">
+          <Link href="/marriage-certificate-attestation-in-bangalore">
             Marriage Certificate
           </Link>
         </li>
         <li>
-          <Link href="commercial-certificate-attestation-in-bangalore">
+          <Link href="/commercial-certificate-attestation-in-bangalore">
             Commercial Documents
           </Link>
         </li>
         <li>
-          <Link href="salary-certificate-attestation-in-bangalore">
+          <Link href="/salary-certificate-attestation-in-bangalore">
             Salary Certificate
           </Link>
         </li>
         <li>
-          <Link href="">Equivalence Certificate</Link>
+          <Link href="/equivalence-certificate-attestation-in-bangalore">Equivalence Certificate</Link>
         </li>
         <li>
-          <Link href="">Single Status Certificate</Link>
+          <Link href="/single-status-certificate-attestation-in-bangalore">Single Status Certificate</Link>
         </li>
         <li>
-          <Link href=""> Ministry of education department</Link>
+          <Link href="/ministry-of-education-department-attestation-in-bangalore"> Ministry of education department</Link>
         </li>
         <li>
-          <Link href=""> Foreign Affairs (FA)</Link>
+          <Link href="/foreign-affairs-attestation-in-bangalore"> Foreign Affairs (FA)</Link>
         </li>
         <li>
-          <Link href=""> Transfer Certificate (TC)</Link>
+          <Link href="/transfer-certificate-attestation-in-bangalore"> Transfer Certificate (TC)</Link>
         </li>
         <li>
           <Link href=""> Employment Certificate</Link>
         </li>
         <li>
-          <Link href=""> Medical Certificate</Link>
+          <Link href="/medical-certificate-attestation-in-bangalore"> Medical Certificate</Link>
         </li>
         <li>
-          <Link href=""> Ministry of Health department</Link>
+          <Link href="/ministry-of-health-department-attestation-in-bangalore"> Ministry of Health department</Link>
         </li>
         <li>
-          <Link href=""> Ministry of Justice</Link>
+          <Link href="/ministry-of-justice-attestation-in-bangalore"> Ministry of Justice</Link>
         </li>
         <li>
           <Link href=""> Chamber of Commerce</Link>

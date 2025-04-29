@@ -6,7 +6,7 @@ export default function FooterAttestation() {
       <ul>
         <h4>Attestation</h4>
         <li>
-          <Link href="uae-embassy-attestation-in-bangalore">UAE</Link>
+          <Link href="/uae-embassy-attestation-in-bangalore">UAE</Link>
         </li>
         <li>
           <Link href="qatar-embassy-attestation-in-bangalore">Qatar</Link>
