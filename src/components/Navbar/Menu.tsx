@@ -360,7 +360,12 @@ const Menu = () => {
             href="/contact-us"
             className={pathname === "/contact-us" ? "active" : ""}
           >
-            Contact Us{" "}
+            Contact Us
+          </Link>
+        </li>
+        <li>
+          <Link href="/blog" className={pathname === "/blog" ? "active" : ""}>
+            Blog
           </Link>
         </li>
       </div>
@@ -586,6 +591,16 @@ const Menu = () => {
                 onClick={hideSideBar}
               >
                 Contact Us
+              </Link>
+            </li>
+            <li>
+              {" "}
+              <Link
+                href="/blog"
+                className={pathname === "/blog" ? "active" : ""}
+                onClick={hideSideBar}
+              >
+                Blog
               </Link>
             </li>
             <li className="menuContainerBtn-Container">
