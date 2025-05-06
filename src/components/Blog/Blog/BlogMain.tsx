@@ -2,18 +2,20 @@
 import "@/components/Blog/Blog.css";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import dummyImg from "@/media/images/attestationBanner.png";
+import chooseRightBanner from "@/media/images/Blog/How to Choose the Right Agency for Embassy Attestation Services in Bangalore.png";
+import attestationVsApostille from "@/media/images/Blog/Embassy Attestation vs. Apostille_ What’s the Difference.png";
+
 import Image from "next/image";
 const BlogMain = () => {
   const blogs = [
     {
-      img: dummyImg,
+      img: chooseRightBanner,
       head: "How to Choose the Right Agency for Embassy Attestation Services in Bangalore?",
       para: "When it comes to traveling abroad for education, employment, business, or ...",
       link: "/how-to-choose-the-right-agency-for-embassy-attestation-services-in-bangalore",
     },
     {
-      img: dummyImg,
+      img: attestationVsApostille,
       head: "Embassy Attestation vs. Apostille: What’s the Difference?",
       para: "When it comes to using documents internationally—whether for employment, education, business, or ...",
       link: "/embassy-attestation-vs-apostille-whats-the-difference", 

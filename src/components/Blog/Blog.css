@@ -19,6 +19,17 @@
   width: 70%;
   margin: 0 auto;
 }
+.blog-wrapper1 > h1 {
+  text-align: center;
+  color: var(--customColor1);
+}
+.blog-wrapper1 > h2 {
+  text-align: start;
+}
+.blogHead-content > ul > li > a {
+  text-decoration: none;
+  color: var(--customColor1);
+}
 .blog-wrapper2 {
   /* border: solid red; */
   width: 30%;
@@ -562,7 +573,7 @@
 .blogImg-content {
   /* border: solid red; */
   width: 100%;
-  height: 100%;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -572,7 +583,9 @@
   width: 100%;
 }
 .blogImg-content > img {
-  width: 70%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .blogImg-content {
@@ -713,7 +726,7 @@
   justify-content: flex-start;
   align-items: start;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding: 20px;
   margin: 10px;
   box-shadow: 0 0 10px grey;
@@ -721,7 +734,7 @@
 }
 .blogCardImg {
   /* border: solid red; */
-  height: 300px;
+  height: 200px;
 }
 .blogCardImg > img {
   width: 100%;
@@ -729,17 +742,24 @@
   object-fit: cover;
   border-radius: 10px;
 }
-.BlogCardBut {
+.blogCardBut {
   /* border: solid brown; */
-  width: 100px;
+  width: 100%;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogCardBut > button {
+  height: 40px;
+  width: 100px;
 }
 .blogCardTitle > h2 {
   color: var(--customColor1);
   font-size: 20px;
 }
-.BlogCardBut > button {
-  width: 100%;
+.blogCardBut > button {
+  width: 100px;
   height: 100%;
   padding: 5px;
   font-size: 15px;
@@ -748,7 +768,7 @@
   border: none;
   cursor: pointer;
 }
-.BlogCardBut > button > a {
+.blogCardBut > button > a {
   text-decoration: none;
   color: white;
 }

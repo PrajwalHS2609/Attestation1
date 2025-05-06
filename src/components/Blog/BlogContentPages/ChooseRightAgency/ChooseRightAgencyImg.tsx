@@ -1,11 +1,12 @@
-import React from 'react'
-
+import Image from "next/image";
+import React from "react";
+import chooseRightBanner from "@/media/images/Blog/How to Choose the Right Agency for Embassy Attestation Services in Bangalore.png";
 const ChooseRightAgencyImg = () => {
   return (
     <div className="blogImg-content">
-      <img src={""} alt="Ten Hair Color Banner" loading="lazy" />
+      <Image src={chooseRightBanner} alt="choose Right Banner" />
     </div>
-  )
-}
+  );
+};
 
-export default ChooseRightAgencyImg
+export default ChooseRightAgencyImg;
