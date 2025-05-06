@@ -5,6 +5,7 @@ import Image from "next/image";
 import "@/components/Blog/Blog.css";
 import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
 
+
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
   title,
@@ -19,6 +20,15 @@ const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   }
 }`;
 
+export const metadata = {
+  title: "",
+  description: "",
+  canonical: "https://foreignembassyattestation.com/",
+  keywords: [
+    "Attestation, Apostille, Bangalore, Best Price",
+    "Birth, Marriage, Degree",
+  ],
+};
 
 export default async function PostPage({
   params,

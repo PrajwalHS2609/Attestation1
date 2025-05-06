@@ -43,5 +43,15 @@ export default defineType({
       title: 'Body',
       type: 'blockContent',
     }),
+    defineField({
+      name: 'metaTitle',
+      title: 'Meta Title',
+      type: 'text',
+    }),
+    defineField({
+      name: 'metaDescription',
+      title: 'Meta Description',
+      type: 'text',
+    }),
   ],
 })

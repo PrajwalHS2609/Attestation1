@@ -1,6 +1,6 @@
-import "./Map.css"
-
-export default function Map() {
+import React from "react";
+import "./Map.css";
+const Map = () => {
   return (
     <div className="map-container">
       <iframe
@@ -10,4 +10,6 @@ export default function Map() {
       ></iframe>
     </div>
   );
-}
+};
+
+export default Map;
