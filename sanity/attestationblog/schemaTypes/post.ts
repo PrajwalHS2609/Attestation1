@@ -46,7 +46,7 @@ export default defineType({
     defineField({
       name: 'metaTitle',
       title: 'Meta Title',
-      type: 'text',
+      type: 'string',
     }),
     defineField({
       name: 'metaDescription',

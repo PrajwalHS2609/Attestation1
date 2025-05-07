@@ -1,10 +1,12 @@
 // src/app/[slug]/page.tsx
+
 import { PortableText, type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import Image from "next/image";
 import "@/components/Blog/Blog.css";
 import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
-
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
@@ -12,6 +14,8 @@ const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   slug,
   publishedAt,
   body,
+  metaTitle,
+  metaDescription,
   mainImage {
     asset->{
       _id,
@@ -20,32 +24,41 @@ const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   }
 }`;
 
-export const metadata = {
-  title: "",
-  description: "",
-  canonical: "https://foreignembassyattestation.com/",
-  keywords: [
-    "Attestation, Apostille, Bangalore, Best Price",
-    "Birth, Marriage, Degree",
-  ],
-};
+// ✅ Awaiting params in generateMetadata
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+  const resolvedParams = await params;
+  const slug = resolvedParams.slug;
 
+  const post = await client.fetch(POST_QUERY, { slug });
+
+  if (!post) {
+    return {
+      title: "Post Not Found",
+      description: "The blog post you're looking for doesn't exist.",
+    };
+  }
+
+  return {
+    title: post.metaTitle || "Default Title",
+    description: post.metaDescription || "Default blog description.",
+  };
+}
+
+// ✅ Awaiting params in the main page component
 export default async function PostPage({
   params,
 }: {
-  params: Promise<{ slug: string }>; // Expecting params to be a Promise
+  params: Promise<{ slug: string }>;
 }) {
-  const resolvedParams = await params; // Resolve the Promise to get { slug }
-  const { slug } = resolvedParams;
+  const resolvedParams = await params;
+  const slug = resolvedParams.slug;
 
   const post = await client.fetch<SanityDocument>(POST_QUERY, { slug });
 
   if (!post) {
-    return (
-      <main>
-        <p>Post not found.</p>
-      </main>
-    );
+    notFound();
   }
 
   const postImageUrl = post?.mainImage?.asset?.url || null;
@@ -72,14 +85,14 @@ export default async function PostPage({
           {Array.isArray(post.body) && <PortableText value={post.body} />}
         </div>
       </div>
-     <div className="blog-wrapper2">
-     <BlogSidebar/>
-     </div>
+      <div className="blog-wrapper2">
+        <BlogSidebar />
+      </div>
     </div>
   );
 }
 
-// Optional: Pre-generate paths for static site generation
+// ✅ generateStaticParams remains unchanged
 type SlugType = {
   slug: {
     current: string;
