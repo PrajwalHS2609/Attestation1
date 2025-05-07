@@ -1,53 +1,63 @@
-// src/app/[slug]/page.tsx
-
 import { PortableText, type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import Image from "next/image";
-import "@/components/Blog/Blog.css";
-import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+
+// CSS for both post and service
+import "@/components/Blog/Blog.css";
+import "@/components/Style/style.css";
+
+import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
   title,
   slug,
-  publishedAt,
   body,
   metaTitle,
   metaDescription,
   mainImage {
-    asset->{
-      _id,
-      url
-    }
+    asset->{ _id, url }
   }
 }`;
 
-// ✅ Awaiting params in generateMetadata
+const SERVICE_QUERY = `*[_type == "ServiceCategory" && slug.current == $slug][0]{
+  _id,
+  title,
+  slug,
+  body,
+  metaTitle,
+  metaDescription,
+  mainImage {
+    asset->{ _id, url }
+  }
+}`;
+
+// ✅ keep generateMetadata as you wanted
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
-  const resolvedParams = await params;
-  const slug = resolvedParams.slug;
+  const { slug } = await params;
 
   const post = await client.fetch(POST_QUERY, { slug });
+  const service = !post ? await client.fetch(SERVICE_QUERY, { slug }) : null;
+  const content = post || service;
 
-  if (!post) {
+  if (!content) {
     return {
-      title: "Post Not Found",
-      description: "The blog post you're looking for doesn't exist.",
+      title: "Not Found",
+      description: "The page you're looking for doesn't exist.",
     };
   }
 
   return {
-    title: post.metaTitle || "Default Title",
-    description: post.metaDescription || "Default blog description.",
+    title: content.metaTitle || content.title || "Default Title",
+    description: content.metaDescription || "Default description.",
   };
 }
 
-// ✅ Awaiting params in the main page component
-export default async function PostPage({
+export default async function SlugPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
@@ -56,50 +66,59 @@ export default async function PostPage({
   const slug = resolvedParams.slug;
 
   const post = await client.fetch<SanityDocument>(POST_QUERY, { slug });
+  const service = !post
+    ? await client.fetch<SanityDocument>(SERVICE_QUERY, { slug })
+    : null;
+  const content = post || service;
 
-  if (!post) {
-    notFound();
-  }
+  if (!content) notFound();
 
-  const postImageUrl = post?.mainImage?.asset?.url || null;
+  const imageUrl = content?.mainImage?.asset?.url || null;
+  const isPost = !!post;
 
   return (
-    <div className="blog-container">
-      <div className="blog-wrapper1">
-        <div className="blogImg-content">
-          {postImageUrl ? (
-            <Image
-              src={postImageUrl}
-              alt={post.title || "Post image"}
-              width={550}
-              height={310}
-            />
-          ) : (
-            <p className="image-fallback">Image not available</p>
-          )}
-        </div>
+    <div className={isPost ? "blog-container" : "service-container"}>
+      <div className={isPost ? "blog-wrapper1" : "service-wrapper1"}>
+        {imageUrl ? (
+          <Image
+            src={imageUrl}
+            alt={content.title || "Image"}
+            width={550}
+            height={310}
+          />
+        ) : (
+          <p className="image-fallback">Image not available</p>
+        )}
 
-        <h1 className="blogHead-content">{post.title}</h1>
+        <h1 className={isPost ? "blogHead-content" : "head-container"}>
+          {content.title}
+        </h1>
 
-        <div className="blogHead-content">
-          {Array.isArray(post.body) && <PortableText value={post.body} />}
+        <div className={isPost ? "blogHead-content" : "head-container"}>
+          {Array.isArray(content.body) && <PortableText value={content.body} />}
         </div>
       </div>
-      <div className="blog-wrapper2">
-        <BlogSidebar />
-      </div>
+
+      {isPost && (
+        <div className="blog-wrapper2">
+          <BlogSidebar />
+        </div>
+      )}
     </div>
   );
 }
 
-// ✅ generateStaticParams remains unchanged
-type SlugType = {
-  slug: {
-    current: string;
-  };
-};
+type SlugType = { slug: { current: string } };
 
 export async function generateStaticParams() {
-  const posts = await client.fetch<SlugType[]>(`*[_type == "post"]{ slug }`);
-  return posts.map((post) => ({ slug: post.slug.current }));
+  const postSlugs = await client.fetch<SlugType[]>(
+    `*[_type == "post"]{ slug }`
+  );
+  const serviceSlugs = await client.fetch<SlugType[]>(
+    `*[_type == "ServiceCategory"]{ slug }`
+  );
+
+  return [...postSlugs, ...serviceSlugs].map((item) => ({
+    slug: item.slug.current,
+  }));
 }
