@@ -1,36 +1,45 @@
-import React from "react";
-import "@/components/Blog/Blog.css";
-import chooseRightBanner from "@/media/images/Blog/How to Choose the Right Agency for Embassy Attestation Services in Bangalore.png";
-import attestationVsApostille from "@/media/images/Blog/Embassy Attestation vs. Apostille_ What’s the Difference.png";
 import Link from "next/link";
+import { type SanityDocument } from "next-sanity";
+import { client } from "@/sanity/client";
 import Image from "next/image";
+import "@/components/Blog/Blog.css";
 
-const BlogPost = () => {
-  const blogPost = [
-    {
-      id: 1,
-      img: chooseRightBanner,
-      title:
-        "How to Choose the Right Agency for Embassy Attestation Services in Bangalore?",
-      link: "/how-to-choose-the-right-agency-for-embassy-attestation-services-in-bangalore",
-    },
-    {
-      id: 2,
-      img: attestationVsApostille,
-      title: "Embassy Attestation vs. Apostille: What’s the Difference?",
-      link: "/embassy-attestation-vs-apostille-whats-the-difference",
-    },
-  ];
+const POSTS_QUERY = `*[
+  _type == "post" && defined(slug.current)
+]|order(publishedAt desc)[0...2]{
+  _id,
+  title,
+  slug,
+  description,
+  mainImage{
+    ...,
+    asset->{
+      _id,
+      url
+    }
+  }
+}`;
+export default async function IndexPage() {
+  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {});
+
   return (
     <div className="blogPost-container">
       <ul>
         <h2>Recent Posts</h2>
-        {blogPost.map((x) => (
-          <Link href={x.link} key={x.id}>
+        {posts.map((post) => (
+          <Link href={`/${post.slug.current}`} key={post.id}>
             <ul>
               <li>
-                <Image src={x.img} alt={x.title} />
-                <h4>{x.title}</h4>
+                {post.mainImage?.asset?.url && (
+                  <Image
+                    src={post.mainImage.asset.url}
+                    alt={post.title}
+                    width={550}
+                    height={310}
+                    className="rounded-md object-cover aspect-video"
+                  />
+                )}
+                <h4>{post.title}</h4>
               </li>
             </ul>
           </Link>
@@ -38,6 +47,4 @@ const BlogPost = () => {
       </ul>
     </div>
   );
-};
-
-export default BlogPost;
+}
