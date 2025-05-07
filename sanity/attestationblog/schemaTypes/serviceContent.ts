@@ -28,8 +28,14 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'body',
-      title: 'Body',
+      name: 'body1',
+      title: 'Body1',
+      type: 'blockContent',
+    }),
+    
+    defineField({
+      name: 'body2',
+      title: 'Body2',
       type: 'blockContent',
     }),
     defineField({

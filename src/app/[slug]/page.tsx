@@ -10,6 +10,8 @@ import "@/components/Style/style.css";
 
 import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
 
+import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
   title,
@@ -35,9 +37,11 @@ const SERVICE_QUERY = `*[_type == "ServiceCategory" && slug.current == $slug][0]
 }`;
 
 // ✅ keep generateMetadata as you wanted
-export async function generateMetadata(
-  { params }: { params: Promise<{ slug: string }> }
-): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
   const { slug } = await params;
 
   const post = await client.fetch(POST_QUERY, { slug });
@@ -77,25 +81,47 @@ export default async function SlugPage({
   const isPost = !!post;
 
   return (
-    <div className={isPost ? "blog-container" : "service-container"}>
+    <div className={isPost ? "blog-container" : "main-container"}>
       <div className={isPost ? "blog-wrapper1" : "service-wrapper1"}>
-        {imageUrl ? (
+        {isPost && imageUrl ? (
           <Image
             src={imageUrl}
             alt={content.title || "Image"}
             width={550}
             height={310}
           />
-        ) : (
+        ) : isPost ? (
           <p className="image-fallback">Image not available</p>
-        )}
+        ) : null}
 
+        {/* HeaderComponent for service content */}
+        {!isPost && imageUrl && (
+          <HeaderComponent
+            imageSrc={imageUrl} // Directly pass the image URL here
+            alt={content.title || "Image"}
+          />
+        )}
         <h1 className={isPost ? "blogHead-content" : "head-container"}>
           {content.title}
         </h1>
+        <div className={isPost ? "blogHead-content" : "head-container"}>
+          {/* Render body only for posts */}
+          {isPost && Array.isArray(content.body) && (
+            <PortableText value={content.body} />
+          )}
+        </div>
 
         <div className={isPost ? "blogHead-content" : "head-container"}>
-          {Array.isArray(content.body) && <PortableText value={content.body} />}
+          {/* Render body1 only for service content */}
+          {!isPost && Array.isArray(content.body1) && (
+            <PortableText value={content.body1} />
+          )}
+        </div>
+        <div className={isPost ? "blogHead-content" : "head-container"}>
+          {/* Render body2 only for service content */}
+          {!isPost && Array.isArray(content.body2) && (
+            <PortableText value={content.body2} />
+          )}
         </div>
       </div>
 
