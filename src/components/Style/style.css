@@ -368,9 +368,13 @@
   color: var(--customColor1);
   font-size: 30px;
 }
-.service-wrapper1{
+.service-wrapper1 {
   width: 100%;
-  border: solid;
+  /* border: solid; */
+}
+.service-wrapper1 > h1 {
+  color: var(--customColor1);
+  text-align: center;
 }
 .service-wrapper1 > img {
   width: 100%;
@@ -416,6 +420,10 @@
     padding-bottom: 40px;
   }
   /* -------------------------heading--------------------------- */
+  .service-wrapper1 > h1 {
+    color: var(--customColor1);
+    margin-top: 30px;
+  }
   .head-container > h2::after {
     content: "";
     position: absolute;

@@ -11,6 +11,9 @@ import "@/components/Style/style.css";
 import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
 
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
@@ -28,7 +31,8 @@ const SERVICE_QUERY = `*[_type == "ServiceCategory" && slug.current == $slug][0]
   _id,
   title,
   slug,
-  body,
+  body1,
+  body2,
   metaTitle,
   metaDescription,
   mainImage {
@@ -110,15 +114,18 @@ export default async function SlugPage({
             <PortableText value={content.body} />
           )}
         </div>
-
         <div className={isPost ? "blogHead-content" : "head-container"}>
-          {/* Render body1 only for service content */}
           {!isPost && Array.isArray(content.body1) && (
-            <PortableText value={content.body1} />
+            <>
+              <PortableText value={content.body1} />
+              <HomeService />
+              <HomeCountries />
+              <HomeWhy />
+            </>
           )}
         </div>
+
         <div className={isPost ? "blogHead-content" : "head-container"}>
-          {/* Render body2 only for service content */}
           {!isPost && Array.isArray(content.body2) && (
             <PortableText value={content.body2} />
           )}
