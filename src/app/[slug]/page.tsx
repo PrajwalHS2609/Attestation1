@@ -14,6 +14,7 @@ import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
+import { portableTextComponents } from './../../components/PortableTextComponents';
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
@@ -111,13 +112,19 @@ export default async function SlugPage({
         <div className={isPost ? "blogHead-content" : "head-container"}>
           {/* Render body only for posts */}
           {isPost && Array.isArray(content.body) && (
-            <PortableText value={content.body} />
+            <PortableText
+              value={content.body}
+              components={portableTextComponents}
+            />
           )}
         </div>
         <div className={isPost ? "blogHead-content" : "head-container"}>
           {!isPost && Array.isArray(content.body1) && (
             <>
-              <PortableText value={content.body1} />
+              <PortableText
+                value={content.body}
+                components={portableTextComponents}
+              />
               <HomeService />
               <HomeCountries />
               <HomeWhy />
@@ -127,7 +134,10 @@ export default async function SlugPage({
 
         <div className={isPost ? "blogHead-content" : "head-container"}>
           {!isPost && Array.isArray(content.body2) && (
-            <PortableText value={content.body2} />
+            <PortableText
+              value={content.body}
+              components={portableTextComponents}
+            />
           )}
         </div>
       </div>
