@@ -4,7 +4,7 @@ import { client } from "@/sanity/client";
 import Image from "next/image";
 import "@/components/Blog/Blog.css";
 
-const NEWS_QUERY = `*[_type == "news"] | order(publishedAt desc)[0..3]{
+const NEWS_QUERY = `*[_type == "news"] | order(publishedAt desc)[0...3]{
   _id,
   title,
   slug,
