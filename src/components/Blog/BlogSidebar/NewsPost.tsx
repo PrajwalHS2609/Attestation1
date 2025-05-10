@@ -4,28 +4,24 @@ import { client } from "@/sanity/client";
 import Image from "next/image";
 import "@/components/Blog/Blog.css";
 
-const POSTS_QUERY = `*[
-  _type == "post" && defined(slug.current)
-]|order(publishedAt desc)[0...3]{
+const NEWS_QUERY = `*[_type == "news"] | order(publishedAt desc)[0..3]{
   _id,
   title,
   slug,
+    author,
+  publishedAt,
   description,
-  mainImage{
-    ...,
-    asset->{
-      _id,
-      url
-    }
+  mainImage {
+    asset->{ _id, url }
   }
 }`;
-export default async function IndexPage() {
-  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {});
+export default async function NewsPost() {
+  const posts = await client.fetch<SanityDocument[]>(NEWS_QUERY, {});
 
   return (
     <div className="blogPost-container">
       <ul>
-        <h2>Recent Posts</h2>
+        <h2>Latest News</h2>
         {posts.map((post) => (
           <Link href={`/${post.slug.current}`} key={post.id}>
             <ul>
@@ -39,7 +35,16 @@ export default async function IndexPage() {
                     className="rounded-md object-cover aspect-video"
                   />
                 )}
-                <h4>{post.title}</h4>
+                <div className="blog-news">
+                  <h5>{post.title}</h5>
+                  <p>
+                    {post.author} |{" "}
+                    {new Date(post.publishedAt)
+                      .toLocaleDateString("en-GB")
+                      .replaceAll("/", "-")}
+                    {` ${new Date(post.publishedAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`}
+                  </p>
+                </div>
               </li>
             </ul>
           </Link>
