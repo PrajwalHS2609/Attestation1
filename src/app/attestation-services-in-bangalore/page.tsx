@@ -29,10 +29,10 @@ export default function Attestation() {
       <AttestationHead />
       <AttestationCertificate />
       <AttestationFlag />
-      <AttestationContent />
       <HomeService />
       <HomeCountries />
       <HomeWhy />
+      <AttestationContent />
     </div>
   );
 }

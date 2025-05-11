@@ -1,7 +1,7 @@
-
 import AttestationFeesInBangaloreContent from "@/components/AttestationContent/AttestationFeesInBangalore/AttestationFeesInBangaloreContent";
 import AttestationFeesInBangaloreHead from "@/components/AttestationContent/AttestationFeesInBangalore/AttestationFeesInBangaloreHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
@@ -29,6 +29,7 @@ export default function AttestationFee() {
       <HomeService />
       <HomeCountries />
       <HomeWhy />
+      <HomeBlog />  
       <AttestationFeesInBangaloreContent />
     </div>
   );
