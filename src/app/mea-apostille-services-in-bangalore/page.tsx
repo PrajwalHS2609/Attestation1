@@ -1,5 +1,7 @@
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeNews from "@/components/HomePage/HomeNews/HomeNews";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import MeaCommercialDoc from "@/components/MeaPage/MeaCommercialDoc/MeaCommercialDoc";
@@ -24,10 +26,12 @@ export default function MeaPage() {
       <HeaderComponent imageSrc={meaBanner.src} alt="mea Banner" />
       <MeaProcedure />
       <MeaCommercialDoc />
-      <MeaContent />
       <HomeService />
       <HomeCountries />
       <HomeWhy />
+      <HomeBlog />
+      <HomeNews />
+      <MeaContent />
     </div>
   );
 }

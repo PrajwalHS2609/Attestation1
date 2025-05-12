@@ -62,11 +62,16 @@
   text-align: justify;
 }
 .pccImpCard-icon {
-  border: solid;
+  /* border: solid red; */
   background-color: white;
   padding: 20px;
   font-size: 50px;
   border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--customColor1);
 }
 .pccImpCard-item > span {

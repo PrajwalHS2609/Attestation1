@@ -1,4 +1,6 @@
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
+import HomeNews from "@/components/HomePage/HomeNews/HomeNews";
 import MofaContent from "@/components/MofaPage/MofaContent";
 import MofaCountries from "@/components/MofaPage/MofaCountries/MofaCountries";
 import MofaProcedure from "@/components/MofaPage/MofaProcedure";
@@ -21,6 +23,8 @@ export default function Mofa() {
       <HeaderComponent imageSrc={mofaBanner.src} alt="mofa Banner" />
       <MofaProcedure />
       <MofaCountries />
+      <HomeBlog />
+      <HomeNews />
       <MofaContent />
     </div>
   );

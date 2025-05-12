@@ -1,5 +1,7 @@
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeNews from "@/components/HomePage/HomeNews/HomeNews";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import StateHrdAndhraContent from "@/components/StateHrd/StateHrdAndhra/StateHrdAndhraContent";
 import StateHrdAndhraHead from "@/components/StateHrd/StateHrdAndhra/StateHrdAndhraHead";
@@ -24,6 +26,8 @@ export default function AndhraHrd() {
       <StateHrdAndhraHead />
       <HomeService />
       <HomeCountries />
+      <HomeBlog />
+      <HomeNews />
       <StateHrdAndhraContent />
     </div>
   );

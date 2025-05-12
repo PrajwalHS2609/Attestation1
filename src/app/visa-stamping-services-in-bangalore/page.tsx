@@ -1,5 +1,7 @@
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeNews from "@/components/HomePage/HomeNews/HomeNews";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import VisaStampingContent from "@/components/VisaStampingPage/VisaStampingContent";
@@ -27,6 +29,8 @@ export default function VisaStamping() {
       <HomeService />
       <HomeCountries />
       <HomeWhy />
+      <HomeBlog />
+      <HomeNews />
       <VisaStampingContent />
     </div>
   );

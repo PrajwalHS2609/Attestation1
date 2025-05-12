@@ -4,6 +4,7 @@ import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeGovernment from "@/components/HomePage/HomeGovernment/HomeGovernment";
 import HomeHeader from "@/components/HomePage/HomeHeader/HomeHeader";
+import HomeNews from "@/components/HomePage/HomeNews/HomeNews";
 import HomeSeo from "@/components/HomePage/HomeSeo/HomeSeo";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
@@ -30,6 +31,7 @@ export default function Home() {
         <HomeWhy />
         <CountriesCarousel />
         <HomeBlog/>
+        <HomeNews/>
         <Map />
       </div>
   );

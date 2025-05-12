@@ -1,5 +1,7 @@
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeNews from "@/components/HomePage/HomeNews/HomeNews";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import StateHrdKarnatakaContent from "@/components/StateHrd/StateHrdKarnataka/StateHrdKarnatakaContent";
@@ -30,6 +32,8 @@ export default function KaranatakaStateHrd() {
       <HomeService />
       <HomeCountries />
       <HomeWhy />
+      <HomeBlog />
+      <HomeNews />
       <StateHrdKarnatakaContent />
     </div>
   );

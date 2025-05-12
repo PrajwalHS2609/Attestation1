@@ -1,5 +1,7 @@
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeNews from "@/components/HomePage/HomeNews/HomeNews";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import StateHrdTamilContent from "@/components/StateHrd/StateHrdTamil/StateHrdTamilContent";
@@ -27,6 +29,8 @@ export default function TamilHrd() {
       <HomeService />
       <HomeCountries />
       <HomeWhy />
+      <HomeBlog />
+      <HomeNews />
       <StateHrdTamilContent />
     </div>
   );

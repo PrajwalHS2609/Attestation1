@@ -5,6 +5,7 @@ import ApostilleHead from "@/components/ApostillePage/ApostilleHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeNews from "@/components/HomePage/HomeNews/HomeNews";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import apostilleBanner from "@/media/images/apostilleBanner.png";
@@ -27,11 +28,12 @@ export default function Attestation() {
       <ApostilleHead />
       <ApostilleCertificate />
       <ApostilleFlag />
-      <ApostilleContent />
       <HomeService />
       <HomeCountries />
-      <HomeBlog />
       <HomeWhy />
+      <HomeBlog />
+      <HomeNews />
+      <ApostilleContent />
     </div>
   );
 }
