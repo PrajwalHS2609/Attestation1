@@ -32,7 +32,7 @@ export default defineType({
       title: 'Body1',
       type: 'blockContent',
     }),
-    
+
     defineField({
       name: 'body2',
       title: 'Body2',
@@ -47,6 +47,12 @@ export default defineType({
       name: 'metaDescription',
       title: 'Meta Description',
       type: 'text',
+    }),
+
+    defineField({
+      name: 'youtubeVideoUrl',
+      title: 'YouTube Video URL',
+      type: 'url',
     }),
   ],
 })

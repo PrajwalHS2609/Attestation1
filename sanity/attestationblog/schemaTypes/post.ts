@@ -53,5 +53,10 @@ export default defineType({
       title: 'Meta Description',
       type: 'text',
     }),
+    defineField({
+      name: 'youtubeVideoUrl',
+      title: 'YouTube Video URL',
+      type: 'url',
+    }),
   ],
 })

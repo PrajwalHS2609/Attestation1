@@ -25,7 +25,8 @@ const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   metaDescription,
   mainImage {
     asset->{ _id, url }
-  }
+  },
+  youtubeVideoUrl
 }`;
 
 const SERVICE_QUERY = `*[_type == "ServiceCategory" && slug.current == $slug][0]{
@@ -38,7 +39,8 @@ const SERVICE_QUERY = `*[_type == "ServiceCategory" && slug.current == $slug][0]
   metaDescription,
   mainImage {
     asset->{ _id, url }
-  }
+  },
+    youtubeVideoUrl
 }`;
 
 const NEWS_QUERY = `*[_type == "news" && slug.current == $slug][0]{
@@ -46,7 +48,7 @@ const NEWS_QUERY = `*[_type == "news" && slug.current == $slug][0]{
   title,
   slug,
   body,
-      author,
+  author,
   publishedAt,
   description,
   metaTitle,
@@ -56,7 +58,6 @@ const NEWS_QUERY = `*[_type == "news" && slug.current == $slug][0]{
   }
 }`;
 
-// ✅ keep generateMetadata as you wanted
 export async function generateMetadata({
   params,
 }: {
@@ -84,8 +85,6 @@ export async function generateMetadata({
   };
 }
 
-// -----------------------------------------------------------------------------------------
-
 export default async function SlugPage({
   params,
 }: {
@@ -94,78 +93,51 @@ export default async function SlugPage({
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
 
+  // Fetch post, service, or news based on the slug
   const post = await client.fetch<SanityDocument>(POST_QUERY, { slug });
-
   const service = !post
     ? await client.fetch<SanityDocument>(SERVICE_QUERY, { slug })
     : null;
-
   const news =
     !post && !service
       ? await client.fetch<SanityDocument>(NEWS_QUERY, { slug })
       : null;
 
   const content = post || service || news;
-
-  if (!content) notFound();
+  if (!content) notFound(); // If no content, show not found
 
   const imageUrl = content?.mainImage?.asset?.url || null;
+  const youtubeUrl = content?.youtubeVideoUrl || null; // Get the YouTube URL
+  console.log("YouTube URL: ", youtubeUrl); // Debugging line to check the URL for service content
 
   const isPost = !!post;
   const isService = !!service;
   const isNews = !!news;
-
+  const body = isService
+    ? content?.body1 || content?.body2
+    : content?.body || [];
+  const videoIndex = 2;
   return (
-    <div
-      className={
-        isNews
-          ? "blog-container"
-          : isPost
-            ? "blog-container"
-            : "main-container"
-      }
-    >
-      <div
-        className={
-          isNews
-            ? "blog-wrapper1"
-            : isPost
-              ? "blog-wrapper1"
-              : "service-wrapper1"
-        }
-      >
-        {/* Render image for News */}
-        {isPost && imageUrl && (
+    <div className={isNews || isPost ? "blog-container" : "main-container"}>
+      <div className={isNews || isPost ? "blog-wrapper1" : "service-wrapper1"}>
+        {/* Render image for News or Post */}
+        {(isPost || isNews) && imageUrl && (
           <Image
             src={imageUrl}
-            alt={content.title || "News Image"}
+            alt={content.title || "Content Image"}
             width={550}
             height={310}
           />
         )}
 
-        {isNews && imageUrl && (
-          <Image
-            src={imageUrl}
-            alt={content.title || "News Image"}
-            width={550}
-            height={310}
-          />
-        )}
-        {/* HeaderComponent for Services */}
+        {/* Header Component for Services */}
         {isService && imageUrl && (
           <HeaderComponent imageSrc={imageUrl} alt={content.title || "Image"} />
         )}
 
         {/* Title */}
         <h1
-          className={
-            isNews
-              ? "blogHead-content"
-              : isPost
-                ? "blogHead-content"
-                : "head-container"
-          }
+          className={isNews || isPost ? "blogHead-content" : "head-container"}
         >
           {content.title}
         </h1>
@@ -178,15 +150,74 @@ export default async function SlugPage({
           </b>
         )}
 
+        {/* YouTube Video Embedding */}
+        {/* {youtubeUrl ? (
+          <div className="youtube-container">
+            <iframe
+              width="100%"
+              height="500"
+              src={
+                youtubeUrl.includes("youtu.be")
+                  ? `https://www.youtube.com/embed/${youtubeUrl.split("/").pop()?.split("?")[0]}`
+                  : youtubeUrl.includes("youtube.com/watch?v=")
+                    ? `https://www.youtube.com/embed/${youtubeUrl.split("v=")[1]}`
+                    : ""
+              }
+              title={content.title || "YouTube Video"}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        ) : (
+          <p>Video not available</p>
+        )} */}
+        <div
+          className={isNews || isPost ? "blogHead-content" : "head-container"}
+        >
+          {Array.isArray(body) &&
+            body.map((block, index) => {
+              // Insert video between body blocks (example: after second block)
+              if (index === videoIndex) {
+                return (
+                  <>
+                    <PortableText
+                      value={block}
+                      components={portableTextComponents}
+                    />
+                    {youtubeUrl && (
+                      <div className="youtube-container">
+                        <iframe
+                          width="100%"
+                          height="500"
+                          src={
+                            youtubeUrl.includes("youtu.be")
+                              ? `https://www.youtube.com/embed/${youtubeUrl.split("/").pop()?.split("?")[0]}`
+                              : `https://www.youtube.com/embed/${youtubeUrl.split("v=")[1]}`
+                          }
+                          title={content.title || "YouTube Video"}
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        />
+                      </div>
+                    )}
+                  </>
+                );
+              }
+
+              return (
+                <PortableText
+                  key={index}
+                  value={block}
+                  components={portableTextComponents}
+                />
+              );
+            })}
+        </div>
         {/* Body content (for all types) */}
         <div
-          className={
-            isNews
-              ? "blogHead-content"
-              : isPost
-                ? "blogHead-content"
-                : "head-container"
-          }
+          className={isNews || isPost ? "blogHead-content" : "head-container"}
         >
           {Array.isArray(content.body) && (
             <PortableText
@@ -203,9 +234,27 @@ export default async function SlugPage({
               value={content.body1}
               components={portableTextComponents}
             />
+         
             <HomeService />
             <HomeCountries />
             <HomeWhy />
+               {youtubeUrl && (
+              <div className="youtube-container">
+                <iframe
+                  width="100%"
+                  height="500"
+                  src={
+                    youtubeUrl.includes("youtu.be")
+                      ? `https://www.youtube.com/embed/${youtubeUrl.split("/").pop()?.split("?")[0]}`
+                      : `https://www.youtube.com/embed/${youtubeUrl.split("v=")[1]}`
+                  }
+                  title={content.title || "YouTube Video"}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            )}
           </div>
         )}
 
@@ -220,36 +269,12 @@ export default async function SlugPage({
         )}
       </div>
 
-      {isPost && (
-        <div className="blog-wrapper2">
-          <BlogSidebar />
-        </div>
-      )}
-
-      {/* Sidebar for news posts */}
-      {isNews && (
+      {/* Sidebar for Post and News */}
+      {(isPost || isNews) && (
         <div className="blog-wrapper2">
           <BlogSidebar /> {/* Assuming you have a NewsSidebar component */}
         </div>
       )}
     </div>
   );
-}
-
-type SlugType = { slug: { current: string } };
-
-export async function generateStaticParams() {
-  const postSlugs = await client.fetch<SlugType[]>(
-    `*[_type == "post"]{ slug }`
-  );
-  const serviceSlugs = await client.fetch<SlugType[]>(
-    `*[_type == "ServiceCategory"]{ slug }`
-  );
-  const newsSlugs = await client.fetch<SlugType[]>(
-    `*[_type == "news"]{ slug }`
-  );
-
-  return [...postSlugs, ...serviceSlugs, ...newsSlugs].map((item) => ({
-    slug: item.slug.current,
-  }));
 }
