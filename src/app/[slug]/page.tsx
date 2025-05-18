@@ -1,3 +1,4 @@
+import React from "react";
 import { PortableText, type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import Image from "next/image";
@@ -40,7 +41,7 @@ const SERVICE_QUERY = `*[_type == "ServiceCategory" && slug.current == $slug][0]
   mainImage {
     asset->{ _id, url }
   },
-    youtubeVideoUrl
+  youtubeVideoUrl
 }`;
 
 const NEWS_QUERY = `*[_type == "news" && slug.current == $slug][0]{
@@ -67,8 +68,7 @@ export async function generateMetadata({
 
   const post = await client.fetch(POST_QUERY, { slug });
   const service = !post ? await client.fetch(SERVICE_QUERY, { slug }) : null;
-  const news =
-    !post && !service ? await client.fetch(NEWS_QUERY, { slug }) : null;
+  const news = !post && !service ? await client.fetch(NEWS_QUERY, { slug }) : null;
 
   const content = post || service || news;
 
@@ -108,7 +108,6 @@ export default async function SlugPage({
 
   const imageUrl = content?.mainImage?.asset?.url || null;
   const youtubeUrl = content?.youtubeVideoUrl || null; // Get the YouTube URL
-  console.log("YouTube URL: ", youtubeUrl); // Debugging line to check the URL for service content
 
   const isPost = !!post;
   const isService = !!service;
@@ -117,6 +116,7 @@ export default async function SlugPage({
     ? content?.body1 || content?.body2
     : content?.body || [];
   const videoIndex = 2;
+
   return (
     <div className={isNews || isPost ? "blog-container" : "main-container"}>
       <div className={isNews || isPost ? "blog-wrapper1" : "service-wrapper1"}>
@@ -150,37 +150,14 @@ export default async function SlugPage({
           </b>
         )}
 
-        {/* YouTube Video Embedding */}
-        {/* {youtubeUrl ? (
-          <div className="youtube-container">
-            <iframe
-              width="100%"
-              height="500"
-              src={
-                youtubeUrl.includes("youtu.be")
-                  ? `https://www.youtube.com/embed/${youtubeUrl.split("/").pop()?.split("?")[0]}`
-                  : youtubeUrl.includes("youtube.com/watch?v=")
-                    ? `https://www.youtube.com/embed/${youtubeUrl.split("v=")[1]}`
-                    : ""
-              }
-              title={content.title || "YouTube Video"}
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        ) : (
-          <p>Video not available</p>
-        )} */}
         <div
           className={isNews || isPost ? "blogHead-content" : "head-container"}
         >
           {Array.isArray(body) &&
             body.map((block, index) => {
-              // Insert video between body blocks (example: after second block)
               if (index === videoIndex) {
                 return (
-                  <>
+                  <React.Fragment key={`block-${index}`}>
                     <PortableText
                       value={block}
                       components={portableTextComponents}
@@ -192,8 +169,13 @@ export default async function SlugPage({
                           height="500"
                           src={
                             youtubeUrl.includes("youtu.be")
-                              ? `https://www.youtube.com/embed/${youtubeUrl.split("/").pop()?.split("?")[0]}`
-                              : `https://www.youtube.com/embed/${youtubeUrl.split("v=")[1]}`
+                              ? `https://www.youtube.com/embed/${youtubeUrl
+                                  .split("/")
+                                  .pop()
+                                  ?.split("?")[0]}`
+                              : `https://www.youtube.com/embed/${youtubeUrl.split(
+                                  "v="
+                                )[1]}`
                           }
                           title={content.title || "YouTube Video"}
                           frameBorder="0"
@@ -202,19 +184,20 @@ export default async function SlugPage({
                         />
                       </div>
                     )}
-                  </>
+                  </React.Fragment>
                 );
               }
 
               return (
                 <PortableText
-                  key={index}
+                  key={`block-${index}`}
                   value={block}
                   components={portableTextComponents}
                 />
               );
             })}
         </div>
+
         {/* Body content (for all types) */}
         <div
           className={isNews || isPost ? "blogHead-content" : "head-container"}
@@ -230,10 +213,10 @@ export default async function SlugPage({
         {/* body1 for Services */}
         {isService && Array.isArray(content.body1) && (
           <div className="head-container">
-            <PortableText
+            {/* <PortableText
               value={content.body1}
               components={portableTextComponents}
-            />
+            /> */}
 
             <HomeService />
             <HomeCountries />
@@ -245,8 +228,13 @@ export default async function SlugPage({
                   height="500"
                   src={
                     youtubeUrl.includes("youtu.be")
-                      ? `https://www.youtube.com/embed/${youtubeUrl.split("/").pop()?.split("?")[0]}`
-                      : `https://www.youtube.com/embed/${youtubeUrl.split("v=")[1]}`
+                      ? `https://www.youtube.com/embed/${youtubeUrl
+                          .split("/")
+                          .pop()
+                          ?.split("?")[0]}`
+                      : `https://www.youtube.com/embed/${youtubeUrl.split(
+                          "v="
+                        )[1]}`
                   }
                   title={content.title || "YouTube Video"}
                   frameBorder="0"
@@ -272,7 +260,7 @@ export default async function SlugPage({
       {/* Sidebar for Post and News */}
       {(isPost || isNews) && (
         <div className="blog-wrapper2">
-          <BlogSidebar /> {/* Assuming you have a NewsSidebar component */}
+          <BlogSidebar />
         </div>
       )}
     </div>
