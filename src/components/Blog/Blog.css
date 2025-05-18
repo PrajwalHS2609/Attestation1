@@ -86,7 +86,7 @@
 .blogCategories-container > ul > li {
   border-bottom: solid var(--customColor1) 1px;
   width: 100%;
-  list-style: none;
+  /* list-style: none; */
   margin: 10px;
   display: flex;
   justify-content: flex-start;

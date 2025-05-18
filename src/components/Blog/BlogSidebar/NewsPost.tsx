@@ -36,7 +36,7 @@ export default async function NewsPost() {
                   />
                 )}
                 <div className="blog-news">
-                  <h5>{post.title}</h5>
+                  <h6>{post.title}</h6>
                   <p>
                     {post.author} |{" "}
                     {new Date(post.publishedAt)
