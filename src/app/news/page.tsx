@@ -36,13 +36,12 @@ export default async function IndexPage() {
               )}
             </div>
             <div className="blogCardDate">
-              <b>
-                {post.author} |
+              <p style={{border:"solid"}}>
+                {post.author} |{" "}
                 {new Date(post.publishedAt)
                   .toLocaleDateString("en-GB")
                   .replaceAll("/", "-")}
-                {` ${new Date(post.publishedAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`}
-              </b>
+              </p>
             </div>
             <div className="blogCardTitle">
               <h2>{post.title}</h2>

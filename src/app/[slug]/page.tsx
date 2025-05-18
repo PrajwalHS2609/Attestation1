@@ -234,11 +234,11 @@ export default async function SlugPage({
               value={content.body1}
               components={portableTextComponents}
             />
-         
+
             <HomeService />
             <HomeCountries />
             <HomeWhy />
-               {youtubeUrl && (
+            {youtubeUrl && (
               <div className="youtube-container">
                 <iframe
                   width="100%"

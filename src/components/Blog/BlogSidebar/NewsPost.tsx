@@ -42,7 +42,6 @@ export default async function NewsPost() {
                     {new Date(post.publishedAt)
                       .toLocaleDateString("en-GB")
                       .replaceAll("/", "-")}
-                    {` ${new Date(post.publishedAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`}
                   </p>
                 </div>
               </li>
