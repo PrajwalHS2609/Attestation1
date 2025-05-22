@@ -32,6 +32,9 @@ export default function FooterService() {
         <li>
           <Link href="/visa-stamping-services-in-bangalore">Visa Stamping</Link>
         </li>
+               <li>
+          <Link href="/news">News</Link>
+        </li>
       </ul>
     </div>
   );

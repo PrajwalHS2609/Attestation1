@@ -24,7 +24,7 @@ export default async function IndexPage() {
     <div className="blogMainContainer">
       <div className="blogMainContent">
         {posts.map((post) => (
-          <div className="blogCardContainer" key={post._id}>
+          <div className="newsCardContainer" key={post._id}>
             <div className="blogCardImg">
               {post.mainImage?.asset?.url && (
                 <Image
@@ -36,7 +36,7 @@ export default async function IndexPage() {
               )}
             </div>
             <div className="blogCardDate">
-              <p style={{border:"solid"}}>
+              <p>
                 {post.author} |{" "}
                 {new Date(post.publishedAt)
                   .toLocaleDateString("en-GB")
