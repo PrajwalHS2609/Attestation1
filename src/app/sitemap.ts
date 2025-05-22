@@ -7,9 +7,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
     const paths = await client.fetch(SITEMAP_QUERY);
 
-    const baseUrl = process.env.VERCEL
-      ? `https://${process.env.VERCEL_URL}`
-      : "http://localhost:3000";
+const baseUrl =
+  process.env.VERCEL && process.env.VERCEL_ENV === "production"
+    ? "https://foreignembassyattestation.com"
+    : process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
 
     const dynamicPaths = paths.map((path: { href: string; _updatedAt: string }) => ({
       url: new URL(path.href!, baseUrl).toString(),
