@@ -291,8 +291,9 @@
 }
 .blogHead-content>p>strong{
     color: var(--customColor1);
-
-
+}
+.blogHead-content>p>strong>a{
+    color: var(--customColor1);text-decoration: none;
 }
 .blogHead-content > ul {
   width: 100%;
