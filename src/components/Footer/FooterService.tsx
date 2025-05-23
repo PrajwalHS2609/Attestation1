@@ -35,8 +35,8 @@ export default function FooterService() {
         <li>
           <Link href="/news">News</Link>
         </li>
-        <li>
-          <Link href="/other-services">OtherServices</Link>
+        <li >
+          <Link href="/other-services" style={{color:"#01257d"}}>OtherServices</Link>
         </li>
       </ul>
     </div>
