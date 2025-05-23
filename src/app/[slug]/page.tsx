@@ -5,12 +5,10 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
-// CSS for both post and service
 import "@/components/Blog/Blog.css";
 import "@/components/Style/style.css";
 
 import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
-
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
@@ -68,7 +66,8 @@ export async function generateMetadata({
 
   const post = await client.fetch(POST_QUERY, { slug });
   const service = !post ? await client.fetch(SERVICE_QUERY, { slug }) : null;
-  const news = !post && !service ? await client.fetch(NEWS_QUERY, { slug }) : null;
+  const news =
+    !post && !service ? await client.fetch(NEWS_QUERY, { slug }) : null;
 
   const content = post || service || news;
 
@@ -93,7 +92,6 @@ export default async function SlugPage({
   const resolvedParams = await params;
   const slug = resolvedParams.slug;
 
-  // Fetch post, service, or news based on the slug
   const post = await client.fetch<SanityDocument>(POST_QUERY, { slug });
   const service = !post
     ? await client.fetch<SanityDocument>(SERVICE_QUERY, { slug })
@@ -104,14 +102,15 @@ export default async function SlugPage({
       : null;
 
   const content = post || service || news;
-  if (!content) notFound(); // If no content, show not found
+  if (!content) notFound();
 
   const imageUrl = content?.mainImage?.asset?.url || null;
-  const youtubeUrl = content?.youtubeVideoUrl || null; // Get the YouTube URL
+  const youtubeUrl = content?.youtubeVideoUrl || null;
 
   const isPost = !!post;
   const isService = !!service;
   const isNews = !!news;
+
   const body = isService
     ? content?.body1 || content?.body2
     : content?.body || [];
@@ -120,7 +119,6 @@ export default async function SlugPage({
   return (
     <div className={isNews || isPost ? "blog-container" : "main-container"}>
       <div className={isNews || isPost ? "blog-wrapper1" : "service-wrapper1"}>
-        {/* Render image for News or Post */}
         {(isPost || isNews) && imageUrl && (
           <Image
             src={imageUrl}
@@ -130,19 +128,16 @@ export default async function SlugPage({
           />
         )}
 
-        {/* Header Component for Services */}
         {isService && imageUrl && (
           <HeaderComponent imageSrc={imageUrl} alt={content.title || "Image"} />
         )}
 
-        {/* Title */}
         <h1
           className={isNews || isPost ? "blogHead-content" : "head-container"}
         >
           {content.title}
         </h1>
 
-        {/* Published date for News */}
         {isNews && content.publishedAt && content.author && (
           <b className="published-date">
             Published on: {new Date(content.publishedAt).toLocaleDateString()}{" "}
@@ -150,6 +145,7 @@ export default async function SlugPage({
           </b>
         )}
 
+        {/* Main Body with optional YouTube insert */}
         <div
           className={isNews || isPost ? "blogHead-content" : "head-container"}
         >
@@ -169,13 +165,8 @@ export default async function SlugPage({
                           height="500"
                           src={
                             youtubeUrl.includes("youtu.be")
-                              ? `https://www.youtube.com/embed/${youtubeUrl
-                                  .split("/")
-                                  .pop()
-                                  ?.split("?")[0]}`
-                              : `https://www.youtube.com/embed/${youtubeUrl.split(
-                                  "v="
-                                )[1]}`
+                              ? `https://www.youtube.com/embed/${youtubeUrl.split("/").pop()?.split("?")[0]}`
+                              : `https://www.youtube.com/embed/${youtubeUrl.split("v=")[1]}`
                           }
                           title={content.title || "YouTube Video"}
                           frameBorder="0"
@@ -198,66 +189,44 @@ export default async function SlugPage({
             })}
         </div>
 
-        {/* Body content (for all types) */}
-        <div
-          className={isNews || isPost ? "blogHead-content" : "head-container"}
-        >
-          {Array.isArray(content.body) && (
-            <PortableText
-              value={content.body}
-              components={portableTextComponents}
-            />
-          )}
-        </div>
+        {/* body1 and body2 (optional) for Services only */}
+        {isService && (
+          <>
+            <div className="head-container">
+              <HomeService />
+              <HomeCountries />
+              <HomeWhy />
+              {youtubeUrl && (
+                <div className="youtube-container">
+                  <iframe
+                    width="100%"
+                    height="500"
+                    src={
+                      youtubeUrl.includes("youtu.be")
+                        ? `https://www.youtube.com/embed/${youtubeUrl.split("/").pop()?.split("?")[0]}`
+                        : `https://www.youtube.com/embed/${youtubeUrl.split("v=")[1]}`
+                    }
+                    title={content.title || "YouTube Video"}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              )}
+            </div>
 
-        {/* body1 for Services */}
-        {isService && Array.isArray(content.body1) && (
-          <div className="head-container">
-            {/* <PortableText
-              value={content.body1}
-              components={portableTextComponents}
-            /> */}
-
-            <HomeService />
-            <HomeCountries />
-            <HomeWhy />
-            {youtubeUrl && (
-              <div className="youtube-container">
-                <iframe
-                  width="100%"
-                  height="500"
-                  src={
-                    youtubeUrl.includes("youtu.be")
-                      ? `https://www.youtube.com/embed/${youtubeUrl
-                          .split("/")
-                          .pop()
-                          ?.split("?")[0]}`
-                      : `https://www.youtube.com/embed/${youtubeUrl.split(
-                          "v="
-                        )[1]}`
-                  }
-                  title={content.title || "YouTube Video"}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+            {Array.isArray(content.body2) && (
+              <div className="head-container">
+                <PortableText
+                  value={content.body2}
+                  components={portableTextComponents}
                 />
               </div>
             )}
-          </div>
-        )}
-
-        {/* body2 for Services */}
-        {isService && Array.isArray(content.body2) && (
-          <div className="head-container">
-            <PortableText
-              value={content.body2}
-              components={portableTextComponents}
-            />
-          </div>
+          </>
         )}
       </div>
 
-      {/* Sidebar for Post and News */}
       {(isPost || isNews) && (
         <div className="blog-wrapper2">
           <BlogSidebar />
