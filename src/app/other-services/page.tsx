@@ -1,14 +1,7 @@
 import { client } from "@/sanity/client";
 import Link from "next/link";
 import "@/components/Style/style.css";
-
-type Service = {
-  _id: string;
-  title: string;
-  slug: {
-    current: string;
-  };
-};
+import { SanityDocument } from "next-sanity";
 
 const SERVICE_QUERY = `*[_type == "ServiceCategory"] |order(publishedAt desc)[0...100]{
   _id,
@@ -17,7 +10,7 @@ const SERVICE_QUERY = `*[_type == "ServiceCategory"] |order(publishedAt desc)[0.
 }`;
 
 export default async function OtherServices() {
-  const services = await client.fetch<Service[]>(SERVICE_QUERY);
+  const services = await client.fetch<SanityDocument[]>(SERVICE_QUERY);
 
   return (
     <div className="head-container">
