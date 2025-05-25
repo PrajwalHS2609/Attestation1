@@ -10,7 +10,7 @@ type Service = {
   };
 };
 
-const SERVICE_QUERY = `*[_type == "ServiceCategory"][0...100]{
+const SERVICE_QUERY = `*[_type == "ServiceCategory"] |order(publishedAt desc)[0...100]{
   _id,
   title,
   slug,
