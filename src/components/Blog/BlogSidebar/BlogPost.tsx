@@ -27,7 +27,7 @@ export default async function IndexPage() {
       <ul>
         <h2>Recent Posts</h2>
         {posts.map((post) => (
-          <Link href={`/${post.slug.current}`} key={post.id}>
+          <Link href={`/${post.slug.current}`} key={post._id}>
             <ul>
               <li>
                 {post.mainImage?.asset?.url && (

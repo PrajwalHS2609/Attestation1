@@ -3,6 +3,9 @@ import Link from "next/link";
 import "@/components/Style/style.css";
 import { SanityDocument } from "next-sanity";
 
+// 🔥 Force dynamic rendering on every request (not cached)
+export const dynamic = "force-dynamic";
+
 const SERVICE_QUERY = `*[_type == "ServiceCategory"] |order(publishedAt desc)[0...100]{
   _id,
   title,
@@ -10,7 +13,9 @@ const SERVICE_QUERY = `*[_type == "ServiceCategory"] |order(publishedAt desc)[0.
 }`;
 
 export default async function OtherServices() {
-  const services = await client.fetch<SanityDocument[]>(SERVICE_QUERY);
+  const services = await client.fetch<SanityDocument[]>(SERVICE_QUERY, {}, {
+    cache: "no-store", // also tells Next.js not to cache the fetch
+  });
 
   return (
     <div className="head-container">
