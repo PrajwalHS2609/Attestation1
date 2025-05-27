@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const POSTS_QUERY = `*[
     _type == "post" && defined(slug.current)
-  ]|order(publishedAt desc)[0...3]{
+  ]|order(publishedAt asc)[0...3]{
     _id,
     title,
     slug,
