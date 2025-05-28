@@ -128,7 +128,7 @@ const Menu = () => {
     },
     {
       id: "2",
-      pathName: "/commercial-documents-appostille-in-bangalore",
+      pathName: "/commercial-documents-apostille-in-bangalore",
       menu: "Non-Education Certificate",
     },
   ];
