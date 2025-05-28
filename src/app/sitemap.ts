@@ -194,7 +194,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       "/uae-embassy-attestation-for-commercial-documents-in-bangalore",
     ].map((path) => ({
       url: new URL(path, baseUrl).toString(),
-      lastModified: new Date("2024-12-31"),
+      lastModified: new Date(),
       changeFrequency: "weekly" as ChangeFrequency,
       priority: 0.8,
     }));
