@@ -192,7 +192,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       "/uae-embassy-attestation-for-birth-certificates-in-bangalore",
       "/uae-embassy-attestation-for-marriage-certificates-in-bangalore",
       "/uae-embassy-attestation-for-commercial-documents-in-bangalore",
-      "/other-services"
     ].map((path) => ({
       url: new URL(path, baseUrl).toString(),
       lastModified: new Date(),
