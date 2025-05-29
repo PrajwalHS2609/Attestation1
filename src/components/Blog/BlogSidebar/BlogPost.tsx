@@ -6,7 +6,7 @@ import "@/components/Blog/Blog.css";
 
 const POSTS_QUERY = `*[
   _type == "post" && defined(slug.current)
-]|order(publishedAt asc)[0...2]{
+]|order(publishedAt desc)[0...2]{
   _id,
   title,
   slug,
