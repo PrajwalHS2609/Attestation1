@@ -18,7 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     const baseUrl =
       process.env.VERCEL && process.env.VERCEL_ENV === "production"
-        ? "https://petclinics.co.in"
+        ? "https://foreignembassyattestation.com/"
         : process.env.VERCEL_URL
           ? `https://${process.env.VERCEL_URL}`
           : "http://localhost:3000";
