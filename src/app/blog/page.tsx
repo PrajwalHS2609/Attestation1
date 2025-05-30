@@ -4,21 +4,24 @@ import { client } from "@/sanity/client";
 import Image from "next/image";
 import "@/components/Blog/Blog.css";
 
+// Rebuild the page every 60 seconds to get fresh data from Sanity
+export const revalidate = 60;
+
 const POSTS_QUERY = `*[
-    _type == "post" && defined(slug.current)
-  ]|order(publishedAt desc)[0...100]{
-    _id,
-    title,
-    slug,
-    description,
-    mainImage{
-      ...,
-      asset->{
-        _id,
-        url
-      }
+  _type == "post" && defined(slug.current)
+]|order(publishedAt desc)[0...100]{
+  _id,
+  title,
+  slug,
+  description,
+  mainImage{
+    ...,
+    asset->{
+      _id,
+      url
     }
-  }`;
+  }
+}`;
 
 export default async function IndexPage() {
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {});
