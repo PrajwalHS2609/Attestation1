@@ -1,4 +1,3 @@
-import React from 'react'
 import "@/components/Style/style.css";
 import "@/components/Blog/Blog.css";
 import { type SanityDocument } from "next-sanity";
