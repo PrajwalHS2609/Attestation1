@@ -6,7 +6,6 @@ import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import StateHrdTamilContent from "@/components/StateHrd/StateHrdTamil/StateHrdTamilContent";
 import StateHrdTamilHead from "@/components/StateHrd/StateHrdTamil/StateHrdTamilHead";
-
 import tamilHrdBanner from "@/media/images/Hrd/TamilNaduHrd.png";
 
 export const metadata = {
@@ -22,7 +21,7 @@ export const metadata = {
   ],
 };
 
-export default function TamilNaduHrd() {
+export default function TamilHrd() {
   return (
     <div className="main-container">
       <HeaderComponent imageSrc={tamilHrdBanner.src} alt="Tamil Hrd Banner" />

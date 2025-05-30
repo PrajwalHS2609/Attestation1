@@ -8,10 +8,9 @@ import Link from 'next/link';
 
 export const revalidate = 0;
 
-
 const POSTS_QUERY = `*[
     _type == "post" && defined(slug.current)
-  ]|order(publishedAt des c)[0...3]{
+  ]|order(publishedAt desc)[0...3]{
     _id,
     title,
     slug,
