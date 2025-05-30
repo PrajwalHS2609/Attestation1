@@ -4,8 +4,7 @@ import { client } from "@/sanity/client";
 import Image from "next/image";
 import "@/components/Blog/Blog.css";
 
-// Rebuild the page every 60 seconds to get fresh data from Sanity
-export const revalidate = 60;
+export const revalidate = 0;
 
 const POSTS_QUERY = `*[
   _type == "post" && defined(slug.current)
