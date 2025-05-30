@@ -6,9 +6,12 @@ import { client } from "@/sanity/client";
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const revalidate = 0;
+
+
 const POSTS_QUERY = `*[
     _type == "post" && defined(slug.current)
-  ]|order(publishedAt desc)[0...3]{
+  ]|order(publishedAt des c)[0...3]{
     _id,
     title,
     slug,
