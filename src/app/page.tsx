@@ -19,20 +19,23 @@ export const metadata = {
     "Birth, Marriage, Degree",
   ],
 };
+
+export const revalidate = 0;
+
 export default function Home() {
   return (
-      <div className="main-container">
-        <HomeHeader />
-        <HomeService />
-        <HomeGovernment />
-        <HomeCountries />
-        <HomeAboutUs />
-        <HomeSeo />
-        <HomeWhy />
-        <CountriesCarousel />
-        <HomeBlog/>
-        <HomeNews/>
-        <Map />
-      </div>
+    <div className="main-container">
+      <HomeHeader />
+      <HomeService />
+      <HomeGovernment />
+      <HomeCountries />
+      <HomeAboutUs />
+      <HomeSeo />
+      <HomeWhy />
+      <CountriesCarousel />
+      <HomeBlog />
+      <HomeNews />
+      <Map />
+    </div>
   );
 }
