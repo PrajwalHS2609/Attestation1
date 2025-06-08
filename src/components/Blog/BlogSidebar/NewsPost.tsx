@@ -4,6 +4,9 @@ import { client } from "@/sanity/client";
 import Image from "next/image";
 import "@/components/Blog/Blog.css";
 
+export const revalidate = 0;
+
+
 const NEWS_QUERY = `*[_type == "news"] | order(publishedAt desc)[0...3]{
   _id,
   title,

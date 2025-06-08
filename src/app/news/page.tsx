@@ -3,6 +3,7 @@ import { client } from "@/sanity/client";
 import Image from "next/image";
 import "@/components/Blog/Blog.css";
 import Link from "next/link";
+export const revalidate = 0;
 
 // ✅ Use this query to fetch all posts (no slug param needed)
 const NEWS_QUERY = `*[_type == "news"] | order(publishedAt desc){

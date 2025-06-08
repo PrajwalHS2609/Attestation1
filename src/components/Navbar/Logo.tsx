@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/media/images/attestation1Logo.png";
+import logo from "@/media/images/Attestation Logo.png";
 import Link from "next/link";
 import "./Navbar.css"
 export default function Logo() {
