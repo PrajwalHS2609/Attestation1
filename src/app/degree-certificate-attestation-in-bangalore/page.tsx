@@ -1,5 +1,9 @@
+import DegreeAttestationCertificateContent from "@/components/DegreeAttestationCertificate/DegreeAttestationCertificateContent";
 import DegreeAttestationHead from "@/components/DegreeAttestationCertificate/DegreeAttestationHead";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
+import HomeService from "@/components/HomePage/HomeService/HomeService";
+import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import degreeBanner from "@/media/images/degreeCertificate.png";
 
 export const metadata = {
@@ -19,6 +23,10 @@ export default function DegreeCertificateAttestation() {
     <div className="main-container">
       <HeaderComponent imageSrc={degreeBanner.src} alt="degree Banner" />
       <DegreeAttestationHead />
+            <HomeService />
+            <HomeCountries />
+            <HomeWhy />
+      <DegreeAttestationCertificateContent />
     </div>
   );
 }
