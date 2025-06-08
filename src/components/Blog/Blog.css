@@ -900,7 +900,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 20px;
+    padding: 0px;
   }
   .blogMainDisplayContent {
     /* border: solid blue; */
@@ -911,7 +911,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
