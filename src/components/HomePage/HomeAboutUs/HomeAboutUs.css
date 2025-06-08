@@ -33,7 +33,7 @@
 .homeAboutUsMain-content {
   /* border: solid green; */
   width: 50%;
-  height: 800px;
+  height: 860px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -42,7 +42,7 @@
 }
 .homeAboutUsMain-content > img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .homeAboutUsMain-content > p {
   font-size: 20px;

@@ -14,29 +14,30 @@ export default function HomeAboutUsMain() {
     <div className="homeAboutUsMain-container">
       <div className="homeAboutUsMain-content">
         <p>
-          At Service Attestation1, we take pride in being a trusted leader in
-          certificate attestation and apostille services. With over 15 years of
-          expertise and a dedicated team of professionals, we have built a
-          strong reputation for delivering fast, efficient, and reliable
-          solutions.
+          Foreign Embassy Attestation is proud to be India’s most trusted name
+          in certificate attestation and apostille services in Bangalore. With
+          over 15 years of experience, the company has helped thousands of
+          Indian students, professionals, and families complete their document
+          attestation quickly and securely for international use.
         </p>
         <p>
-          As a REGISTERED and ISO 9001:2015 certified company, we are officially
-          recognized by the Government and multiple embassies. Our
-          specialization includes attesting, authenticating, and legalizing
-          various documents, covering both educational and non-educational
-          certificates, such as marriage certificates, birth certificates,
-          affidavits, and more.
+          As a Government-registered and ISO 9001:2015 certified organization,
+          officially recognized by various embassies and consulates, Foreign
+          Embassy Attestation handles a wide range of document types, including
+          educational, personal, and commercial certificates such as degree
+          certificates, birth and marriage certificates, affidavits, and more.
         </p>
         <p>
-          What makes us stand out? We provide 100% genuine attestation on all
-          documents, ensuring authenticity and accuracy. Plus, our competitive
-          pricing makes us the best choice in the industry.
+          With a strong commitment to providing 100% genuine attestation,
+          transparent and affordable pricing, reliable doorstep pickup and
+          delivery, and fast turnaround with regular updates, they ensure a
+          seamless and trustworthy experience.
         </p>
         <p>
-          Trust Service Attestation1 for a seamless and hassle-free attestation
-          experience. Let us handle the paperwork, so you can focus on what
-          truly matters!
+          From Delhi to Dubai and Mumbai to Muscat, the team at Foreign Embassy
+          Attestation guarantees global acceptance of your authenticated
+          documents. Trust them for a smooth, secure, and stress-free
+          attestation process so you can focus on your journey ahead.
         </p>
         <div className="homeAboutUsMain-itemWrapper">
           {aboutUs.map((x) => (
