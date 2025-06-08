@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./Footer.css";
-import Logo from "@/media/images/attestation1Logo.png";
+import Logo from "@/media/images/Attestation Logo.png";
 import { MdLocationPin } from "react-icons/md";
 import { MdPhoneInTalk } from "react-icons/md";
 import { FaEnvelopeOpenText } from "react-icons/fa6";
