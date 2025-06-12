@@ -363,11 +363,11 @@ const Menu = () => {
             Contact Us
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/blog" className={pathname === "/blog" ? "active" : ""}>
             Blog
           </Link>
-        </li>
+        </li> */}
       </div>
       {/* -----------------------respMenu------------------------------- */}
       <div className="menu-content2">

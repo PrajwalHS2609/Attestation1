@@ -139,6 +139,11 @@
   width: 50%;
   right: -20px;
 }
+.blogHead-content > h4 {
+  text-align: start;
+  color: var(--customColor1);
+  width: 100%;
+}
 .head-container > h3 {
   color: var(--customColor1);
   text-align: start;
