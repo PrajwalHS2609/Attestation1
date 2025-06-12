@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import TopBar from "@/components/TopBar/Topbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Script from "next/script";
+import PopupAd from "./../components/PopupAd/PopupAd";
 
 export default function RootLayout({
   children,
@@ -70,6 +71,8 @@ export default function RootLayout({
         </Script>
       </head>
       <body>
+        <PopupAd />
+
         <TopBar />
         <Navbar />
         <main className="main-container"> {children}</main>
