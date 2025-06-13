@@ -8,13 +8,13 @@ const BlogCategories = () => {
       <ul>
         <h2>Categories</h2>
         <li>
-          <Link href={"/blog"}>All</Link>
+          <Link href={"/category/blog"}>All</Link>
         </li>
         <li>
-          <Link href={"/blog"}>Attestation</Link>
+          <Link href={"/category/attestation"}>Attestation</Link>
         </li>
         <li>
-          <Link href={"/blog"}>Apostille</Link>
+          <Link href={"/category/apostille"}>Apostille</Link>
         </li>
       </ul>
     </div>

@@ -58,5 +58,14 @@ export default defineType({
       title: 'YouTube Video URL',
       type: 'url',
     }),
+    defineField({
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'blogCategory'}]}],
+      options: {
+        layout: 'tags', // Shows them as tags in Studio
+      },
+    }),
   ],
 })
