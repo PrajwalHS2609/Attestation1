@@ -52,7 +52,7 @@
 .menu-content1 > li {
   position: relative;
   list-style: none;
-  border: solid teal;
+  /* border: solid teal; */
   height: 100%;
   width: 110px;
   display: flex;
