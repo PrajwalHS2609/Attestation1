@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import "@/components/Blog/Blog.css";
-import { client } from "@/sanity/client";
-import { SanityDocument } from "next-sanity";
+  import { client } from "@/sanity/client";
+  import { SanityDocument } from "next-sanity";
 
 const CATEGORY_QUERY = `*[_type == "blogCategory"] | order(title asc){
   _id,

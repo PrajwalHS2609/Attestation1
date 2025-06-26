@@ -129,7 +129,7 @@ const Menu = () => {
     {
       id: "2",
       pathName: "/commercial-documents-apostille-in-bangalore",
-      menu: "Non-Education Certificate",
+      menu: "Commercial Certificate",
     },
   ];
   const attestationMenu = [
@@ -141,7 +141,17 @@ const Menu = () => {
     {
       id: "2",
       pathName: "/commercial-documents-attestation-in-bangalore",
-      menu: "Non-Education Certificate",
+      menu: "Commercial Certificate",
+    },
+    {
+      id: "3",
+      pathName: "/marriage-certificate-attestation-in-bangalore",
+      menu: "Marriage Certificate",
+    },
+    {
+      id: "4",
+      pathName: "/birth-certificate-attestation-in-bangalore",
+      menu: "Birth Certificate",
     },
   ];
   const stateHrd = [
