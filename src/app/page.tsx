@@ -10,6 +10,7 @@ import HomeSeo from "@/components/HomePage/HomeSeo/HomeSeo";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import Map from "@/components/HomePage/Map/Map";
+import FaqComponent from "@/components/Faq/Faq";
 export const metadata = {
   title: "Attestation & Apostille Services in Bangalore",
   description:
@@ -33,6 +34,7 @@ export default function Home() {
       <HomeAboutUs />
       <HomeSeo />
       <HomeWhy />
+      <FaqComponent />
       <CountriesCarousel />
       <HomeBlog />
       <HomeNews />

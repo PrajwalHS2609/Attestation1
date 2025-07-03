@@ -1,3 +1,4 @@
+import FaqComponent from "@/components/Faq/Faq";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
@@ -30,6 +31,7 @@ export default function Pcc() {
       <HomeService />
       <HomeCountries />
       <HomeWhy />
+      <FaqComponent />
       <HomeBlog />
       <HomeNews />
       <PccContent />

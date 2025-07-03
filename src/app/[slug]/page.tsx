@@ -15,6 +15,9 @@ import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import { portableTextComponents } from "./../../components/PortableTextComponents";
 
+export const revalidate = 0;
+
+
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
   title,

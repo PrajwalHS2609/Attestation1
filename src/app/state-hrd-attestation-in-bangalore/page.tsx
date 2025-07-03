@@ -11,6 +11,7 @@ import stateHrd from "@/media/images/stateHrdBanner.png";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeNews from "@/components/HomePage/HomeNews/HomeNews";
+import FaqComponent from "@/components/Faq/Faq";
 
 export const metadata = {
   title: "State HRD & Home Department Attestation in Bangalore",
@@ -35,6 +36,7 @@ export default function StateHrd() {
       <HomeService />
       <HomeCountries />
       <HomeWhy />
+      <FaqComponent />
       <HomeBlog />
       <HomeNews />
       <StateHrdContent />

@@ -2,6 +2,7 @@ import ApostilleCertificate from "@/components/ApostillePage/ApostilleCertificat
 import ApostilleContent from "@/components/ApostillePage/ApostilleContent";
 import ApostilleFlag from "@/components/ApostillePage/ApostilleFlags/ApostilleFlags";
 import ApostilleHead from "@/components/ApostillePage/ApostilleHead";
+import FaqComponent from "@/components/Faq/Faq";
 import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
@@ -31,6 +32,7 @@ export default function Attestation() {
       <HomeService />
       <HomeCountries />
       <HomeWhy />
+      <FaqComponent />
       <HomeBlog />
       <HomeNews />
       <ApostilleContent />
