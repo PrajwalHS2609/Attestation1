@@ -616,7 +616,7 @@
 .slugContent-container > h1 > span {
   color: var(--customColor2);
 }
-.slugContent-container > h1::after {
+/* .slugContent-container > h1::after {
   content: "";
   position: absolute;
   display: flex;
@@ -625,7 +625,7 @@
   border: 2px solid var(--customColor2);
   width: 50%;
   left: 20%;
-}
+} */
 .slugContent-container > h2 {
   position: relative;
   color: var(--customColor1);
@@ -674,4 +674,12 @@
 .headList-icon {
   color: var(--customColor1);
   font-size: 30px;
+}
+@media screen and (min-width: 320px) and (max-width: 990px) {
+.slugContent-wrapper {
+  padding: 10px;
+}
+.slugContent-container {
+padding: 10px;
+}
 }
