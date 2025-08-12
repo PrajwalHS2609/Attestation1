@@ -17,7 +17,6 @@ import { portableTextComponents } from "./../../components/PortableTextComponent
 
 export const revalidate = 0;
 
-
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
   title,
@@ -217,13 +216,14 @@ export default async function SlugPage({
                 </div>
               )}
             </div>
-
             {Array.isArray(content.body2) && (
-              <div className="head-container">
-                <PortableText
-                  value={content.body2}
-                  components={portableTextComponents}
-                />
+              <div className="slugContent-wrapper">
+                <div className="slugContent-container">
+                  <PortableText
+                    value={content.body2}
+                    components={portableTextComponents}
+                  />
+                </div>
               </div>
             )}
           </>

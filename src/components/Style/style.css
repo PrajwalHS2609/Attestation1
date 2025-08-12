@@ -578,3 +578,100 @@
     gap: 30px;
   }
 }
+
+/* ------------------------------slugContent---------------------------------------- */
+.slugContent-wrapper {
+  padding: 20px;
+}
+.slugContent-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 0 0 5px var(--customColor1);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.slugContent-container > p {
+  font-size: 18px;
+  text-align: start;
+  width: 100%;
+}
+.slugContent-container > p > strong {
+  color: var(--customColor1);
+}
+.slugContent-container > p > a {
+  text-decoration: none;
+  color: var(--customColor1);
+}
+.slugContent-container > h1 {
+  position: relative;
+  color: var(--customColor1);
+  text-align: center;
+}
+.slugContent-container > h1 > span {
+  color: var(--customColor2);
+}
+.slugContent-container > h1::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  left: 20%;
+}
+.slugContent-container > h2 {
+  position: relative;
+  color: var(--customColor1);
+  text-align: center;
+}
+.slugContent-container > h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  right: -20px;
+}
+.slugContent-container > h4 {
+  text-align: start;
+  color: var(--customColor1);
+  width: 100%;
+}
+.slugContent-container > strong {
+  text-align: start;
+  color: var(--customColor1);
+  width: 100%;
+}
+.slugContent-container > h3 {
+  color: var(--customColor1);
+  text-align: start;
+  width: 100%;
+}
+.slugContent-container > ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.slugContent-container > ul > li {
+  margin: 20px;
+  font-size: 18px;
+  text-align: start;
+  width: fit-content;
+}
+.slugContent-container > ul > li > strong {
+  color: var(--customColor1);
+  text-align: start;
+}
+.headList-icon {
+  color: var(--customColor1);
+  font-size: 30px;
+}
