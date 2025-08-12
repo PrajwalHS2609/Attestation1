@@ -606,6 +606,7 @@
 }
 .slugContent-container > p > a {
   text-decoration: none;
+  font-weight: 500;
   color: var(--customColor1);
 }
 .slugContent-container > h1 {
