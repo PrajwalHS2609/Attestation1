@@ -36,6 +36,13 @@ const SERVICE_QUERY = `*[_type == "ServiceCategory" && slug.current == $slug][0]
   slug,
   body1,
   body2,
+    customTable {
+    title,
+    headers,
+    rows[] {
+      cells
+    }
+  },
   metaTitle,
   metaDescription,
   mainImage {
@@ -57,6 +64,7 @@ const NEWS_QUERY = `*[_type == "news" && slug.current == $slug][0]{
   mainImage {
     asset->{ _id, url }
   }
+    
 }`;
 
 export async function generateMetadata({
@@ -223,6 +231,35 @@ export default async function SlugPage({
                     value={content.body2}
                     components={portableTextComponents}
                   />
+                  {content.customTable && (
+                    <div className="custom-table">
+                      {content.customTable.title && (
+                        <h3>{content.customTable.title}</h3>
+                      )}
+                      <table>
+                        <thead>
+                          <tr>
+                            {content.customTable.headers?.map(
+                              (header: string, idx: number) => (
+                                <th key={idx}>{header}</th>
+                              )
+                            )}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {content.customTable.rows?.map(
+                            (row: { cells: string[] }, rowIndex: number) => (
+                              <tr key={rowIndex}>
+                                {row.cells.map((cell, cellIndex) => (
+                                  <td key={cellIndex}>{cell}</td>
+                                ))}
+                              </tr>
+                            )
+                          )}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
                 </div>
               </div>
             )}

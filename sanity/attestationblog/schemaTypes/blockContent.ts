@@ -63,5 +63,9 @@ export default defineType({
       type: 'image',
       options: {hotspot: true},
     }),
+    // ✅ Add table support here
+    defineArrayMember({
+      type: 'customTable', // <-- matches the name in table.ts
+    }),
   ],
 })
