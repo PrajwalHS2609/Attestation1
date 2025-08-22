@@ -31,8 +31,8 @@ export default function FooterContact() {
           <MdPhoneInTalk className="footerContact-icon" />
         </div>
         <div className="footerContact-item">
-          <a href="tel:1234567890">+91 1234567890</a>
-          <a href="tel:9876543210">+91 9876543210</a>
+          <a href="tel:6360226773">+91 6360226773</a>
+          <a href="tel:6360226773">+91 6360226773</a>
         </div>
       </div>
       <div className="footerContact-content">

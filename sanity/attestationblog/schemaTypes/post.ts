@@ -67,5 +67,14 @@ export default defineType({
         layout: 'tags', // Shows them as tags in Studio
       },
     }),
+    defineField({
+      name: 'faqs',
+      title: 'FAQs',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'faq'}]}],
+      options: {
+        layout: 'tags', // Optional, will show selected FAQs as tags
+      },
+    }),
   ],
 })

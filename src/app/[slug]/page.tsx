@@ -14,6 +14,7 @@ import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
 import { portableTextComponents } from "./../../components/PortableTextComponents";
+import FaqComponent from "@/components/Faq/Faq";
 
 export const revalidate = 0;
 
@@ -198,6 +199,7 @@ export default async function SlugPage({
               );
             })}
         </div>
+        {isPost && <FaqComponent />}
 
         {/* body1 and body2 (optional) for Services only */}
         {isService && (
@@ -261,6 +263,7 @@ export default async function SlugPage({
                     </div>
                   )}
                 </div>
+                <FaqComponent />
               </div>
             )}
           </>

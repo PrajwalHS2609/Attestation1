@@ -53,7 +53,7 @@ export default defineType({
           name: 'headers',
           title: 'Table Headers',
           type: 'array',
-          of: [{ type: 'string' }],
+          of: [{type: 'string'}],
         },
         {
           name: 'rows',
@@ -69,7 +69,7 @@ export default defineType({
                   name: 'cells',
                   title: 'Cells',
                   type: 'array',
-                  of: [{ type: 'string' }],
+                  of: [{type: 'string'}],
                 },
               ],
             },
@@ -92,6 +92,15 @@ export default defineType({
       name: 'youtubeVideoUrl',
       title: 'YouTube Video URL',
       type: 'url',
+    }),
+    defineField({
+      name: 'faqs',
+      title: 'FAQs',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'faq'}]}],
+      options: {
+        layout: 'tags', // Optional, will show selected FAQs as tags
+      },
     }),
   ],
 })

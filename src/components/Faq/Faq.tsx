@@ -2,14 +2,15 @@
 
 import React, { useEffect, useState } from "react";
 import Accordion from "react-bootstrap/Accordion";
-import { client } from "@/sanity/client"; // adjust your import path
+import { client } from "@/sanity/client"; // adjust path if needed
+import { PortableText } from "@portabletext/react";
 import "./Faq.css";
 
 export const revalidate = 0;
 
 type FaqItem = {
   question: string;
-  answer: string;
+  answer: any; // PortableText blocks (not just string)
 };
 
 type FaqData = {
@@ -26,6 +27,21 @@ const faqQuery = `
   }
 }
 `;
+
+// ✅ Custom serializers for PortableText
+const portableTextComponents = {
+  list: {
+    bullet: ({ children }: any) => <ul className="faq-list">{children}</ul>,
+    number: ({ children }: any) => <ol className="faq-list">{children}</ol>,
+  },
+  listItem: {
+    bullet: ({ children }: any) => <li className="faq-list-item">{children}</li>,
+    number: ({ children }: any) => <li className="faq-list-item">{children}</li>,
+  },
+  block: {
+    normal: ({ children }: any) => <p className="faq-text">{children}</p>,
+  },
+};
 
 const FaqComponent: React.FC = () => {
   const [faqData, setFaqData] = useState<FaqData | null>(null);
@@ -54,7 +70,10 @@ const FaqComponent: React.FC = () => {
                 <b>{item.question}</b>
               </Accordion.Header>
               <Accordion.Body className="acc-body">
-                {item.answer}
+                <PortableText
+                  value={item.answer}
+                  components={portableTextComponents}
+                />
               </Accordion.Body>
             </Accordion.Item>
           ))}

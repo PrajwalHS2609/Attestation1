@@ -30,20 +30,20 @@ export default function ContactUsAddress() {
             </li>
             <li>
               {" "}
-              <a href="tel:9876543210">
+              <a href="tel:6360226773">
                 <span>
                   <FaPhoneAlt className="footerAddressIco1" />
                 </span>
-                +91 9876543210
+                +91 6360226773
               </a>
             </li>
             <li>
               {" "}
-              <a href="tel:1234567890">
+              <a href="tel:6360226773">
                 <span>
                   <FaMobileAlt className="footerAddressIco1" />
                 </span>
-                +91 1234567890
+                +91 6360226773
               </a>
             </li>
             <li>
