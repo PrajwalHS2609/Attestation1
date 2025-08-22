@@ -2,15 +2,16 @@
 
 import React, { useEffect, useState } from "react";
 import Accordion from "react-bootstrap/Accordion";
-import { client } from "@/sanity/client"; // adjust path if needed
-import { PortableText } from "@portabletext/react";
+import { client } from "@/sanity/client";
+import { PortableText, PortableTextComponents } from "@portabletext/react";
+import type { PortableTextBlock } from "@portabletext/types";
 import "./Faq.css";
 
 export const revalidate = 0;
 
 type FaqItem = {
   question: string;
-  answer: any; // PortableText blocks (not just string)
+  answer: PortableTextBlock[]; // ✅ properly typed
 };
 
 type FaqData = {
@@ -21,25 +22,25 @@ type FaqData = {
 const faqQuery = `
 *[_type == "faq"][0]{
   title,
-  items[]{
+  items[] {
     question,
     answer
   }
 }
 `;
 
-// ✅ Custom serializers for PortableText
-const portableTextComponents = {
+// ✅ Typed PortableText serializers
+const portableTextComponents: PortableTextComponents = {
   list: {
-    bullet: ({ children }: any) => <ul className="faq-list">{children}</ul>,
-    number: ({ children }: any) => <ol className="faq-list">{children}</ol>,
+    bullet: ({ children }) => <ul className="faq-list">{children}</ul>,
+    number: ({ children }) => <ol className="faq-list">{children}</ol>,
   },
   listItem: {
-    bullet: ({ children }: any) => <li className="faq-list-item">{children}</li>,
-    number: ({ children }: any) => <li className="faq-list-item">{children}</li>,
+    bullet: ({ children }) => <li className="faq-list-item">{children}</li>,
+    number: ({ children }) => <li className="faq-list-item">{children}</li>,
   },
   block: {
-    normal: ({ children }: any) => <p className="faq-text">{children}</p>,
+    normal: ({ children }) => <p className="faq-text">{children}</p>,
   },
 };
 
