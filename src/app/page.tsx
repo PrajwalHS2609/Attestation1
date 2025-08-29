@@ -34,7 +34,6 @@ export default function Home() {
       <HomeAboutUs />
       <HomeSeo />
       <HomeWhy />
-      <FaqComponent />
       <CountriesCarousel />
       <HomeBlog />
       <HomeNews />
