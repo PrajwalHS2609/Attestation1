@@ -9,7 +9,6 @@ import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import attestationBanner from "@/media/images/attestationBanner.png";
 import HomeBlog from "@/components/HomePage/HomeBlog/HomeBlog";
 import HomeNews from "@/components/HomePage/HomeNews/HomeNews";
-import FaqComponent from "@/components/Faq/Faq";
 
 export const metadata = {
   title: "Attestation Services in Bangalore – Embassy Attestation in Bangalore",
@@ -35,7 +34,6 @@ export default function Attestation() {
       <HomeService />
       <HomeCountries />
       <HomeWhy />
-      <FaqComponent/>
       <HomeBlog />
       <HomeNews />
       <AttestationContent />
