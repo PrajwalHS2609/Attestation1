@@ -81,6 +81,11 @@
 .headerKey-respContainer {
   display: none;
 }
+.head-container>p>a{
+    text-decoration: none;
+  font-weight: 500;
+  color: var(--customColor1);
+}
 /* ------------------------Heading-------------------------------------- */
 .head-container {
   width: 100%;
@@ -609,6 +614,7 @@
   font-weight: 500;
   color: var(--customColor1);
 }
+
 .slugContent-container > h1 {
   position: relative;
   color: var(--customColor1);
@@ -642,6 +648,7 @@
   width: 50%;
   right: -20px;
 }
+
 .slugContent-container > h4 {
   text-align: start;
   color: var(--customColor1);

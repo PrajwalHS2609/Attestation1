@@ -53,7 +53,7 @@ const FaqComponent: React.FC = () => {
     });
   }, []);
 
-  if (!faqData) return <p>Loading FAQs…</p>;
+  if (!faqData) return <p></p>;
 
   return (
     <div className="faq-container">
