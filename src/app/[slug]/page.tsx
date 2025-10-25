@@ -7,7 +7,7 @@ import NewsContent, { NewsContentType } from "@/components/SanityComponents/News
 
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{_id, title, slug, body, mainImage { asset->{ url } }, youtubeVideoUrl, faq[] { question, answer }}`;
-const SERVICE_QUERY = `*[_type == "ServiceCategory" && slug.current == $slug][0]{_id, title, slug, body1, body2, mainImage { asset->{ url } }, youtubeVideoUrl, faq[] { question, answer }, customTable{title, headers, rows[] {cells}}}`;
+const SERVICE_QUERY = `*[_type == "serviceContent" && slug.current == $slug][0]{_id, title, slug, body1, body2, mainImage { asset->{ url } }, youtubeVideoUrl, faq[] { question, answer }, customTable{title, headers, rows[] {cells}}}`;
 const NEWS_QUERY = `*[_type == "news" && slug.current == $slug][0]{_id, title, slug, body, author, publishedAt, mainImage { asset->{ url } }, faq[] { question, answer }}`;
 
 export const revalidate = 0;
