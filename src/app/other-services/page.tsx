@@ -6,7 +6,7 @@ import { SanityDocument } from "next-sanity";
 // 🔥 Force dynamic rendering on every request (not cached)
 export const dynamic = "force-dynamic";
 
-const SERVICE_QUERY = `*[_type == "serviceContent"] |order(publishedAt desc)[0...100]{
+const SERVICE_QUERY = `*[_type == "ServiceCategory"] |order(publishedAt desc)[0...100]{
   _id,
   title,
   slug,
