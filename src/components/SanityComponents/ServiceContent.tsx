@@ -1,4 +1,3 @@
-
 import React from "react";
 import { PortableText } from "next-sanity";
 import { portableTextComponents } from "@/components/PortableTextComponents";
@@ -29,7 +28,11 @@ export type ServiceContentType = {
   customTable?: CustomTable;
 };
 
-export default function ServiceContent({ content }: { content: ServiceContentType }) {
+export default function ServiceContent({
+  content,
+}: {
+  content: ServiceContentType;
+}) {
   const imageUrl = content?.mainImage?.asset?.url;
   const youtubeUrl = content?.youtubeVideoUrl;
 
@@ -40,8 +43,13 @@ export default function ServiceContent({ content }: { content: ServiceContentTyp
       <h1 className="head-container">{content.title}</h1>
 
       {content.body1 && (
-        <div className="head-container">
-          <PortableText value={content.body1} components={portableTextComponents} />
+        <div className="slugContent-wrapper">
+          <div className="slugContent-container">
+            <PortableText
+              value={content.body1}
+              components={portableTextComponents}
+            />
+          </div>
         </div>
       )}
 
@@ -72,11 +80,16 @@ export default function ServiceContent({ content }: { content: ServiceContentTyp
       {content.body2 && (
         <div className="slugContent-wrapper">
           <div className="slugContent-container">
-            <PortableText value={content.body2} components={portableTextComponents} />
+            <PortableText
+              value={content.body2}
+              components={portableTextComponents}
+            />
 
             {content.customTable && (
               <div className="custom-table">
-                {content.customTable.title && <h3>{content.customTable.title}</h3>}
+                {content.customTable.title && (
+                  <h3>{content.customTable.title}</h3>
+                )}
                 <table>
                   <thead>
                     <tr>

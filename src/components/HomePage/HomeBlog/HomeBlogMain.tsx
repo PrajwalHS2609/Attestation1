@@ -27,7 +27,7 @@ export default async function HomeBlogMain() {
 
   return (
     <div className="blogMainContainer">
-      <div className="blogMainContent">
+      <div className="blogMainCon tent">
         {posts.map((post) => (
           <div className="blogCardContainer" key={post._id}>
             <div className="blogCardImg">

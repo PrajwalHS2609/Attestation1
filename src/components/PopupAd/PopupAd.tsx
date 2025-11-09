@@ -20,7 +20,6 @@ const PopupAd = () => {
     return () => clearTimeout(timer); // Clear timeout on route change
   }, [pathname]); // 👈 run effect on each page change
 
-
   const handleExit = () => {
     setShowPopup(false);
   };
@@ -37,6 +36,7 @@ const PopupAd = () => {
           <Image src={popupImg} alt="" />
         </div>
         <div className="popup-contentWrapper">
+          <h1>This Website is For Sale!</h1>
           <h2 className="popup-heading outlined-heading">
             🚀 BizGen Website Package
           </h2>
