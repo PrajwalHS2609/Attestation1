@@ -62,15 +62,26 @@ const SERVICE_QUERY = `{
   }
 }`;
 
-const NEWS_QUERY = `*[_type == "news" && slug.current == $slug][0]{
-  _id,
-  title,
-  slug,
-  body,
-  author,
-  publishedAt,
-  mainImage{ asset->{url} },
-  faq[]{ question, answer }
+const NEWS_QUERY = `{
+  "news": *[_type == "news" && slug.current == $slug][0]{
+    _id,
+    title,
+    slug,
+    body,
+    author,
+    publishedAt,
+    mainImage{ asset->{url} },
+    faq[]{ question, answer }
+  },
+  "carouselBlock": *[_type == "carouselBlock"][0]{
+    title,
+    images[]{
+      alt,
+      caption,
+      link,
+      asset->{ url }
+    }
+  }
 }`;
 
 export const revalidate = 0;
@@ -88,7 +99,7 @@ type CarouselImage = {
   asset?: { url?: string };
 };
 
-type CarouselBlock = {
+export type CarouselBlock = {
   title?: string;
   images?: CarouselImage[];
 };
@@ -104,11 +115,11 @@ export default async function SlugPage({
 }) {
   const { slug } = await paramsPromise;
 
-  // 1️⃣ Try Post + carousel
-  const postData: {
+  // 1️⃣ Try Post
+  const postData = await client.fetch<{
     post: PostContentType | null;
     carouselBlock: CarouselBlock | null;
-  } = await client.fetch(POST_QUERY, { slug });
+  }>(POST_QUERY, { slug });
 
   if (postData.post) {
     return (
@@ -121,11 +132,11 @@ export default async function SlugPage({
     );
   }
 
-  // 2️⃣ Try Service + carousel
-  const serviceData: {
+  // 2️⃣ Try Service
+  const serviceData = await client.fetch<{
     service: ServiceContentType | null;
     carouselBlock: CarouselBlock | null;
-  } = await client.fetch(SERVICE_QUERY, { slug });
+  }>(SERVICE_QUERY, { slug });
 
   if (serviceData.service) {
     return (
@@ -138,10 +149,22 @@ export default async function SlugPage({
     );
   }
 
-  // 3️⃣ Try News
-  const news = await client.fetch<NewsContentType | null>(NEWS_QUERY, { slug });
+  // 3️⃣ Try News + carousel
+  const newsData = await client.fetch<{
+    news: NewsContentType | null;
+    carouselBlock: CarouselBlock | null;
+  }>(NEWS_QUERY, { slug });
 
-  if (news) return <NewsContent content={news} />;
+  if (newsData.news) {
+    return (
+      <NewsContent
+        content={{
+          ...newsData.news,
+          carouselBlock: newsData.carouselBlock ?? undefined,
+        }}
+      />
+    );
+  }
 
   // 4️⃣ Nothing found
   return notFound();
