@@ -33,11 +33,14 @@ const PopupAd = () => {
       <div className="popup-content">
         <div className="popup-imgContainer">
           <Image src={popupImg} alt="" />
-          <button className="glass-btn">
-            <a href="https://api.whatsapp.com/send?phone=916360226773">
-              +91 6360226773
-            </a>
-          </button>
+          <span>
+            {" "}
+            <button className="glass-btn">
+              <a href="https://api.whatsapp.com/send?phone=916360226773">
+                +91 6360226773
+              </a>
+            </button>{" "}
+          </span>
         </div>
       </div>
     </div>
