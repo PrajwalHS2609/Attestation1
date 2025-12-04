@@ -2,9 +2,8 @@
 import React, { useEffect, useState } from "react";
 import "./PopupAd.css";
 import { FaXmark } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
-import popupImg from "@/media/images/attestationBanner.png";
+import popupImg from "@/media/images/pop-ad.png";
 import { usePathname } from "next/navigation";
 const PopupAd = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -34,29 +33,11 @@ const PopupAd = () => {
       <div className="popup-content">
         <div className="popup-imgContainer">
           <Image src={popupImg} alt="" />
-        </div>
-        <div className="popup-contentWrapper">
-          <h1>This Website is For Sale!</h1>
-          <h2 className="popup-heading outlined-heading">
-            🚀 BizGen Website Package
-          </h2>
-          <h4 className="popup-subheading">
-            <span className="highlight">Launch in 24 Hrs</span> <br />
-            Only <span className="price">₹25,000</span> for a{" "}
-            <strong>fully-loaded, digital-ready</strong> website!
-          </h4>
-          <p className="popup-disclaimer">
-            This site is for sale. Please avoid inquiries about services.
-          </p>
-          <a
-            href="https://api.whatsapp.com/send?phone=916360226773"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="popup-whatsapp"
-          >
-            <FaWhatsapp className="popup-whatsIcon" />
-            <span>Grab This Deal</span>
-          </a>
+          <button className="glass-btn">
+            <a href="https://api.whatsapp.com/send?phone=916360226773">
+              +91 6360226773
+            </a>
+          </button>
         </div>
       </div>
     </div>
