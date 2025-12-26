@@ -13,6 +13,7 @@ import ServiceContent, {
 import NewsContent, {
   NewsContentType,
 } from "@/components/SanityComponents/NewsContent";
+import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
 
 // =========================
 // GROQ QUERIES
@@ -123,12 +124,17 @@ export default async function SlugPage({
 
   if (postData.post) {
     return (
-      <PostContent
-        content={{
-          ...postData.post,
-          carouselBlock: postData.carouselBlock ?? undefined,
-        }}
-      />
+     <div className="blog-container">
+        <PostContent
+          content={{
+            ...postData.post,
+            carouselBlock: postData.carouselBlock ?? undefined,
+          }}
+        />
+        <div className="blog-wrapper2">
+        <BlogSidebar />
+      </div>
+      </div>
     );
   }
 

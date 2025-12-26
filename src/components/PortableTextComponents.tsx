@@ -110,7 +110,7 @@ export const portableTextComponents: PortableTextComponents = {
           </div>
         </details>
       );
-    },
+    },  
 
     // ------------------------------FAQ----------------------------------
 

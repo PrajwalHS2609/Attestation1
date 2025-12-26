@@ -7,7 +7,7 @@ import "@/components/Blog/Blog.css";
 export const revalidate = 0;
 
 
-const NEWS_QUERY = `*[_type == "news"] | order(publishedAt desc)[0...3]{
+const NEWS_QUERY = `*[_type == "news"] | order(publishedAt desc)[0...2]{
   _id,
   title,
   slug,
