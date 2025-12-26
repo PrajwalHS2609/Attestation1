@@ -35,10 +35,12 @@ export default function BlogAuthor({ slug }) {
   return (
     <div className="blogAuthorContainer">
       <div className="blogAuthorContent">
-        {author.mainImage?.asset?.url && (
-          <img src={author.mainImage.asset.url} alt={author.name} />
-        )}
-
+        <div className="blogAuthorImg">
+          {" "}
+          {author.mainImage?.asset?.url && (
+            <img src={author.mainImage.asset.url} alt={author.name} />
+          )}
+        </div>
         <div className="blogAuthorName">
           <h4>{author.designation}</h4>
           <h3>{author.name}</h3>
@@ -48,9 +50,9 @@ export default function BlogAuthor({ slug }) {
       {author.bio && <PortableText value={author.bio} />}
 
       <div className="blogAuthorSocial">
-        <FaInstagram />
-        <FaLinkedin />
-        <FaXTwitter />
+        <FaInstagram className="authorSocialIcon"/>
+        <FaLinkedin className="authorSocialIcon"/>
+        <FaXTwitter className="authorSocialIcon"/>
       </div>
     </div>
   );
