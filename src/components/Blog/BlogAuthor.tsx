@@ -42,9 +42,7 @@ export default function BlogAuthor({ slug }: BlogAuthorProps) {
         }`,
         { slug }
       )
-      .then((data) => {
-        setAuthor(data?.author ?? null);
-      })
+      .then((data) => setAuthor(data?.author ?? null))
       .catch(console.error);
   }, [slug]);
 
@@ -53,11 +51,9 @@ export default function BlogAuthor({ slug }: BlogAuthorProps) {
   return (
     <div className="blogAuthorContainer">
       <div className="blogAuthorContent">
-        <div className="blogAuthorImg">
-          {author.mainImage?.asset?.url && (
-            <img src={author.mainImage.asset.url} alt={author.name} />
-          )}
-        </div>
+        {author.mainImage?.asset?.url && (
+          <img src={author.mainImage.asset.url} alt={author.name} />
+        )}
 
         <div className="blogAuthorName">
           <h4>{author.designation}</h4>
@@ -68,9 +64,9 @@ export default function BlogAuthor({ slug }: BlogAuthorProps) {
       {author.bio && <PortableText value={author.bio} />}
 
       <div className="blogAuthorSocial">
-        <FaInstagram className="authorSocialIcon" />
-        <FaLinkedin className="authorSocialIcon" />
-        <FaXTwitter className="authorSocialIcon" />
+        <FaInstagram />
+        <FaLinkedin />
+        <FaXTwitter />
       </div>
     </div>
   );
