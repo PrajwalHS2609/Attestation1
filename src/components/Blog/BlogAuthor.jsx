@@ -7,24 +7,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { client } from "@/sanity/client";
 import "./Blog.css";
 
-type Author = {
-  _id: string;
-  name: string;
-  designation?: string;
-  bio?: any;
-  mainImage?: {
-    asset?: {
-      url?: string;
-    };
-  };
-};
-
-type BlogAuthorProps = {
-  slug: string;
-};
-
-export default function BlogAuthor({ slug }: BlogAuthorProps) {
-  const [author, setAuthor] = useState<Author | null>(null);
+export default function BlogAuthor({ slug }) {
+  const [author, setAuthor] = useState(null);
 
   useEffect(() => {
     client
