@@ -6,12 +6,15 @@ import { PortableText } from "next-sanity";
 import { portableTextComponents } from "@/components/PortableTextComponents";
 import type { PortableTextBlock } from "@portabletext/types";
 import "bootstrap/dist/css/bootstrap.min.css";
+import BlogAuthor from "./../Blog/BlogAuthor";
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type PostContentType = {
   _id: string;
   title: string;
-  slug: string;
+  slug: {
+    current: string;
+  };
   body: PortableTextBlock[];
   mainImage?: { asset?: { url?: string } };
   youtubeVideoUrl?: string;
@@ -34,7 +37,7 @@ export default function PostContent({ content }: { content: PostContentType }) {
       {imageUrl && (
         <Image src={imageUrl} alt={content.title} width={550} height={310} />
       )}
-      <h1 className="blogHead-content">{content.title}</h1>
+      <h1 className="">{content.title}</h1>
       {/* ✅ Carousel Section */}
       <div className="blogHead-content">
         <PortableText
@@ -42,6 +45,7 @@ export default function PostContent({ content }: { content: PostContentType }) {
           components={portableTextComponents}
         />
       </div>
+      <BlogAuthor slug={content.slug.current} />
     </div>
   );
 }

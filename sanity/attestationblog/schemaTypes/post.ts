@@ -59,6 +59,12 @@ export default defineType({
       type: 'url',
     }),
     defineField({
+      name: 'author',
+      title: 'Author',
+      type: 'reference',
+      to: [{type: 'author'}],
+    }),
+    defineField({
       name: 'categories',
       title: 'Categories',
       type: 'array',

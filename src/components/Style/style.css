@@ -1084,3 +1084,52 @@ details[open] .faq-answer {
 .carousel-control-prev {
   display: none;
 }
+/* ---------------------------QuoteBlock----------------------------- */
+.quote-block {
+  border-left: 4px solid var(--customColor1);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  background: var(--customLightColor);
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--customColor1);
+}
+
+.quote-author {
+  display: block;
+  margin-top: 0.5rem;
+  text-align: right;
+  color: #666;
+  font-weight: bold;
+}
+.quote-text > span {
+  font-size: 30px;
+}
+
+/* ----------------------------------Highlight----------------------------------- */
+
+.highlight-box {
+  background: var(--customLightColor);
+  border: 4px dotted var(--customColor1);
+  margin: 20px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 15px;
+}
+.highlight-title {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.highlight-content > p {
+  font-size: 16px;
+}

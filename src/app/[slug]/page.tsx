@@ -31,12 +31,7 @@ const POST_QUERY = `{
   },
   "carouselBlock": *[_type == "carouselBlock"][0]{
     title,
-    images[]{
-      alt,
-      caption,
-      link,
-      asset->{ url }
-    }
+    images[]{ alt, caption, link, asset->{ url } }
   }
 }`;
 
@@ -124,7 +119,7 @@ export default async function SlugPage({
 
   if (postData.post) {
     return (
-     <div className="blog-container">
+      <div className="blog-container">
         <PostContent
           content={{
             ...postData.post,
@@ -132,8 +127,8 @@ export default async function SlugPage({
           }}
         />
         <div className="blog-wrapper2">
-        <BlogSidebar />
-      </div>
+          <BlogSidebar />
+        </div>
       </div>
     );
   }
