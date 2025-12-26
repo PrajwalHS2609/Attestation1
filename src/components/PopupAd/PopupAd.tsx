@@ -14,7 +14,7 @@ const PopupAd = () => {
 
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 8000); // 8 seconds
+    }, 10000); // 8 seconds
 
     return () => clearTimeout(timer); // Clear timeout on route change
   }, [pathname]); // 👈 run effect on each page change

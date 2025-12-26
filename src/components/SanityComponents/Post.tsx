@@ -4,10 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { PortableText } from "next-sanity";
 import { portableTextComponents } from "@/components/PortableTextComponents";
-import FaqComponent from "@/components/Faq/Faq";
-import BlogSidebar from "@/components/Blog/BlogSidebar/BlogSidebar";
 import type { PortableTextBlock } from "@portabletext/types";
-import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
@@ -32,10 +29,6 @@ export type CarouselImage = {
 };
 export default function PostContent({ content }: { content: PostContentType }) {
   const imageUrl = content?.mainImage?.asset?.url;
-  const youtubeUrl = content?.youtubeVideoUrl;
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex: number) => setIndex(selectedIndex);
   return (
     <div className="blog-wrapper1">
       {imageUrl && (
