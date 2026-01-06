@@ -5,7 +5,7 @@ import TopBar from "@/components/TopBar/Topbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Script from "next/script";
 import PopupAd from "./../components/PopupAd/PopupAd";
-
+import "@/components/Style/style.css"
 export default function RootLayout({
   children,
 }: {
