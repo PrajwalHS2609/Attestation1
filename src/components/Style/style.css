@@ -810,16 +810,21 @@
   /* border: solid red; */
   width: 100%;
   height: 100%;
-  padding: 20px;
 }
 .portableImg > a {
   width: 100%;
   height: 100%;
 }
+.portableImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: solid blue; */
+}
 .portableImg > a > img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   /* border: solid blue; */
 }
 @media screen and (max-width: 768px) {
@@ -935,21 +940,7 @@ blockquote > strong {
 blockquote > em {
   color: var(--customColor);
 }
-.portableImg {
-  /* border: solid red; */
-  width: 100%;
-  height: 100%;
-}
-.portableImg > a {
-  width: 100%;
-  height: 100%;
-}
-.portableImg > a > img {
-  width: 100%;
-  height: 600px;
-  object-fit: contain;
-  /* border: solid blue; */
-}
+
 
 /* ---------- FAQ Section ---------- */
 .faq-section {
