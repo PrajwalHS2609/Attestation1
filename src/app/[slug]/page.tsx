@@ -45,7 +45,10 @@ const SERVICE_QUERY = `{
     mainImage{ asset->{url} },
     youtubeVideoUrl,
     faq[]{ question, answer },
-    customTable{ title, headers, rows[]{ cells } }
+    customTable{ title, headers, rows[]{ cells } },
+      seoKeywords{
+  keywords
+}
   },
   "carouselBlock": *[_type == "carouselBlock"][0]{
     title,

@@ -10,6 +10,7 @@ import FaqComponent from "@/components/Faq/Faq";
 import type { PortableTextBlock } from "@portabletext/types";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SanitySeoKeywords from "./SanitySeoKeyword";
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type CustomTable = {
@@ -37,6 +38,9 @@ export type ServiceContentType = {
     title?: string;
     images?: CarouselImage[];
   };
+  seoKeywords?: {
+    keywords?: string[];
+  };
 };
 
 export default function ServiceContent({
@@ -62,41 +66,41 @@ export default function ServiceContent({
               value={content.body1}
               components={portableTextComponents}
             />
-             {/* ✅ Carousel Section */}
-          {content.carouselBlock?.images?.length ? (
-            <Carousel activeIndex={index} onSelect={handleSelect}  className="carouselContainer">
-              {content.carouselBlock.images.map((img, i) => (
-                <Carousel.Item key={i} className="carouselItem">
-                  {img.link ? (
-                    <a
-                      href={img.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+            {/* ✅ Carousel Section */}
+            {content.carouselBlock?.images?.length ? (
+              <Carousel activeIndex={index} onSelect={handleSelect} className="carouselContainer">
+                {content.carouselBlock.images.map((img, i) => (
+                  <Carousel.Item key={i} className="carouselItem">
+                    {img.link ? (
+                      <a
+                        href={img.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src={img.asset?.url}
+                          alt={img.alt || `Slide ${i + 1}`}
+                          className="d-block w-100 rounded"
+                        />
+                      </a>
+                    ) : (
                       <img
                         src={img.asset?.url}
                         alt={img.alt || `Slide ${i + 1}`}
                         className="d-block w-100 rounded"
                       />
-                    </a>
-                  ) : (
-                    <img
-                      src={img.asset?.url}
-                      alt={img.alt || `Slide ${i + 1}`}
-                      className="d-block w-100 rounded"
-                    />
-                  )}
-                  {img.caption && (
-                    <Carousel.Caption>
-                      <h3>{img.caption}</h3>
-                    </Carousel.Caption>
-                  )}
-                </Carousel.Item>
-              ))}
-            </Carousel>
-          ) : null}
+                    )}
+                    {img.caption && (
+                      <Carousel.Caption>
+                        <h3>{img.caption}</h3>
+                      </Carousel.Caption>
+                    )}
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            ) : null}
           </div>
-         
+
         </div>
       )}
 
@@ -104,7 +108,9 @@ export default function ServiceContent({
         <HomeService />
         <HomeCountries />
         <HomeWhy />
-
+        {content.seoKeywords?.keywords && (
+          <SanitySeoKeywords keywords={content.seoKeywords.keywords} />
+        )}
         {youtubeUrl && (
           <div className="youtube-container">
             <iframe
