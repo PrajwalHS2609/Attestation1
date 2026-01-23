@@ -89,9 +89,9 @@ export default defineType({
       type: 'text',
     }),
     defineField({
-      name: 'seoKeywords',
+      name: 'seoKeywordsBlock',
       title: 'SEO Keywords',
-      type: 'seoKeywords',
+      type: 'seoKeywordsBlock',
     }),
     defineField({
       name: 'youtubeVideoUrl',

@@ -10,9 +10,9 @@ import carouselBlock from './carouselBlock'
 import highlightBlock from './highlightBlock'
 import quoteContent from './quoteContent'
 import author from './author'
-import seoKeywords from './seoKeywords'
+import seoKeywordsBlock from './seoKeywordsBlock'
 
 
 
 
-export const schemaTypes = [post, blockContent,serviceContent,newsContent,blogCategory,faqContent,table,accordionBlock,carouselBlock,highlightBlock,quoteContent,author,seoKeywords]
+export const schemaTypes = [post, blockContent,serviceContent,newsContent,blogCategory,faqContent,table,accordionBlock,carouselBlock,highlightBlock,quoteContent,author,seoKeywordsBlock]
