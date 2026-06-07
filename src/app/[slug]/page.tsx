@@ -46,9 +46,9 @@ const SERVICE_QUERY = `{
     youtubeVideoUrl,
     faq[]{ question, answer },
     customTable{ title, headers, rows[]{ cells } },
-      seoKeywords{
+      seoKeywordsBlock{
   keywords
-}
+},
   },
   "carouselBlock": *[_type == "carouselBlock"][0]{
     title,

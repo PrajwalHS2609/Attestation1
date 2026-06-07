@@ -38,9 +38,9 @@ export type ServiceContentType = {
     title?: string;
     images?: CarouselImage[];
   };
-  seoKeywords?: {
-    keywords?: string[];
-  };
+      seoKeywordsBlock?: {
+        keywords?: string[];
+      };
 };
 
 export default function ServiceContent({
@@ -108,8 +108,8 @@ export default function ServiceContent({
         <HomeService />
         <HomeCountries />
         <HomeWhy />
-        {content.seoKeywords?.keywords && (
-          <SanitySeoKeywords keywords={content.seoKeywords.keywords} />
+        {content.seoKeywordsBlock?.keywords && (
+          <SanitySeoKeywords keywords={content.seoKeywordsBlock.keywords} />
         )}
         {youtubeUrl && (
           <div className="youtube-container">
