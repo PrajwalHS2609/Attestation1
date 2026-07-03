@@ -429,7 +429,11 @@
     font-size: 35px;
     width: 300px;
   }
-
+  .header-coverContent > h1 {
+    color: white;
+    font-size: 35px;
+    width: 300px;
+  }
   .headerKey-container {
     display: none;
   }
