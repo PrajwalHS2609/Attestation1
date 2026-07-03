@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { PortableText } from "next-sanity";
 import { portableTextComponents } from "@/components/PortableTextComponents";
-import HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
+import  HeaderComponent from "@/components/HeaderComponent/HeaderComponent";
 import HomeService from "@/components/HomePage/HomeService/HomeService";
 import HomeCountries from "@/components/HomePage/HomeCountries/HomeCountries";
 import HomeWhy from "@/components/HomePage/HomeWhy/HomeWhy";
@@ -55,9 +55,9 @@ export default function ServiceContent({
   const handleSelect = (selectedIndex: number) => setIndex(selectedIndex);
   return (
     <div className="main-container service-wrapper1">
-      {imageUrl && <HeaderComponent imageSrc={imageUrl} alt={content.title} />}
+      {imageUrl && <HeaderComponent imageSrc={imageUrl} alt={content.title} title={content.title}/>}
 
-      <h1 className="head-container">{content.title}</h1>
+      {/* <h1 className="head-container">{content.title}</h1> */}
 
       {content.body1 && (
         <div className="slugContent-wrapper">
